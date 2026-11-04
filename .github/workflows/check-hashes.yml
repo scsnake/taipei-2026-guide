@@ -1,0 +1,14 @@
+name: check-hashes
+# On every push to main: the published files must match SHA256SUMS.
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  hashes:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify SHA256SUMS
+        run: sha256sum -c SHA256SUMS

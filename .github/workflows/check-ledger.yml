@@ -1,0 +1,27 @@
+name: check-ledger
+# Runs on every pull request. Read-only token; no secrets; it only reads data files.
+on:
+  pull_request:
+    paths: ["ledger/**", "claims/**", "VERIFY.md", "rubric.md", "guide.md", "tools/**", ".github/**"]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pdftotext
+        run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils
+      - name: Check append-only rule, schema and quotes
+        # Uses the checker from the BASE branch, so a PR cannot weaken the rules it is checked by.
+        run: |
+          git show origin/${{ github.base_ref }}:tools/check_ledger.py > /tmp/check_ledger.py
+          cp /tmp/check_ledger.py tools/check_ledger_base.py
+          python3 tools/check_ledger_base.py --base origin/${{ github.base_ref }} \
+            --actor "${{ github.event.pull_request.user.login }}" --owner "${{ github.repository_owner }}"
