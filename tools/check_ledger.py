@@ -43,12 +43,20 @@ def changed(base):
     return rows
 
 
-def claim_ids():
+def claim_ids(base=None):
+    """Claim ids from the BASE branch when given, so a pull request cannot add its own claims."""
+    if base:
+        names = [n for n in git("ls-tree", "--name-only", base, "claims/").split() if n.endswith(".jsonl")]
+        texts = [git("show", f"{base}:{n}") for n in names]
+    else:
+        texts = [p.read_text() for p in (ROOT / "claims").glob("*.jsonl")]
     ids = set()
-    for p in (ROOT / "claims").glob("*.jsonl"):
-        for l in p.read_text().splitlines():
-            if l.strip():
+    for t in texts:
+        for l in t.splitlines():
+            try:
                 ids.add(json.loads(l)["id"])
+            except (ValueError, KeyError, TypeError):
+                continue
     return ids
 
 
@@ -109,7 +117,7 @@ def main():
                     files.append(path)
             elif path.startswith(PROTECTED) and not is_owner:
                 errors.append(f"`{path}`: only the maintainer changes this file. Put your findings in a new ledger file.")
-    ids = claim_ids()
+    ids = claim_ids(a.base)
     seen = set()
     for fp in files:
         if not NAME.match(fp):
