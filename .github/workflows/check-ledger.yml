@@ -2,7 +2,6 @@ name: check-ledger
 # Runs on every pull request. Read-only token; no secrets; it only reads data files.
 on:
   pull_request:
-    paths: ["ledger/**", "claims/**", "VERIFY.md", "rubric.md", "guide.md", "tools/**", ".github/**"]
 permissions:
   contents: read
 jobs:
