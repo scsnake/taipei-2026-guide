@@ -1,0 +1,180 @@
+{
+ "race": "D7-D8",
+ "completed": "2026-11-05",
+ "moderator": "Claude Fable 5.1 (high)",
+ "debaters": [
+  "GPT-6.1 Sol (medium)",
+  "Gemini 4 Argon (medium)"
+ ],
+ "rounds": 2,
+ "rubric": "rubric.md",
+ "guide_section": "12.10",
+ "note": "Citation tags in this file are the guide's local tags (for example [Q-12]); claims/*.jsonl carry the same tags with their sources.",
+ "verdict": {
+  "group": "臺北市議員第七選區（平地原住民）與第八選區（山地原住民）",
+  "candidates": [
+   {
+    "no": 1,
+    "name": "林筱薇",
+    "party": "無",
+    "status": "新人",
+    "district": "第七選區",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 6.2,
+    "free": 5.6,
+    "just": 5.0,
+    "benev": 6.0,
+    "comp": 6.0,
+    "total": 57.2,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "批中國十項措施是政治操作，交流不能繞過民主程序",
+      "grade": "4-C",
+      "ref": "[D78-12]"
+     },
+     {
+      "text": "國防預算被延宕、刪減令人無法接受；監督不能變成癱瘓",
+      "grade": "4-C",
+      "ref": "[D78-13]"
+     }
+    ],
+    "bad": [],
+    "drivers": "民主程序與國防表態以0.6折算加分；無法律或金錢爭議；新人無問政紀錄，整體信心低。"
+   },
+   {
+    "no": 2,
+    "name": "李芳儒",
+    "party": "中國國民黨",
+    "status": "現任（4屆）",
+    "district": "第七選區",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.0,
+    "free": 4.0,
+    "just": 5.0,
+    "benev": 5.5,
+    "comp": 7.0,
+    "total": 51.75,
+    "rank": 2,
+    "tier": "次選",
+    "good": [],
+    "bad": [
+     {
+      "text": "表示從來不認為平埔族屬於原住民族，反對列入平地原民",
+      "grade": "5-A",
+      "ref": "[D78-22]"
+     },
+     {
+      "text": "要求236所中小學校長交原住民族看法報告，引發爭議",
+      "grade": "5-B",
+      "ref": "[D78-20]"
+     }
+    ],
+    "drivers": "平埔表態扣自由與仁愛；校長報告案未扣分；合法獻金與雙城論壇出席不扣分；質詢紀錄支持能力。"
+   },
+   {
+    "no": 1,
+    "name": "孔垂崢",
+    "party": "無",
+    "status": "新人",
+    "district": "第八選區",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.0,
+    "free": 5.0,
+    "just": 5.0,
+    "benev": 6.0,
+    "comp": 6.5,
+    "total": 53.75,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "很可能曾任孔文吉立委辦公室助理與主任",
+      "grade": "4-B",
+      "ref": "[D78-51]"
+     }
+    ],
+    "bad": [],
+    "drivers": "金融教育、防詐與青年購屋輔導方案較具體；幕僚資歷折算採認；排序信心低。"
+   },
+   {
+    "no": 2,
+    "name": "林家豪",
+    "party": "民主進步黨",
+    "status": "新人（2022曾以民眾黨推薦參選新北市）",
+    "district": "第八選區",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.0,
+    "free": 5.0,
+    "just": 5.0,
+    "benev": 6.0,
+    "comp": 5.5,
+    "total": 52.25,
+    "rank": 3,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "公報經歷列行政院第2屆青年諮詢委員與原民會就業促進委員",
+      "grade": "4-A",
+      "ref": "[D78-31]"
+     }
+    ],
+    "bad": [],
+    "drivers": "過往諮詢經歷與2022政見支持有限能力分；2026北市具體政見資料不足；無負面紀錄。"
+   },
+   {
+    "no": 3,
+    "name": "李傅鈺婷",
+    "party": "中國國民黨",
+    "status": "新人",
+    "district": "第八選區",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.0,
+    "free": 5.0,
+    "just": 5.0,
+    "benev": 6.0,
+    "comp": 5.8,
+    "total": 52.7,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "國民黨北市黨部表示她長期擔任父親的特別助理",
+      "grade": "5-B",
+      "ref": "[D78-25]"
+     },
+     {
+      "text": "北檢起訴其父案7名被告中，沒有她",
+      "grade": "5-B",
+      "ref": "[D78-36]"
+     }
+    ],
+    "bad": [],
+    "drivers": "特助經歷支持有限能力分；政見概括；父親案件不轉嫁扣分；未見回應只降低信心。"
+   }
+  ],
+  "first": {
+   "第七選區": "林筱薇",
+   "第八選區": "孔垂崢"
+  },
+  "second": {
+   "第七選區": "李芳儒",
+   "第八選區": "李傅鈺婷"
+  },
+  "excluded": [],
+  "W1_first": {
+   "第七選區": "林筱薇",
+   "第八選區": "孔垂崢"
+  },
+  "W2_first": {
+   "第七選區": "林筱薇",
+   "第八選區": "孔垂崢"
+  }
+ }
+}

@@ -24,10 +24,10 @@ ROOT = Path(__file__).resolve().parent.parent
 NAME = re.compile(r"^ledger/\d{4}-\d{2}-\d{2}_[A-Za-z0-9-]{1,39}_[a-z0-9.\-]{2,60}\.jsonl$")
 VERDICTS = {"確認", "推翻", "更新", "查無", "新增"}
 GRADE = re.compile(r"^([1-5]-[ABC]|N(-[ABC])?)$")
-CLAIM_ID = re.compile(r"^(M|D[1-8])-\d{2}-\d{2}$")
-NEW_ID = re.compile(r"^(M|D[1-8])-\d{2}-N\d{2,3}$")
+CLAIM_ID = re.compile(r"^((M|D[1-8])-\d{2}-\d{2}|R22-\d{2}-\d{2,3})$")
+NEW_ID = re.compile(r"^(M|D[1-8]|R22)-\d{2}-N\d{2,3}$")
 REQUIRED = ["claim", "verdict", "grade", "url", "quote", "checked_at", "model", "tool", "contributor"]
-PROTECTED = ("claims/", "VERIFY.md", "rubric.md", "guide.md", "RELEASES.md", "SHA256SUMS", "tools/", ".github/")
+PROTECTED = ("claims/", "panel/", "VERIFY.md", "rubric.md", "rubric_r22.md", "guide.md", "RELEASES.md", "SHA256SUMS", "tools/", ".github/")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/140 Safari/537.36"
 
 

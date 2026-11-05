@@ -1,0 +1,251 @@
+{
+ "race": "M",
+ "completed": "2026-11-04",
+ "moderator": "Claude Fable 5.1 (high)",
+ "debaters": [
+  "GPT-6.1 Sol (medium)",
+  "Gemini 4 Argon (medium)"
+ ],
+ "rounds": 2,
+ "rubric": "rubric.md",
+ "guide_section": "12.3",
+ "note": "Citation tags in this file are the guide's local tags (for example [Q-12]); claims/*.jsonl carry the same tags with their sources.",
+ "verdict": {
+  "group": "臺北市長選舉",
+  "candidates": [
+   {
+    "no": 1,
+    "name": "郭璽",
+    "party": "台灣麻將最大黨",
+    "status": "新人",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 3,
+    "benev": 4.5,
+    "comp": 5,
+    "total": 44.25,
+    "rank": 5,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "曾獲聘海軍司令部無給職顧問，協助潛艦國造",
+      "grade": "5-A",
+      "ref": "[M-77]"
+     },
+     {
+      "text": "登記參選時稱認同蔣經國反共立場",
+      "grade": "4-C",
+      "ref": "[M-79]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "LINE群組加重誹謗，拘役50日判決確定",
+      "grade": "5-A",
+      "ref": "[M-10]"
+     },
+     {
+      "text": "直播誹謗案一審判刑4月，未確定",
+      "grade": "4-C",
+      "ref": "[M-11]"
+     },
+     {
+      "text": "另案遭士林地檢依誹謗與公然侮辱起訴",
+      "grade": "4-C",
+      "ref": "[M-74]"
+     }
+    ],
+    "drivers": "確定誹謗判決與多起未確定誹謗刑案拉低公義；反共表態支持低信心A=+1。"
+   },
+   {
+    "no": 2,
+    "name": "林志成",
+    "party": "無黨籍",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 2,
+    "benev": 2.5,
+    "comp": 5,
+    "total": 38.75,
+    "rank": 6,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "同名者2010年毆打2人，判刑2月確定",
+      "grade": "4-A",
+      "ref": "[M-12]"
+     },
+     {
+      "text": "同名者持斧砸毀司法院招牌，判刑6月確定",
+      "grade": "4-A",
+      "ref": "[M-13]"
+     },
+     {
+      "text": "同名者2013年再犯傷害致骨折，判刑8月確定",
+      "grade": "4-A",
+      "ref": "[M-14]"
+     }
+    ],
+    "drivers": "同名且經歷吻合的三起暴力與毀損確定判決，按0.6權重後仍重創公義與仁愛。"
+   },
+   {
+    "no": 3,
+    "name": "沈伯洋",
+    "party": "民主進步黨",
+    "status": "現任不分區立委，首次參選市長",
+    "A": 5,
+    "A_conf": "高",
+    "demo": 8,
+    "free": 9,
+    "just": 7.5,
+    "benev": 6,
+    "comp": 6.5,
+    "total": 75.5,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "主提反滲透法、國家安全法、兩岸條例等修法",
+      "grade": "5-A",
+      "ref": "[M-16]"
+     },
+     {
+      "text": "國台辦列入台獨頑固分子清單並禁止入境",
+      "grade": "5-A",
+      "ref": "[M-89]"
+     },
+     {
+      "text": "726後稱對抗做錯事立委，非投不同意票的人",
+      "grade": "5-B",
+      "ref": "[M-97]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "受訪稱國民黨立委不工作、智商低落",
+      "grade": "5-C",
+      "ref": "[M-85]"
+     },
+     {
+      "text": "辯論稱7599都更未動工，查核指說法不完整",
+      "grade": "5-C",
+      "ref": "[M-17]"
+     }
+    ],
+    "drivers": "國安修法與遭中共制裁支撐民主與自由高分；貶抑言詞與說法不完整限制公義。"
+   },
+   {
+    "no": 4,
+    "name": "蕭文乾",
+    "party": "臺灣SoR無法黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5.5,
+    "total": 50.75,
+    "rank": 3,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "黨章明定推動Science of Reading納入課綱",
+      "grade": "5-A",
+      "ref": "[M-129]"
+     }
+    ],
+    "bad": [],
+    "drivers": "黨章有具體教育方向，能力微幅加分；其餘無紀錄，屬低資訊候選人。"
+   },
+   {
+    "no": 5,
+    "name": "蔣萬安",
+    "party": "中國國民黨",
+    "status": "現任（1 屆）",
+    "A": -1,
+    "A_conf": "高",
+    "demo": 6,
+    "free": 6,
+    "just": 5.5,
+    "benev": 7,
+    "comp": 8,
+    "total": 63.25,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "市府與台灣輝達簽約，權利金122億元",
+      "grade": "5-A",
+      "ref": "[M-41]"
+     },
+     {
+      "text": "市府統計任內社宅開工2504戶、完工7645戶",
+      "grade": "5-A",
+      "ref": "[M-120]"
+     },
+     {
+      "text": "稱中華民國本來就是主權獨立的國家",
+      "grade": "5-B",
+      "ref": "[M-100]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "承認請託團隊製作AI合成總統聲音影片",
+      "grade": "5-B",
+      "ref": "[M-107]"
+     },
+     {
+      "text": "聲援罷免連署偽造案被告，後4人認罪",
+      "grade": "5-B",
+      "ref": "[M-53]"
+     },
+     {
+      "text": "辯論無菸城市、都更、食安三項說法不精準",
+      "grade": "5-C",
+      "ref": "[M-17]"
+     }
+    ],
+    "drivers": "輝達簽約與社宅實績支撐能力與仁愛；AI影片、聲援被告與辯論失準拉低民主與公義。"
+   },
+   {
+    "no": 6,
+    "name": "唐新民",
+    "party": "三勢團結促進聯盟",
+    "status": "新人（2022 曾參選）",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 4,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "2022造勢經費來自中國滲透來源，本人未起訴",
+      "grade": "5-A",
+      "ref": "[M-66]"
+     }
+    ],
+    "drivers": "造勢資金案未證明本人知情，不扣個人分；缺具體政見與表態，屬低資訊候選人。"
+   }
+  ],
+  "first": "沈伯洋",
+  "second": "蔣萬安",
+  "excluded": [],
+  "W1_first": "沈伯洋",
+  "W2_first": "沈伯洋"
+ }
+}

@@ -10,7 +10,7 @@
 
 ### 3.1 資料來源與查核
 
-1. 候選人名單、號次：臺北市選舉委員會候選人登記冊。[R32]
+1. 候選人名單、號次：臺北市選舉委員會候選人登記冊。[R2]
 2. 問政紀錄：臺北市議會議員資料、書面質詢與提案紀錄；前立委用立法院資料。
 3. 政治獻金：監察院政治獻金公開查閱平台（2022 年帳戶）。
 4. 法律紀錄：司法院判決書、檢察署新聞稿；只有新聞時，盡量用兩家媒體。
@@ -18,7 +18,7 @@
 
 ### 3.2 證據分級：兩軸制
 
-醫學、情報與氣候科學都把「主張有多可信」和「來源有多可靠」分開評估。[R37][R38][R39][R40] 例如北約的資訊評估法把來源可靠度（A–F）與資訊可信度（1–6）分成兩軸。[R38] 美國情報體系規定，可能性用語（例如「幾乎不可能」01–05%、「大約一半」45–55%）與信心程度不可寫在同一句。[R39] 放射科的 LI-RADS 也把「中間、無法判定」（LR-3）當成一個正式等級。[R41] 本文參考這些做法，採用兩軸標記【等級-來源】。
+醫學、情報與氣候科學都把「主張有多可信」和「來源有多可靠」分開評估。[R49][R50][R51][R52] 例如北約的資訊評估法把來源可靠度（A–F）與資訊可信度（1–6）分成兩軸。[R50] 美國情報體系規定，可能性用語（例如「幾乎不可能」01–05%、「大約一半」45–55%）與信心程度不可寫在同一句。[R51] 放射科的 LI-RADS 也把「中間、無法判定」（LR-3）當成一個正式等級。[R53] 本文參考這些做法，採用兩軸標記【等級-來源】。
 
 #### 第一軸：主張的可信度
 
@@ -109,10 +109,10 @@
 新聞來源本身也可能被收買、帶有立場，或被外國政府操作。本文的處理方式與限制如下。
 
 #### 已知的操弄證據
-- 路透社 2019 年報導：中國大陸當局付費給至少 5 家台灣媒體集團刊登報導，經費主要經由國台辦支付；報導依據 10 位記者與主管的訪談、內部文件與合約，未點名媒體。【5-B】[R42]
-- 英國《金融時報》2019 年報導，旺旺集團旗下的中國時報與中天電視「每天」接受國台辦對新聞處理的指示。旺中否認，稱報導無據並宣布提告。【5-B】[R43] 本文把這件事當作「有可信報導、當事人否認」的爭議，不據此判定該報每一則新聞為假。（推論）
-- 國安局 2026-01 公布：2025 年查獲約 231.4 萬則爭議訊息、約 4.5 萬組異常帳號，比 2024 年多約 1.7 萬組；手法包括 AI 生成影音與盜用民眾帳號。【5-B】[R44]
-- 研究發現，有政黨傾向的選民較會選擇接觸立場相近的政論節目。【5-A】[R45] 因此同陣營的媒體互相引用，不等於獨立查證。（推論）
+- 路透社 2019 年報導：中國大陸當局付費給至少 5 家台灣媒體集團刊登報導，經費主要經由國台辦支付；報導依據 10 位記者與主管的訪談、內部文件與合約，未點名媒體。【5-B】[R54]
+- 英國《金融時報》2019 年報導，旺旺集團旗下的中國時報與中天電視「每天」接受國台辦對新聞處理的指示。旺中否認，稱報導無據並宣布提告。【5-B】[R55] 本文把這件事當作「有可信報導、當事人否認」的爭議，不據此判定該報每一則新聞為假。（推論）
+- 國安局 2026-01 公布：2025 年查獲約 231.4 萬則爭議訊息、約 4.5 萬組異常帳號，比 2024 年多約 1.7 萬組；手法包括 AI 生成影音與盜用民眾帳號。【5-B】[R48]
+- 研究發現，有政黨傾向的選民較會選擇接觸立場相近的政論節目。【5-A】[R56] 因此同陣營的媒體互相引用，不等於獨立查證。（推論）
 - 大型語言模型也可能捏造來源網址，或把無關的網頁當成證據。（推論）【4】
 
 #### 本文的處理規則
@@ -129,15 +129,17 @@
 - 協同操作可以讓假資訊在搜尋結果中大量出現；本文的查核依賴搜尋得到的內容。
 - 三個評議模型可能有共同的訓練資料偏誤（見 1.6 節）。
 
+---
+
 ## 本節參考資料
 
-- [R32] 臺北市選舉委員會. 候選人登記冊（號次抽籤結果）. 2026-10-27. <https://web.cec.gov.tw/api/file/6ae7925e-d158-42ba-814c-34794f003ddb.pdf>；公告頁：<https://web.cec.gov.tw/mect/article/65401>
-- [R37] Guyatt, G. H., Oxman, A. D., Vist, G. E., et al. (2008). GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. *BMJ*, 336(7650), 924–926. <https://doi.org/10.1136/bmj.39489.470347.AD>
-- [R38] Irwin, D., & Mandel, D. R. (2019). Improving information evaluation for intelligence production. *Intelligence and National Security*, 34(4), 503–525. <https://doi.org/10.1080/02684527.2019.1569343>
-- [R39] Office of the Director of National Intelligence. Intelligence Community Directive 203: Analytic Standards. 2015-01-02（2022-01-21 修正）. <https://archive.dni.gov/files/documents/ICD/ICD-203.pdf>
-- [R40] Mastrandrea, M. D., et al. (2010). Guidance Note for Lead Authors of the IPCC Fifth Assessment Report on Consistent Treatment of Uncertainties. IPCC. <https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf>
-- [R41] American College of Radiology. LI-RADS（2026-11-03 讀取）. <https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS>
-- [R42] Reuters（Voice of America 轉載）. Paid 'news': China using Taiwan media to win hearts and minds on island - sources. 2019-08-09. <https://www.voanews.com/a/press-freedom_paid-news-china-using-taiwan-media-win-hearts-and-minds-island-sources/6173678.html>
-- [R43] Taipei Times. Want Want China Times to sue 'Financial Times'. 2019-07-20. <https://www.taipeitimes.com/News/front/archives/2019/07/20/2003718982>
-- [R44] 公視新聞網. 國安局揭中共認知作戰 5 手法 去年查獲逾 231 萬爭議訊息. 2026-01-11. <https://news.pts.org.tw/article/790076>
-- [R45] 選舉研究. 2008 年總統大選競選期間政黨支持者選擇性接觸媒體傾向的分析（2026-11-03 讀取）. <https://jestw.nccu.edu.tw/uploads/paper/tw/2008年總統大選競選期間政黨支持者選擇性接觸媒體傾向的分析.pdf>
+- [R2] 臺北市選舉委員會. 候選人登記冊（號次抽籤結果）. 2026-10-27. <https://web.cec.gov.tw/api/file/6ae7925e-d158-42ba-814c-34794f003ddb.pdf>；公告頁：<https://web.cec.gov.tw/mect/article/65401>
+- [R49] Guyatt, G. H., Oxman, A. D., Vist, G. E., et al. (2008). GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. *BMJ*, 336(7650), 924–926. <https://doi.org/10.1136/bmj.39489.470347.AD>
+- [R50] Irwin, D., & Mandel, D. R. (2019). Improving information evaluation for intelligence production. *Intelligence and National Security*, 34(4), 503–525. <https://doi.org/10.1080/02684527.2019.1569343>
+- [R51] Office of the Director of National Intelligence. Intelligence Community Directive 203: Analytic Standards. 2015-01-02（2022-01-21 修正）. <https://archive.dni.gov/files/documents/ICD/ICD-203.pdf>
+- [R52] Mastrandrea, M. D., et al. (2010). Guidance Note for Lead Authors of the IPCC Fifth Assessment Report on Consistent Treatment of Uncertainties. IPCC. <https://www.ipcc.ch/site/assets/uploads/2017/08/AR5_Uncertainty_Guidance_Note.pdf>
+- [R53] American College of Radiology. LI-RADS（2026-11-03 讀取）. <https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS>
+- [R54] Reuters（Voice of America 轉載）. Paid 'news': China using Taiwan media to win hearts and minds on island - sources. 2019-08-09. <https://www.voanews.com/a/press-freedom_paid-news-china-using-taiwan-media-win-hearts-and-minds-island-sources/6173678.html>
+- [R55] Taipei Times. Want Want China Times to sue 'Financial Times'. 2019-07-20. <https://www.taipeitimes.com/News/front/archives/2019/07/20/2003718982>
+- [R48] 公視新聞網. 國安局揭中共認知作戰 5 手法 去年查獲逾 231 萬爭議訊息. 2026-01-11. <https://news.pts.org.tw/article/790076>
+- [R56] 選舉研究. 2008 年總統大選競選期間政黨支持者選擇性接觸媒體傾向的分析（2026-11-03 讀取）. <https://jestw.nccu.edu.tw/uploads/paper/tw/2008年總統大選競選期間政黨支持者選擇性接觸媒體傾向的分析.pdf>

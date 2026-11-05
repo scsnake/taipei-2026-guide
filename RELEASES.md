@@ -2,6 +2,39 @@
 
 Each release lists the SHA-256 hash of every published file. Check your copy with `shasum -a 256 -c SHA256SUMS` (macOS) or `sha256sum -c SHA256SUMS` (Linux). Each release is also a signed git tag.
 
+## v0.2.0 — 2026-11-05
+
+Draft. All candidate profiles have the full fact-check (GPT-5.6 Sol), and the model panel has scored all 9 races (`panel/`). New: national referendum case 22 (核電) — guide section 13, 239 claims in `claims/R22.jsonl`, the approved criteria in `rubric_r22.md`, and the panel verdict with its decision map in `panel/R22.json`. Case 22 result under the criteria: 證據不足以分出 (default total −2.8; W1 −4.8; W2 +1.2). The 2026 選舉公報 is not yet online.
+
+- Claims: 1269 (active). Ledger lines: 0.
+- SHA-256 of SHA256SUMS: `3d305c47b5bff83f89ffe9e3207143cbf9f4e782934f57a0ff6280501d134ab3`
+
+| File | SHA-256 |
+|---|---|
+| `guide.md` | `55d7914079e8aceededfc6e882d74eb42f65cffc9a989496b0e171d7d80628d0` |
+| `rubric.md` | `873bebf2bd95462bd2ef44afc5203d38376d0f232171aff8252ddb7cc8b75aa6` |
+| `rubric_r22.md` | `603c79a79fe20993fd7e50cb55b16117f3520cc1e4eaaf3b2166d28906c28166` |
+| `VERIFY.md` | `6b258b552a3209ffc5c20b50213c29662ffca666ed2900179dc502b0b60a0ce1` |
+| `claims/D1.jsonl` | `caeccd651de9b4c2a451c46e467d105c55b5ffe41bf3750f257c433520830031` |
+| `claims/D2.jsonl` | `195c78c4b988265dc4fcb07a0f16160632282f4fed0f90342a4f8a79336900e1` |
+| `claims/D3.jsonl` | `44094f3d62bf907d932e3c37dcf7d6f5edf76cf9968f464b5382d2230edb0bf4` |
+| `claims/D4.jsonl` | `596cbdd009054548fd564ab42c4c4765b525479be8fa3a05da1f69045dd185b3` |
+| `claims/D5.jsonl` | `52d38312e5cd6777ea4f668c02e827fd80f5604412bac46ecdd2aad6fcf4bcd7` |
+| `claims/D6.jsonl` | `84afa83eaaf0b9ef6cf5f6dd3135cd1f18f59cb8e6bd215b78c57641091b8b5a` |
+| `claims/D7.jsonl` | `fae83a474ad25916458d790545b29bbb113f5f530840613d2b81bc36c2267de3` |
+| `claims/D8.jsonl` | `c60584cae423d1c8f5f9885e1a15450a307614071a9c2afbbb27bf1f97f5b41a` |
+| `claims/M.jsonl` | `324d6079d81f1060b1617806d747b70d98b84229b6734e2809f0f89250103e4a` |
+| `claims/R22.jsonl` | `6eeff34daf44626399a7d107e99d5e47a773e2c4ebcff2589934654bfd4ff448` |
+| `panel/D1.json` | `e9911fa5797942ab7d92e4b655599df0b51bd8f431daa007d072528cea023ea0` |
+| `panel/D2.json` | `8c07fd2209a78fe5bc3aed4f33c17d7ce09bc32b287e683c3d9ba7294ec444e6` |
+| `panel/D3.json` | `f8bdd27301f38f2dd1ab5e988b977ea4ffb72590b1b04a95146ec9a67a099aeb` |
+| `panel/D4.json` | `8c5199f2c417513c9499069e11ced71c4783dc2f89f7ea4ed54e4a2e614c0ce2` |
+| `panel/D5.json` | `40c8548f6f69af6e5b350f085edbffc0f20ec78036553f26210557840b3a0728` |
+| `panel/D6.json` | `38db0e5823c81c6591922ddfd5998c0562e73ff86e7dfae12fd9e0d495b2e289` |
+| `panel/D7-D8.json` | `3c669d808519beac9202f2a405505db2e2ef8a21d3dedf4105dd552842f3a726` |
+| `panel/M.json` | `74eaf59e89d5fb607dd8227db80a51a2c05e2b060d9bba96ac188946969acf70` |
+| `panel/R22.json` | `6e1199fed9a4eafa18845ac9c366cc2dda82094761ce9817c60a5a9390ad6f3a` |
+
 ## v0.1.0 — 2026-11-04
 
 Draft. Candidate profiles for the mayor and 8 council races. MAYOR, D1 and D2 have the full GPT-5.6 Sol fact-check; D3–D6, D7 and D8 are in progress. The model panel's scores are not in this release.

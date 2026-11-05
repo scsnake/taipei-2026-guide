@@ -1,0 +1,356 @@
+{
+ "race": "D2",
+ "completed": "2026-11-04",
+ "moderator": "Claude Fable 5.1 (high)",
+ "debaters": [
+  "GPT-6.1 Sol (medium)",
+  "Gemini 4 Argon (medium)"
+ ],
+ "rounds": 2,
+ "rubric": "rubric.md",
+ "guide_section": "12.5",
+ "note": "Citation tags in this file are the guide's local tags (for example [Q-12]); claims/*.jsonl carry the same tags with their sources.",
+ "verdict": {
+  "group": "臺北市議員第二選區（內湖、南港）",
+  "candidates": [
+   {
+    "no": 1,
+    "name": "闕枚莎",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 6,
+    "total": 53.75,
+    "rank": 8,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "鮮奶、私幼補助、敬老卡政見支持仁愛；本屆書面質詢18筆；兩岸無個人表態。[D2-15][D2-10]"
+   },
+   {
+    "no": 2,
+    "name": "游淑慧",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": 0,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 7,
+    "total": 55.25,
+    "rank": 6,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "鄭宏輝民事求償案法院認已合理查證，駁回",
+      "grade": "5-A",
+      "ref": "[D2-23]"
+     },
+     {
+      "text": "蘇嘉全民事案最高法院駁回上訴，確定免賠",
+      "grade": "1-A",
+      "ref": "[D2-22]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "批中央查處海峽論壇發言，稱只說是統戰活動",
+      "grade": "5-C",
+      "ref": "[D2-67]"
+     }
+    ],
+    "drivers": "書面質詢64筆含幼兒園性侵究責；兩件民事案免賠不扣分；海峽論壇發言屬交流優先傾向。[D2-10][D2-67]"
+   },
+   {
+    "no": 3,
+    "name": "陳冠安",
+    "party": "中國國民黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 10,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "偽造罷免提議人名冊案罪嫌不足，不起訴",
+      "grade": "1-C",
+      "ref": "[D2-28]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "幽靈連署案以被告身分遭搜索，20萬元交保",
+      "grade": "5-B",
+      "ref": "[D2-26]"
+     }
+    ],
+    "drivers": "連署案不起訴不扣分，再議結果未知；無完整市政政見，不能可靠排序。[D2-28][D2-25]"
+   },
+   {
+    "no": 4,
+    "name": "陳又新",
+    "party": "民主進步黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5.5,
+    "just": 5,
+    "benev": 6,
+    "comp": 5,
+    "total": 52.5,
+    "rank": 9,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "社運義務律師經歷；主張大型活動避開住宅區；完整市政政見不足。[D2-29][D2-30]"
+   },
+   {
+    "no": 5,
+    "name": "王孝維",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 1.4,
+    "benev": 5.5,
+    "comp": 6.5,
+    "total": 44,
+    "rank": 13,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "自承17歲涉強盜案，判刑3年6月，已執行",
+      "grade": "4-C",
+      "ref": "[D2-32]"
+     },
+     {
+      "text": "2020年文宣將博士生列為博士，稱漏印生字",
+      "grade": "4-C",
+      "ref": "[D2-32]"
+     }
+    ],
+    "drivers": "強盜定罪按暴力犯罪最低扣幅6乘0.6，公義扣3.6；書面質詢26筆。[D2-32][D2-10]"
+   },
+   {
+    "no": 6,
+    "name": "何恕懷",
+    "party": "新黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 10,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "只查得登記與新黨黨籍，無個人紀錄，不能可靠排序。[D2-2]"
+   },
+   {
+    "no": 7,
+    "name": "吳世正",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 6.5,
+    "total": 54.5,
+    "rank": 7,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "公托、日照政見；書面質詢22筆；隨團出席雙城論壇無可核對表態，不扣分。[D2-36][D2-10][D2-63]"
+   },
+   {
+    "no": 8,
+    "name": "高嘉瑜",
+    "party": "民主進步黨",
+    "status": "前立委、前議員",
+    "A": 2,
+    "A_conf": "中",
+    "demo": 5,
+    "free": 7,
+    "just": 5,
+    "benev": 6,
+    "comp": 7.5,
+    "total": 59.25,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "立委任內主提國家安全法修正草案，2022三讀",
+      "grade": "5-A",
+      "ref": "[D2-40]"
+     },
+     {
+      "text": "李彥秀加重誹謗告訴不起訴，檢方認已查證",
+      "grade": "1-B",
+      "ref": "[D2-76]"
+     }
+    ],
+    "bad": [],
+    "drivers": "國安法修法三讀與主提案161件拉高自由與能力；不起訴不加分；無2026完整政見。[D2-40][D2-39]"
+   },
+   {
+    "no": 9,
+    "name": "李明賢",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 8,
+    "total": 56,
+    "rank": 5,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "何煖軒妨害名譽告訴不起訴確定",
+      "grade": "1-A",
+      "ref": "[D2-45]"
+     }
+    ],
+    "bad": [],
+    "drivers": "本屆書面質詢183筆全區最多；2018兩岸發言代表政黨，不計個人A。[D2-10][D2-80]"
+   },
+   {
+    "no": 10,
+    "name": "陳宥丞",
+    "party": "台灣民眾黨",
+    "status": "現任",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 6,
+    "just": 5,
+    "benev": 6,
+    "comp": 7.5,
+    "total": 57.25,
+    "rank": 3,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "雙城論壇前表示對外交流一定要維護台灣主體性",
+      "grade": "5-C",
+      "ref": "[D2-82]"
+     }
+    ],
+    "bad": [],
+    "drivers": "主體性表態按L4降權；書面質詢80筆，要求松機遷建專案報告。[D2-82][D2-10][D2-48]"
+   },
+   {
+    "no": 11,
+    "name": "何孟樺",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": 2,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 6,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 7,
+    "total": 57.25,
+    "rank": 3,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "稱台灣是主權獨立國家，九二共識只剩一國兩制",
+      "grade": "5-C",
+      "ref": "[D2-85]"
+     }
+    ],
+    "bad": [],
+    "drivers": "拒絕九二共識的表態按L4降權；書面質詢63筆含托育補助戶籍限制。[D2-85][D2-10]"
+   },
+   {
+    "no": 12,
+    "name": "黃啟彬",
+    "party": "永久和平自然法",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 10,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "2024修憲政見不涉主權或兩岸定位；無公職與市政政見，不能可靠排序。[D2-39]"
+   },
+   {
+    "no": 13,
+    "name": "吳欣岱",
+    "party": "台灣基進",
+    "status": "新人（曾參選）",
+    "A": 3,
+    "A_conf": "中",
+    "demo": 5,
+    "free": 7,
+    "just": 5,
+    "benev": 7,
+    "comp": 6,
+    "total": 58.5,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "聲援WHA行程中表示台灣不是中國的一部分",
+      "grade": "5-B",
+      "ref": "[D2-91]"
+     },
+     {
+      "text": "館長陳之漢民事求償案二審駁回上訴，勝訴",
+      "grade": "5-A",
+      "ref": "[D2-58]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "質疑李彥秀帶狗赴美擺拍，拍攝地點未定",
+      "grade": "2-C",
+      "ref": "[D2-59]"
+     }
+    ],
+    "drivers": "明確主權表態；兒少性侵預防與食材溯源政見；無公職紀錄；照片爭議不扣分。[D2-91][D2-57]"
+   }
+  ],
+  "first": "高嘉瑜",
+  "second": "吳欣岱",
+  "excluded": [],
+  "W1_first": "高嘉瑜",
+  "W2_first": "高嘉瑜"
+ }
+}

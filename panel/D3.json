@@ -1,0 +1,399 @@
+{
+ "race": "D3",
+ "completed": "2026-11-04",
+ "moderator": "Claude Fable 5.1 (high)",
+ "debaters": [
+  "GPT-6.1 Sol (medium)",
+  "Gemini 4 Argon (medium)"
+ ],
+ "rounds": 2,
+ "rubric": "rubric.md",
+ "guide_section": "12.6",
+ "note": "Citation tags in this file are the guide's local tags (for example [Q-12]); claims/*.jsonl carry the same tags with their sources.",
+ "verdict": {
+  "group": "臺北市議員第三選區（松山、信義）",
+  "candidates": [
+   {
+    "no": 1,
+    "name": "許淑華",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5.5,
+    "just": 5,
+    "benev": 7,
+    "comp": 8,
+    "total": 60,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "領銜26名跨黨派議員支持的京華城停工提案",
+      "grade": "5-B",
+      "ref": "D3-95"
+     },
+     {
+      "text": "籲跳出馬英九與中國合作設下的ECFA陷阱",
+      "grade": "5-B",
+      "ref": "D3-18"
+     },
+     {
+      "text": "表示每場青鳥行動都有到場",
+      "grade": "4-C",
+      "ref": "D3-87"
+     }
+    ],
+    "bad": [],
+    "drivers": "京華城停工提案與公托長照政見推升能力及仁愛；回應中國禁石斑魚支持A與自由；2006案無罪確定不扣分。"
+   },
+   {
+    "no": 2,
+    "name": "詹為元",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": -1,
+    "A_conf": "低",
+    "demo": 5.2,
+    "free": 5.5,
+    "just": 5,
+    "benev": 6.2,
+    "comp": 7.5,
+    "total": 57.05,
+    "rank": 4,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "提出公共場所偷拍防制自治條例、海砂屋條例修正",
+      "grade": "5-A",
+      "ref": "D3-21"
+     }
+    ],
+    "bad": [
+     {
+      "text": "稱雙城論壇合作備忘錄不影響任何國家安全",
+      "grade": "5-B",
+      "ref": "D3-91"
+     }
+    ],
+    "drivers": "法規提案與247筆書面質詢支持能力；偷拍防制提案支持自由；交流優先言論使A略負。"
+   },
+   {
+    "no": 3,
+    "name": "秦慧珠",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": -1,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5,
+    "just": 4.5,
+    "benev": 5.8,
+    "comp": 7,
+    "total": 54.45,
+    "rank": 6,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "提議以地方公投決定松山機場遷建",
+      "grade": "4-C",
+      "ref": "D3-27"
+     },
+     {
+      "text": "快篩涉賄選案不起訴確定",
+      "grade": "1-B",
+      "ref": "D3-100"
+     }
+    ],
+    "bad": [
+     {
+      "text": "收中石化綠能30萬元後兩度暫擱京華城停工提案",
+      "grade": "5-B",
+      "ref": "D3-95"
+     },
+     {
+      "text": "稱雙城論壇現階段最大溝通障礙是賴總統",
+      "grade": "4-C",
+      "ref": "D3-101"
+     }
+    ],
+    "drivers": "發言紀錄最多與公投主張支持能力、民主；威京子公司捐款與擋停工案重疊小幅扣公義。"
+   },
+   {
+    "no": 4,
+    "name": "左曉明",
+    "party": "無黨籍",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 11,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "未見政見及個人紀錄；全部為資訊不足暫置值，無法可靠排序。"
+   },
+   {
+    "no": 5,
+    "name": "洪健益",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 6,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 7,
+    "total": 58.75,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "表示台灣是一個國家，並不是中國的一個城市",
+      "grade": "4-C",
+      "ref": "D3-41"
+     },
+     {
+      "text": "合辦人民是頭家政策宣講會",
+      "grade": "4-C",
+      "ref": "D3-89"
+     }
+    ],
+    "bad": [
+     {
+      "text": "闖貓空站案起訴，後因撤告公訴不受理",
+      "grade": "5-B",
+      "ref": "D3-108"
+     }
+    ],
+    "drivers": "主權表態、性別平權與大巨蛋監督支持評分；建商捐款無關聯議案不扣分；貓空站案不扣分。"
+   },
+   {
+    "no": 6,
+    "name": "許甫",
+    "party": "台灣民眾黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5,
+    "just": 4,
+    "benev": 5,
+    "comp": 5,
+    "total": 49,
+    "rank": 13,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "公開為徐巧芯反罷免站台",
+      "grade": "4-C",
+      "ref": "D3-112"
+     }
+    ],
+    "bad": [
+     {
+      "text": "證實指示同仁將頻道收款帳戶設為木可公司",
+      "grade": "5-B",
+      "ref": "D3-111"
+     },
+     {
+      "text": "北檢另分他字案調查頻道收益是否涉不法",
+      "grade": "5-B",
+      "ref": "D3-110"
+     }
+    ],
+    "drivers": "頻道收益設入木可公司之財務責任風險扣公義1分；證人身分不扣分；具體政見資訊不足。"
+   },
+   {
+    "no": 7,
+    "name": "許原榮",
+    "party": "中國國民黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50,
+    "rank": 11,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "長期幕僚經歷不足以替代個人政策成果；不以韓國瑜或費鴻泰立場代評。"
+   },
+   {
+    "no": 8,
+    "name": "戴錫欽",
+    "party": "中國國民黨",
+    "status": "現任（議長）",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5,
+    "just": 5,
+    "benev": 6.5,
+    "comp": 6.5,
+    "total": 56,
+    "rank": 5,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "表示應檢討連署過程疑偽造問題並向外界致歉",
+      "grade": "5-B",
+      "ref": "D3-59"
+     },
+     {
+      "text": "偽造案起訴、緩起訴與不起訴名單中都沒有他",
+      "grade": "5-B",
+      "ref": "D3-118"
+     }
+    ],
+    "bad": [
+     {
+      "text": "剴剴案臨時會流會，民進黨團指他偏袒市府",
+      "grade": "5-B",
+      "ref": "D3-57"
+     }
+    ],
+    "drivers": "托育長照政見支持仁愛、能力；本人推動二階連署屬合法參與，與偽造案切開；公開檢討致歉。"
+   },
+   {
+    "no": 9,
+    "name": "鄧樂強",
+    "party": "台灣基進",
+    "status": "新人",
+    "A": 1,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5.6,
+    "just": 5,
+    "benev": 5,
+    "comp": 6,
+    "total": 52.7,
+    "rank": 8,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "政見強調民防量能與社會韌性",
+      "grade": "5-C",
+      "ref": "D3-61"
+     }
+    ],
+    "bad": [],
+    "drivers": "民防與韌性政見有限加分；單一來源依上限按第4級計；不以黨綱代評。"
+   },
+   {
+    "no": 10,
+    "name": "張文潔",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5,
+    "just": 5,
+    "benev": 7.5,
+    "comp": 7,
+    "total": 58.25,
+    "rank": 3,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "參加反濫權護民主活動並公開表態",
+      "grade": "4-C",
+      "ref": "D3-130"
+     },
+     {
+      "text": "合辦人民是頭家政策宣講會",
+      "grade": "4-C",
+      "ref": "D3-89"
+     }
+    ],
+    "bad": [],
+    "drivers": "公私托補助、長者據點與育兒質詢支持仁愛、能力；民主活動有限加分；無爭議紀錄。"
+   },
+   {
+    "no": 11,
+    "name": "郭凡",
+    "party": "民主進步黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5.5,
+    "comp": 5.5,
+    "total": 51.5,
+    "rank": 10,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "都更與寵物政策方向有限加分；初選對手遭爆料事件無證據與他相關。"
+   },
+   {
+    "no": 12,
+    "name": "李明璇",
+    "party": "中國國民黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5.6,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 51.5,
+    "rank": 9,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "公開呼籲讓徐巧芯留在國會監督政府",
+      "grade": "4-C",
+      "ref": "D3-123"
+     },
+     {
+      "text": "賴瑞隆妨害名譽案撤告後不起訴",
+      "grade": "1-B",
+      "ref": "D3-124"
+     }
+    ],
+    "bad": [],
+    "drivers": "公開參與反罷免有限加分；不起訴不扣分；北京求學工作不作政治立場證據；無具體市政政見。"
+   },
+   {
+    "no": 13,
+    "name": "林柏勛",
+    "party": "無黨籍",
+    "status": "新人（第3次參選）",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 6,
+    "total": 53,
+    "rank": 7,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "行人安全與交通零死亡倡議支持仁愛、能力；轉黨及黨紀除名不視為違法或不誠信。"
+   }
+  ],
+  "first": "許淑華",
+  "second": "洪健益",
+  "excluded": [],
+  "W1_first": "許淑華",
+  "W2_first": "許淑華"
+ }
+}

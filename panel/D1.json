@@ -1,0 +1,652 @@
+{
+ "race": "D1",
+ "completed": "2026-11-04",
+ "moderator": "Claude Fable 5.1 (high)",
+ "debaters": [
+  "GPT-6.1 Sol (medium)",
+  "Gemini 4 Argon (medium)"
+ ],
+ "rounds": 2,
+ "rubric": "rubric.md",
+ "guide_section": "12.4",
+ "note": "Citation tags in this file are the guide's local tags (for example [Q-12]); claims/*.jsonl carry the same tags with their sources.",
+ "verdict": {
+  "group": "臺北市議員第一選區（北投、士林）",
+  "candidates": [
+   {
+    "no": 1,
+    "name": "汪志冰",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 6,
+    "total": 53.0,
+    "rank": 6,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "公宅降租、公幼增班政見",
+      "grade": "5-A",
+      "ref": "[D1-6]"
+     }
+    ],
+    "bad": [],
+    "drivers": "公宅與公幼政見；列名上海論壇代表團只是出席紀錄，不代表立場"
+   },
+   {
+    "no": 2,
+    "name": "林杏兒",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 4,
+    "comp": 7,
+    "total": 51.5,
+    "rank": 8,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "第14屆書面質詢77件",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "賄選案本人未起訴，27人一審無罪",
+      "grade": "5-A",
+      "ref": "[D1-16]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "嘲諷陳情長者薪水，遭提誹謗告訴，已道歉",
+      "grade": "5-B",
+      "ref": "[D1-163]"
+     }
+    ],
+    "drivers": "質詢紀錄多；對陳情長者的發言降低仁愛；賄選案不扣分"
+   },
+   {
+    "no": 3,
+    "name": "陳怡潔",
+    "party": "無",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 6,
+    "total": 53.0,
+    "rank": 6,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "北士科交評、社子線延伸、醫護青年社宅",
+      "grade": "5-C",
+      "ref": "[D1-25]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "父陳政忠宏福案定讞（親屬案件，不連坐）",
+      "grade": "5-B",
+      "ref": "[D1-3]"
+     }
+    ],
+    "drivers": "兩屆立委經歷與具體政見；父親案件不扣本人分數"
+   },
+   {
+    "no": 4,
+    "name": "陳慈慧",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 7,
+    "comp": 6,
+    "total": 54.5,
+    "rank": 5,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "社子島拆遷補償、共融遊具政見",
+      "grade": "5-A",
+      "ref": "[D1-32]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "2022返還捐贈154萬元，原因未載",
+      "grade": "3-A",
+      "ref": "[D1-37]"
+     }
+    ],
+    "drivers": "弱勢與社子島政見；返還捐贈原因未載，不推論違法"
+   },
+   {
+    "no": 5,
+    "name": "林世宗",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 4,
+    "free": 5,
+    "just": 3,
+    "benev": 6,
+    "comp": 6,
+    "total": 45.5,
+    "rank": 17,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "質詢台智光案，書面要求市府接管",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "里長餐會賄選案搜索、200萬交保，偵查中",
+      "grade": "5-B",
+      "ref": "[D1-43]"
+     }
+    ],
+    "drivers": "台智光監督；賄選案偵查中，公義扣2、民主扣1"
+   },
+   {
+    "no": 6,
+    "name": "紀建漢",
+    "party": "無",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50.0,
+    "rank": 12,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "三任後港里長，2022得票率66.88%",
+      "grade": "5-A",
+      "ref": "[D1-47]"
+     }
+    ],
+    "bad": [],
+    "drivers": "三任里長無涉案紀錄；缺本屆政見，信心低"
+   },
+   {
+    "no": 7,
+    "name": "劉致妤",
+    "party": "無",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 5,
+    "total": 51.5,
+    "rank": 8,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "主打長照、托育、弱勢家庭支持",
+      "grade": "5-C",
+      "ref": "[D1-52]"
+     }
+    ],
+    "bad": [],
+    "drivers": "弱勢政見；曾任新黨幕僚不推定本人立場"
+   },
+   {
+    "no": 8,
+    "name": "賴苡任",
+    "party": "中國國民黨",
+    "status": "新人",
+    "A": -1,
+    "A_conf": "低",
+    "demo": 3,
+    "free": 5,
+    "just": 2,
+    "benev": 5,
+    "comp": 5,
+    "total": 37.5,
+    "rank": 19,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "罷免提議書偽造案起訴，一審審理中",
+      "grade": "5-A",
+      "ref": "[D1-59]"
+     },
+     {
+      "text": "自述隨傅崐萁訪北京、出席兩岸青年峰會",
+      "grade": "5-A",
+      "ref": "[D1-53]"
+     },
+     {
+      "text": "國民黨考紀會申誡",
+      "grade": "5-B",
+      "ref": "[D1-60]"
+     }
+    ],
+    "drivers": "偽造提議書案起訴，公義與民主扣分；赴北京交流紀錄"
+   },
+   {
+    "no": 9,
+    "name": "謝閔弘",
+    "party": "時代力量",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50.0,
+    "rank": 12,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "社子島、醫療、北士科跨區規劃政見",
+      "grade": "5-C",
+      "ref": "[D1-65]"
+     }
+    ],
+    "bad": [],
+    "drivers": "有政見方向，無紀錄，信心低"
+   },
+   {
+    "no": 10,
+    "name": "陳彥廷",
+    "party": "無",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 50.0,
+    "rank": 12,
+    "tier": "一般",
+    "good": [],
+    "bad": [],
+    "drivers": "只確認登記，無政見與紀錄，無法可靠排序"
+   },
+   {
+    "no": 11,
+    "name": "侯漢廷",
+    "party": "新黨",
+    "status": "現任",
+    "A": -2,
+    "A_conf": "中",
+    "demo": 4,
+    "free": 4,
+    "just": 2,
+    "benev": 6,
+    "comp": 6,
+    "total": 41.0,
+    "rank": 18,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "書面質詢32件，含特教加給、公廁",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "2017國安法案無罪確定",
+      "grade": "1-B",
+      "ref": "[D1-73]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "不實介選文件案起訴，一審審理中",
+      "grade": "5-B",
+      "ref": "[D1-71]"
+     },
+     {
+      "text": "稱依憲法往統一邁進是法定現狀",
+      "grade": "4-C",
+      "ref": "[D1-164]"
+     },
+     {
+      "text": "郭智輝赴宴指控撤回並道歉",
+      "grade": "1-B",
+      "ref": "[D1-75]"
+     }
+    ],
+    "drivers": "介選文件案起訴扣公義3；統一發言與陸媒節目使A為−2"
+   },
+   {
+    "no": 12,
+    "name": "陳重文",
+    "party": "無",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 3,
+    "free": 5,
+    "just": 0,
+    "benev": 6,
+    "comp": 6,
+    "total": 35.5,
+    "rank": 20,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "書面質詢198件，全區最多",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "台智光圖利案一審判8年6月，未確定",
+      "grade": "5-B",
+      "ref": "[D1-92]"
+     },
+     {
+      "text": "農會選舉送禮案一審判5月，坦承",
+      "grade": "5-B",
+      "ref": "[D1-95]"
+     },
+     {
+      "text": "2026選舉餐會案搜索80萬交保，偵查中",
+      "grade": "5-B",
+      "ref": "[D1-102]"
+     }
+    ],
+    "drivers": "兩案一審有罪、兩案偵查中，公義0；選舉相關案件拉低民主"
+   },
+   {
+    "no": 13,
+    "name": "鍾佩玲",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5.5,
+    "just": 5,
+    "benev": 7,
+    "comp": 7,
+    "total": 57.0,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "書面質詢39件，含花博滅火器造假",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "稱國家安全沒有模糊空間",
+      "grade": "4-C",
+      "ref": "[D1-111]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "前團隊成員涉共諜案起訴（人際連帶）",
+      "grade": "5-B",
+      "ref": "[D1-111]"
+     }
+    ],
+    "drivers": "托育與長者安置政見、監督紀錄；共諜案本人無涉"
+   },
+   {
+    "no": 14,
+    "name": "張斯綱",
+    "party": "中國國民黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 4.5,
+    "free": 5,
+    "just": 4,
+    "benev": 6,
+    "comp": 7,
+    "total": 50.75,
+    "rank": 11,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "書面質詢84件",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "罷免提議書案不起訴",
+      "grade": "1-B",
+      "ref": "[D1-117]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "交付舊名冊予賴苡任，個資部分移送市府",
+      "grade": "5-B",
+      "ref": "[D1-117]"
+     }
+    ],
+    "drivers": "質詢紀錄多；不起訴不扣分，只依已確認的交付名冊行為扣分"
+   },
+   {
+    "no": 15,
+    "name": "李文",
+    "party": "無",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 4.8,
+    "benev": 5,
+    "comp": 5,
+    "total": 49.5,
+    "rank": 15,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "2019公然侮辱案一審拘役120日，單一媒體",
+      "grade": "3-C",
+      "ref": "[D1-126]"
+     }
+    ],
+    "drivers": "舊侮辱案只有3-C，以0.2權重微扣；無具體政見，信心低"
+   },
+   {
+    "no": 16,
+    "name": "黃瀞瑩",
+    "party": "台灣民眾黨",
+    "status": "現任",
+    "A": 1,
+    "A_conf": "中",
+    "demo": 5,
+    "free": 5.5,
+    "just": 5,
+    "benev": 7,
+    "comp": 7,
+    "total": 57.0,
+    "rank": 2,
+    "tier": "次選",
+    "good": [
+     {
+      "text": "書面質詢33件，社宅輪候、特教交通車",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "稱維護台灣是主權獨立國家",
+      "grade": "4-C",
+      "ref": "[D1-137]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "稱統獨是假議題",
+      "grade": "5-B",
+      "ref": "[D1-136]"
+     },
+     {
+      "text": "副發言人到職日爭議，未見認定違法",
+      "grade": "3-C",
+      "ref": "[D1-133]"
+     }
+    ],
+    "drivers": "主權發言與統獨假議題並存，A為+1；具體弱勢與社宅監督"
+   },
+   {
+    "no": 17,
+    "name": "林聖峰",
+    "party": "天宙和平統一家庭黨",
+    "status": "新人",
+    "A": -1,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 4,
+    "just": 5,
+    "benev": 5,
+    "comp": 5,
+    "total": 48.0,
+    "rank": 16,
+    "tier": "一般",
+    "good": [],
+    "bad": [
+     {
+      "text": "黨章促進和平統一新中國，本人為負責人",
+      "grade": "5-A",
+      "ref": "[D1-143]"
+     },
+     {
+      "text": "該黨反對同性婚姻立法",
+      "grade": "5-A",
+      "ref": "[D1-144]"
+     }
+    ],
+    "drivers": "負責人身分支持黨章歸屬推論；反同婚為間接推論並折減"
+   },
+   {
+    "no": 18,
+    "name": "林揚庭",
+    "party": "中國國民黨",
+    "status": "新人",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 6,
+    "comp": 5,
+    "total": 51.5,
+    "rank": 8,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "友善育兒、宮廟文化保存政見",
+      "grade": "5-C",
+      "ref": "[D1-146]"
+     }
+    ],
+    "bad": [],
+    "drivers": "育兒與文化政見；無公職紀錄，信心低"
+   },
+   {
+    "no": 19,
+    "name": "林延鳳",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": 1,
+    "A_conf": "中",
+    "demo": 6,
+    "free": 7,
+    "just": 5,
+    "benev": 7,
+    "comp": 8,
+    "total": 64.0,
+    "rank": 1,
+    "tier": "首選",
+    "good": [
+     {
+      "text": "質詢中國遊客干擾合法集會、徐春鶯案",
+      "grade": "5-A",
+      "ref": "[D1-9]"
+     },
+     {
+      "text": "書面質詢70件，北士科地上權監督",
+      "grade": "5-A",
+      "ref": "[D1-154]"
+     }
+    ],
+    "bad": [
+     {
+      "text": "市府點名索資量居前（爭議）",
+      "grade": "5-C",
+      "ref": "[D1-156]"
+     }
+    ],
+    "drivers": "集會自由與中國影響質詢為5-A；具體監督紀錄多"
+   },
+   {
+    "no": 20,
+    "name": "陳賢蔚",
+    "party": "民主進步黨",
+    "status": "現任",
+    "A": null,
+    "A_conf": "低",
+    "demo": 5,
+    "free": 5,
+    "just": 5,
+    "benev": 7,
+    "comp": 7,
+    "total": 56.0,
+    "rank": 4,
+    "tier": "一般",
+    "good": [
+     {
+      "text": "發言207筆全區最高，士林官邸施工監督",
+      "grade": "5-A",
+      "ref": "[D1-160]"
+     },
+     {
+      "text": "校園共融遊具、身障與弱勢政見",
+      "grade": "5-A",
+      "ref": "[D1-157]"
+     }
+    ],
+    "bad": [],
+    "drivers": "弱勢政見與古蹟施工監督；發言筆數不等同成果"
+   }
+  ],
+  "first": "林延鳳",
+  "second": "鍾佩玲、黃瀞瑩（並列）",
+  "excluded": [],
+  "W1_first": "林延鳳",
+  "W2_first": "林延鳳"
+ }
+}

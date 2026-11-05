@@ -21,6 +21,8 @@ WHAT THE GUIDE IS
   cross-strait and democracy indicators), split into claims/<race>.jsonl. Each line is one
   claim with a stable id (for example D3-05-03), its text in zh-TW, its evidence grade, and
   its sources. Races: M (mayor), D1–D6 (council districts), D7, D8 (indigenous districts).
+  claims/R22.jsonl holds the facts on national referendum case 22 (ids like R22-09-14);
+  check them the same way.
 - The method is in rubric.md. Evidence grade 【L-S】:
   L: 5 confirmed (primary record, or two independent reliable sources) | 4 likely |
      3 uncertain or conflicting | 2 likely false | 1 refuted (不起訴, acquittal, retraction) |
