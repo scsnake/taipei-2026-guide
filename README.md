@@ -8,6 +8,7 @@
 
 | Path | What it is |
 |---|---|
+| `index.html` | The interactive guide (zh-TW), one self-contained page. This is the website. |
 | `guide.md` | The full guide (zh-TW): candidate profiles, method, model panel, referendum case 22, counterarguments, references. |
 | `claims/<race>.jsonl` | One line per claim, with a stable id, the zh-TW text, the evidence grade 【L-S】, and its sources. Races: `M` mayor, `D1`–`D6` council districts, `D7` and `D8` indigenous districts, `R22` referendum case 22. |
 | `rubric.md` | The method: evidence grades, the cross-strait scale, and the value criteria. |
@@ -44,7 +45,7 @@ The ranking and the referendum result follow stated criteria and weights. They a
 
 ## Corrections and right of reply
 
-Candidates and their teams can ask for a correction or add a reply. Open an issue with the label `reply` and give the claim id and a source. Replies from the person concerned are added to the claim, next to the accusation.
+Candidates and their teams can ask for a correction or add a reply. Open an issue with the label `reply`, or send an email to scsnake@gmail.com. Give the claim id (or the candidate and the text) and a source. Replies from the person concerned are added to the claim, next to the accusation.
 
 ## License
 

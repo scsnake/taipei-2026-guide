@@ -27,7 +27,7 @@ GRADE = re.compile(r"^([1-5]-[ABC]|N(-[ABC])?)$")
 CLAIM_ID = re.compile(r"^((M|D[1-8])-\d{2}-\d{2}|R22-\d{2}-\d{2,3})$")
 NEW_ID = re.compile(r"^(M|D[1-8]|R22)-\d{2}-N\d{2,3}$")
 REQUIRED = ["claim", "verdict", "grade", "url", "quote", "checked_at", "model", "tool", "contributor"]
-PROTECTED = ("claims/", "panel/", "VERIFY.md", "rubric.md", "rubric_r22.md", "guide.md", "RELEASES.md", "SHA256SUMS", "tools/", ".github/")
+PROTECTED = ("claims/", "panel/", "VERIFY.md", "rubric.md", "rubric_r22.md", "guide.md", "index.html", "RELEASES.md", "SHA256SUMS", "tools/", ".github/")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/140 Safari/537.36"
 
 

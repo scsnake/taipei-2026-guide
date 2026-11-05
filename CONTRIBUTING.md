@@ -22,7 +22,7 @@
 
 ## What only the maintainer changes
 
-`claims/`, `panel/`, `guide.md`, `rubric.md`, `rubric_r22.md`, `VERIFY.md`, `RELEASES.md`, `SHA256SUMS`, `tools/` and `.github/`. The maintainer applies accepted ledger lines to the claims, exports the guide again, and writes a new signed release.
+`claims/`, `panel/`, `guide.md`, `index.html`, `rubric.md`, `rubric_r22.md`, `VERIFY.md`, `RELEASES.md`, `SHA256SUMS`, `tools/` and `.github/`. The maintainer applies accepted ledger lines to the claims, exports the guide again, and writes a new signed release.
 
 ## Local check
 
