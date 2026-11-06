@@ -171,6 +171,10 @@ summary{cursor:pointer;font-size:.88rem;color:var(--accent);font-weight:500}
 .result .lean{font-family:var(--f-display);font-size:1.25rem;font-weight:900}
 .result ul{margin:4px 0;padding-left:1.3em;font-size:.9rem}
 .result button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:3px 12px;cursor:pointer;align-self:flex-start}
+.resetbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.9rem}
+.terms{font-size:.88rem;background:var(--chip);border-radius:8px;padding:8px 12px}
+.terms ul{margin:4px 0 0;padding-left:1.2em}
+.terms li{margin:2px 0}
 footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
 footer p{margin:0 0 .6em}
 footer .site{color:var(--ink)}
@@ -367,9 +371,13 @@ function cardHtml(c, r){
     ${profileHtml(c, r.refs)}
   </article>`;
 }
-function tableHtml(r){
-  let cs = r.candidates.slice();
+function sortedCands(r){
+  const cs = r.candidates.slice();
   if (sortMode==="score") cs.sort((a,b)=>((b.score&&b.score.total)||-1)-((a.score&&a.score.total)||-1));
+  return cs;
+}
+function tableHtml(r){
+  const cs = sortedCands(r);
   return `<div class="sortbar">排序：<button type="button" id="sort-no" aria-pressed="${sortMode==="no"}">號次</button><button type="button" id="sort-score" aria-pressed="${sortMode==="score"}">總分</button><span>點一列可跳到該候選人。</span></div>
   <div class="tablebox"><table><thead><tr><th class="num">號次</th><th>姓名</th><th>政黨</th><th class="num">兩岸</th><th class="num">總分</th><th>依準則</th></tr></thead><tbody>
   ${cs.map(c=>{ const s=c.score; return `<tr data-go="${r.id}-c${c.no}"><td class="num">${c.no}</td><td><b>${esc(c.name)}</b>${sexHtml(c)}</td><td>${esc(partyOf(c))}</td><td class="num">${s?(s.A==null?"不足":(s.A>0?"+":"")+s.A):"—"}</td><td class="num score">${s&&s.total!=null?s.total:"—"}</td><td>${tierHtml(s)}</td></tr>`; }).join("")}
@@ -398,7 +406,7 @@ function render(id){
   const pick = scored ? `<div class="notice">依本文準則：首選 <b>${esc(r.first||"—")}</b>，次選 <b>${esc(r.second||"—")}</b>。${(r.excluded||[]).length?"不列入推薦："+r.excluded.map(e=>`<b>${esc(e.name)}</b>（${esc(e.reason)}）`).join("、")+"。":""} 改用「廉潔優先」權重時首選為 ${esc(r.W1_first||"—")}；改用「主權與自由優先」時為 ${esc(r.W2_first||"—")}。</div>` : `<div class="notice">這一區的模型評議尚未完成。下方先列出經查核的候選人資料。</div>`;
   const verdict = r.verdict_md ? `<details class="panel"><summary>評議理由：判斷邏輯、權重影響、分歧與敏感度</summary><div class="md">${md(r.verdict_md, r.refs)}</div></details>` : "";
   const overview = `<details class="panel"><summary>選區概況</summary><div class="md">${md(r.overview, r.refs)}</div></details>`;
-  $("#race").innerHTML = head + pick + tableHtml(r) + overview + `<div class="cards">${r.candidates.map(c=>cardHtml(c,r)).join("")}</div>` + verdict;
+  $("#race").innerHTML = head + pick + tableHtml(r) + overview + `<div class="cards">${sortedCands(r).map(c=>cardHtml(c,r)).join("")}</div>` + verdict;
   $("#sort-no").onclick = ()=>{ sortMode="no"; render(r.id); };
   $("#sort-score").onclick = ()=>{ sortMode="score"; render(r.id); };
   $("#race").querySelectorAll("tr[data-go]").forEach(tr=>tr.addEventListener("click",()=>{ const el=document.getElementById(tr.dataset.go); if(el) el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); }));
@@ -447,7 +455,7 @@ function refResultHtml(){
   ${R.flags.length?`<b>請再想一次：</b><ul>${R.flags.map(f=>`<li>${inline(f, REF.refs)}</li>`).join("")}</ul>`:""}
   ${typeHtml(refAns)}
   <p class="hint">這不是投票建議。它只比對你自己的答案。已回答 ${n} / ${REF.questions.length} 題。</p>
-  <button type="button" id="refreset">重新作答</button>`;
+  <div class="resetbox" id="refresetbox"><button type="button" id="refreset">重新作答</button></div>`;
 }
 function renderRef(){
   current = null; resetChat(); $("#askpanel").hidden = true;
@@ -457,7 +465,14 @@ function renderRef(){
   $("#race").innerHTML = `<div><h2>全國性公投第 22 案</h2><p class="lede">與市長、議員選舉同日投票。另外領一張公投票。</p></div>
   <blockquote class="mainq">${esc(REF.main)}</blockquote>
   <div class="panel"><div class="md">${md(REF.intro_md, REF.refs)}</div></div>
-  <section class="panel result"><h2>模型評議結果</h2><div class="md">${md(REF.result_md, REF.refs)}</div><p class="hint">${esc(REF.signature)}</p></section>
+  <section class="panel result"><h2>模型評議結果</h2>
+  <div class="terms"><b>先看懂這幾個詞</b><ul>
+    <li><b>問題（b）</b>：這個主文該不該通過。這是你這張票實際回答的問題，也是評議的主要結論。</li>
+    <li><b>問題（a）</b>：台灣該不該走向使用核電。這是長期方向，不是這張票本身，所以兩題的答案可以不同。</li>
+    <li><b>總分與 ±15</b>：總分從 −100 到 +100。+15 以上為「同意」，−15 以下為「不同意」，中間為「證據不足以分出」。</li>
+    <li><b>預設權重、W1、W2</b>：六項準則各占多少比重。預設是民主程序、能源安全、核安與核廢各 20%，環境與健康 10%，民生經濟與實際效果各 15%。W1「安全與世代優先」把核安與核廢提高到 35%。W2「供電與經濟優先」把能源安全提高到 30%、民生經濟提高到 25%。</li>
+  </ul></div>
+  <div class="md">${md(REF.result_md, REF.refs)}</div><p class="hint">${esc(REF.signature)}</p></section>
   <details class="panel"><summary>決策圖：淨效果、轉折點與選民類型</summary><div class="md">${md(REF.map_md, REF.refs)}</div></details>
   <details class="panel"><summary>評議理由：情境、評分、分歧與限制</summary><div class="md">${md(REF.verdict_md, REF.refs)}</div></details>
   <details class="panel"><summary>評議方法與準則</summary><div class="md">${md(REF.method_md, REF.refs)}</div></details>
@@ -465,7 +480,16 @@ function renderRef(){
   <p class="hint">這些問題不是投票建議。它們只檢查你的選票是否符合你自己的想法。</p>
   <form class="quiz" id="quiz" onsubmit="return false">${qs}</form>
   <section class="panel result" id="refres" aria-live="polite">${refResultHtml()}</section>`;
-  const bindReset = ()=>{ const b = $("#refreset"); if (b) b.onclick = ()=>{ refAns = {}; store("tpe-ref22","{}"); renderRef(); }; };
+  const bindReset = ()=>{
+    const b = $("#refreset"); if (!b) return;
+    b.onclick = ()=>{
+      const box = $("#refresetbox"), n = Object.keys(refAns).length;
+      box.innerHTML = `<span>要清除已回答的 ${n} 題嗎？清除後無法復原。</span><button type="button" id="refyes">清除答案</button><button type="button" id="refno">取消</button>`;
+      $("#refyes").onclick = ()=>{ refAns = {}; store("tpe-ref22","{}"); renderRef(); };
+      $("#refno").onclick = ()=>{ $("#refres").innerHTML = refResultHtml(); bindReset(); $("#refreset").focus(); };
+      $("#refno").focus();
+    };
+  };
   $("#quiz").addEventListener("change", e=>{
     const inp = e.target; if (inp.type!=="radio") return;
     refAns[inp.name] = inp.value; store("tpe-ref22", JSON.stringify(refAns));
