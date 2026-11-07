@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILES = ["guide.md", "index.html", "rubric.md", "rubric_r22.md", "VERIFY.md"]
+FILES = ["guide.md", "index.html", "mayors.html", "rubric.md", "rubric_r22.md", "VERIFY.md"]
 
 
 def sha(p):

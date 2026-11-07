@@ -7,12 +7,13 @@ Each release lists the SHA-256 hash of every published file. Check your copy wit
 Draft. New page `mayors.html`: all 22 mayor and county magistrate races (21 with checked profiles and panel verdicts; 臺北 links to the Taipei guide). Taipei D4 panel rerun under the base-5 rule (首選 and 次選 unchanged). Two new ranking rules in `rubric.md` 3.4 and 3.5: a candidate with only base scores is never tagged 首選 or 次選, and a final violent conviction means 不列入推薦 with a warning on the card.
 
 - Claims: 1269 (active). Ledger lines: 0.
-- SHA-256 of SHA256SUMS: `2f628ab2fd8dfd98ce47804bc39bbc220af93bc7a3bc8a91637db16af880a7a0`
+- SHA-256 of SHA256SUMS: `0f2c9a4bb3407b7f91d9ae89e19b87aa9522f3e7954df1d4806e419b24abb037`
 
 | File | SHA-256 |
 |---|---|
 | `guide.md` | `4f3a997b74e17ae41f0c5afab5454aaf61e96508ae0834960761987e85037057` |
 | `index.html` | `c46feed29b9bd33c17e2b3dcd3a98a655a98ea553db58f7253236fcbee033048` |
+| `mayors.html` | `01fd4c5abb8fdbfa66fe4e9827596461790807be35bb88468d040625c7565d0d` |
 | `rubric.md` | `a893504f2751880d5fc46094aef12d9469e8abe73df71156fc3e14d217ff261a` |
 | `rubric_r22.md` | `603c79a79fe20993fd7e50cb55b16117f3520cc1e4eaaf3b2166d28906c28166` |
 | `VERIFY.md` | `6b258b552a3209ffc5c20b50213c29662ffca666ed2900179dc502b0b60a0ce1` |
