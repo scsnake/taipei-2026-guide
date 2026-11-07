@@ -565,27 +565,54 @@ races.forEach(r=>r.candidates.forEach(c=>{
 }));
 const kw = $("#kw"), kwres = $("#kwres"), kwcount = $("#kwcount");
 let pendingGo = null, kwTimer = null;
-function snippet(text, low, term){
-  const i = low.indexOf(term); if (i < 0) return esc(text.slice(0, 60));
-  const a = Math.max(0, i-28), b = Math.min(text.length, i+term.length+40);
+// Search ranking (user review 2026-11-07: 「刑事」 listed many "no case found" texts first).
+// A result whose snippet shows a court or prosecution record (判決確定, 起訴) goes first, after name
+// matches. 不起訴/未起訴/非起訴 and a sentence that reports an absence or an acquittal do not count.
+// When the word appears several times, the snippet uses the first place that shows such a record.
+const NOT_RECORD = /未見|未查得|未查到|未載|沒有|無罪|不等於起訴/;
+function legalIn(text, a, b){
+  const re = /判決確定|起訴/g; re.lastIndex = a; let m;
+  while ((m = re.exec(text)) && m.index + m[0].length <= b){
+    if (m[0]==="起訴" && /[不未非]/.test(text[m.index-1]||"")) continue;
+    const s0 = Math.max(text.lastIndexOf("。", m.index), text.lastIndexOf("；", m.index), text.lastIndexOf("｜", m.index)) + 1;
+    const ends = ["。", "；", "｜"].map(c=>text.indexOf(c, m.index)).filter(x=>x>=0);
+    if (NOT_RECORD.test(text.slice(s0, ends.length ? Math.min(...ends) : text.length))) continue;
+    return true;
+  }
+  return false;
+}
+function pickWin(e, term){
+  const L = e.text.length; let i = e.low.indexOf(term), first = null, n = 0;
+  while (i >= 0 && n < 30){
+    const w = {i, a: Math.max(0, i-28), b: Math.min(L, i+term.length+40)};
+    if (!first) first = w;
+    if (legalIn(e.text, w.a, w.b)) return {...w, legal: true};
+    i = e.low.indexOf(term, i+1); n++;
+  }
+  return first ? {...first, legal: false} : {i: -1, a: 0, b: Math.min(L, 60), legal: false};
+}
+function snippet(text, term, w){
+  const {i, a, b} = w; if (i < 0) return esc(text.slice(a, b));
   return (a>0?"…":"") + esc(text.slice(a,i)) + "<mark>" + esc(text.slice(i,i+term.length)) + "</mark>" + esc(text.slice(i+term.length,b)) + (b<text.length?"…":"");
 }
+const snipTerm = (e, terms) => terms.find(t=>!e.name.includes(t)) || terms[0];
 function runSearch(){
   const q = kw.value.trim().toLowerCase();
   if (!q){ kwres.hidden = true; kwres.innerHTML = ""; kwcount.textContent = ""; return; }
   const terms = q.split(/\s+/);
-  const hits = index.filter(e=>terms.every(t=>e.low.includes(t)))
-    .sort((x,y)=>(terms.some(t=>y.name.includes(t))-terms.some(t=>x.name.includes(t))));
+  const hits = index.filter(e=>terms.every(t=>e.low.includes(t))).map(e=>{
+    const t = snipTerm(e, terms), w = pickWin(e, t);
+    return {e, t, w, k: (terms.some(x=>e.name.includes(x)) ? 2 : 0) + (w.legal ? 1 : 0)};
+  }).sort((x,y)=>y.k-x.k);
   kwcount.textContent = hits.length ? `${hits.length} 筆` : "";
   if (!hits.length){ kwres.innerHTML = `<li class="empty">沒有符合「${esc(kw.value.trim())}」的候選人。</li>`; kwres.hidden = false; return; }
   const shown = hits.slice(0, 40);
-  kwres.innerHTML = shown.map((e,k)=>{
-    const t = terms.find(t=>!e.name.includes(t)) || terms[0];
+  kwres.innerHTML = shown.map(({e, t, w},k)=>{
     const s = e.c.score;
-    return `<li><button type="button" data-k="${k}"><span class="r-head"><b>${esc(e.c.name)}</b>${sexHtml(e.c)}${tierHtml(s)}<span class="party">${esc(partyOf(e.c))}</span><span class="r-race">${esc(e.r.label)}・${esc(e.r.area)}・${e.c.no} 號</span></span><span class="r-snip">${snippet(e.text, e.low, t)}</span></button></li>`;
+    return `<li><button type="button" data-k="${k}"><span class="r-head"><b>${esc(e.c.name)}</b>${sexHtml(e.c)}${tierHtml(s)}<span class="party">${esc(partyOf(e.c))}</span><span class="r-race">${esc(e.r.label)}・${esc(e.r.area)}・${e.c.no} 號</span></span><span class="r-snip">${snippet(e.text, t, w)}</span></button></li>`;
   }).join("") + (hits.length>shown.length?`<li class="empty">另有 ${hits.length-shown.length} 筆，請加關鍵字縮小範圍。</li>`:"");
   kwres.querySelectorAll("button[data-k]").forEach(btn=>btn.addEventListener("click", ()=>{
-    const e = shown[Number(btn.dataset.k)];
+    const e = shown[Number(btn.dataset.k)].e;
     kwres.hidden = true;
     pendingGo = {id: `${e.r.id}-c${e.c.no}`, inProfile: !e.name.includes(terms[0])};
     if (current && current.id === e.r.id) goPending(); else location.hash = e.r.id;
