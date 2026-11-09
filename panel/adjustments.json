@@ -1,0 +1,278 @@
+{
+ "rule": "rubric.md 3.4 問政行為",
+ "applied": "2026-11-09",
+ "event": "2024-03-22 臨時會（剴剴案專案報告）因簽到 25 人不足開會額數，改開談話會；國民黨團經「共識決」不出席。",
+ "basis": "KMT-caucus members (at the time) who were absent at the count; 民主 −0.5 each (total −1.25). Four other absent candidates with no evidence of a caucus action: no change.",
+ "sources": [
+  "https://obasfront.tcc.gov.tw/Agenda/DownloadFile.aspx?FileName=202400001257.pdf&FilePath=pdf/202403&FileGrpKind=2",
+  "https://www.cna.com.tw/news/aloc/202403220183.aspx",
+  "https://www.cna.com.tw/news/aloc/202403220273.aspx"
+ ],
+ "note": "Applied after the panel verdict, without a rerun. The verdict files in this folder are unchanged; 首選 and 次選 are the same in every race.",
+ "changes": [
+  {
+   "race": "D1",
+   "no": 1,
+   "name": "汪志冰",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53.0,
+   "total_after": 51.75,
+   "rank_after": 7
+  },
+  {
+   "race": "D1",
+   "no": 2,
+   "name": "林杏兒",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 51.5,
+   "total_after": 50.25,
+   "rank_after": 10
+  },
+  {
+   "race": "D1",
+   "no": 12,
+   "name": "陳重文",
+   "criterion": "民主",
+   "before": 3,
+   "after": 2.5,
+   "total_before": 35.5,
+   "total_after": 34.25,
+   "rank_after": 20
+  },
+  {
+   "race": "D1",
+   "no": 14,
+   "name": "張斯綱",
+   "criterion": "民主",
+   "before": 4.5,
+   "after": 4.0,
+   "total_before": 50.75,
+   "total_after": 49.5,
+   "rank_after": 14
+  },
+  {
+   "race": "D2",
+   "no": 1,
+   "name": "闕枚莎",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53.75,
+   "total_after": 52.5,
+   "rank_after": 8
+  },
+  {
+   "race": "D2",
+   "no": 2,
+   "name": "游淑慧",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 55.25,
+   "total_after": 54.0,
+   "rank_after": 6
+  },
+  {
+   "race": "D2",
+   "no": 7,
+   "name": "吳世正",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 54.5,
+   "total_after": 53.25,
+   "rank_after": 7
+  },
+  {
+   "race": "D2",
+   "no": 9,
+   "name": "李明賢",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 56,
+   "total_after": 54.75,
+   "rank_after": 5
+  },
+  {
+   "race": "D3",
+   "no": 2,
+   "name": "詹為元",
+   "criterion": "民主",
+   "before": 5.2,
+   "after": 4.7,
+   "total_before": 57.05,
+   "total_after": 55.8,
+   "rank_after": 5
+  },
+  {
+   "race": "D3",
+   "no": 3,
+   "name": "秦慧珠",
+   "criterion": "民主",
+   "before": 5.6,
+   "after": 5.1,
+   "total_before": 54.45,
+   "total_after": 53.2,
+   "rank_after": 6
+  },
+  {
+   "race": "D4",
+   "no": 1,
+   "name": "柳采葳",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 54.5,
+   "total_after": 53.25,
+   "rank_after": 3
+  },
+  {
+   "race": "D4",
+   "no": 4,
+   "name": "陳炳甫",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 54.5,
+   "total_after": 53.25,
+   "rank_after": 3
+  },
+  {
+   "race": "D4",
+   "no": 14,
+   "name": "葉林傳",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 44,
+   "total_after": 42.75,
+   "rank_after": 13
+  },
+  {
+   "race": "D5",
+   "no": 2,
+   "name": "吳志剛",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 51.5,
+   "total_after": 50.25,
+   "rank_after": 8
+  },
+  {
+   "race": "D5",
+   "no": 7,
+   "name": "鍾小平",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 42,
+   "total_after": 40.75,
+   "rank_after": 14
+  },
+  {
+   "race": "D5",
+   "no": 8,
+   "name": "郭昭巖",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53.5,
+   "total_after": 52.25,
+   "rank_after": 6
+  },
+  {
+   "race": "D6",
+   "no": 3,
+   "name": "耿葳",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53,
+   "total_after": 51.75,
+   "rank_after": 9
+  },
+  {
+   "race": "D6",
+   "no": 4,
+   "name": "李柏毅",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53.75,
+   "total_after": 52.5,
+   "rank_after": 6
+  },
+  {
+   "race": "D6",
+   "no": 5,
+   "name": "王欣儀",
+   "criterion": "民主",
+   "before": 4,
+   "after": 3.5,
+   "total_before": 52.5,
+   "total_after": 51.25,
+   "rank_after": 11
+  },
+  {
+   "race": "D6",
+   "no": 8,
+   "name": "陳錦祥",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 46.75,
+   "total_after": 45.5,
+   "rank_after": 16
+  },
+  {
+   "race": "D6",
+   "no": 12,
+   "name": "楊植斗",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 53.25,
+   "total_after": 52.0,
+   "rank_after": 8
+  },
+  {
+   "race": "D6",
+   "no": 16,
+   "name": "徐弘庭",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 49.75,
+   "total_after": 48.5,
+   "rank_after": 15
+  },
+  {
+   "race": "D6",
+   "no": 17,
+   "name": "鍾沛君",
+   "criterion": "民主",
+   "before": 5,
+   "after": 4.5,
+   "total_before": 52.75,
+   "total_after": 51.5,
+   "rank_after": 10
+  },
+  {
+   "race": "D7",
+   "no": 2,
+   "name": "李芳儒",
+   "criterion": "民主",
+   "before": 5.0,
+   "after": 4.5,
+   "total_before": 51.75,
+   "total_after": 50.5,
+   "rank_after": 2
+  }
+ ]
+}

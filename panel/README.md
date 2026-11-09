@@ -12,4 +12,8 @@ The full reasoning (scores, disagreements, sensitivity, limits) is in `guide.md`
 | `verdict` | The moderator's JSON block, unchanged |
 | `decision_map` | `R22` only: totals, weight and probability break-even points, and the voter-type table, recomputed from the verdict |
 
+## Adjustments after the verdict
+
+`adjustments.json` lists score changes applied after a verdict, without a rerun, under a rule added later (rubric.md 3.4 問政行為). It gives the event, the sources, and each candidate's value before and after. The verdict files themselves stay unchanged.
+
 The rankings and the referendum result follow stated criteria and weights. They are not endorsements.
