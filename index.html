@@ -411,6 +411,14 @@ function alignHtml(c, r){
   return `<details class="align"><summary>與市長候選人的關係（推論，不計分）：${it.length} 筆</summary><ul>${it.map(x=>
     `<li><b>${esc(x.mayor)}</b>｜${esc(REL[x.relation]||"")}（${esc(x.level)}）｜${esc(x.date||"日期未確認")}：${esc(x.text)} <span class="src">${(x.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.outlet)}${s.date?" "+esc(s.date):""}</a>`).join("")}</span></li>`).join("")}</ul></details>`;
 }
+const TIE_KIND = {nominate:"提名或推薦", endorse:"表態支持", rally:"同台", split:"黨內分歧", faction:"派系", statement:"發言", distance:"保持距離"};
+const TIE_REL = {support:"支持", oppose:"衝突或批評"};
+function tiesHtml(c){
+  const it = c.ties || [];
+  if (!it.length) return "";
+  return `<details class="align"><summary>與政黨及政治人物的關係（推論，不計分）：${it.length} 筆</summary><ul>${it.map(x=>
+    `<li><b>${esc(x.tie)}</b>｜${esc(TIE_REL[x.relation]||"")}・${esc(TIE_KIND[x.kind]||x.kind)}（${esc(x.level)}）｜${esc(x.date||"日期未確認")}：${esc(x.text)} <span class="src">${(x.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.outlet)}${s.date?" "+esc(s.date):""}</a>`).join("")}</span></li>`).join("")}</ul><p class="align-none">依公開報導整理：提名與推薦、站台、同台、黨內分歧與公開發言。這是推論，不計分，也不影響推薦。</p></details>`;
+}
 function alignBar(r){
   if (!byId.mayor || r.id==="mayor") return "";
   return `<div class="alignbar"><label for="align-mayor">我支持的市長候選人（選填）</label><select id="align-mayor"><option value="">不選</option>${mayorNames().map(n=>`<option value="${esc(n)}"${n===alignMayor?" selected":""}>${esc(n)}</option>`).join("")}</select><span>選了以後，每張卡片標出議員候選人與這位市長候選人的公開關係。依同台、站台與發言整理，是推論，不計分，也不影響推薦。</span></div>`;
@@ -429,6 +437,7 @@ function cardHtml(c, r){
     ${recsHtml(s, r.refs)}
     ${s&&s.drivers?`<p class="drivers">主要依據：${inline(s.drivers,r.refs)}</p>`:""}
     ${alignHtml(c, r)}
+    ${tiesHtml(c)}
     ${profileHtml(c, r.refs)}
   </article>`;
 }
