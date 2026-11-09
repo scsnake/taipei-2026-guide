@@ -36,6 +36,7 @@ h1{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;letter-spacing:.02em}
 h2{font-size:1.3rem;font-weight:900}
 h3{font-size:1.05rem;font-weight:600}
 a{color:var(--accent)}
+header .lede a{white-space:nowrap}
 .lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
 .notice{background:var(--warn-bg);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.9rem}
 .notice b{font-weight:700}
@@ -43,6 +44,13 @@ a{color:var(--accent)}
 .picker{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:10px;border-bottom:1px solid var(--line)}
 .picker-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 @media (max-width:640px){.picker-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.picker-row::-webkit-scrollbar{display:none}.race-btn{flex:none}}
+/* item 3: fade + arrow on a phone scroll row that has more chips off screen */
+.picker-row.more-r{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 56px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 56px),transparent)}
+.picker-row.more-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 56px);mask-image:linear-gradient(90deg,transparent,#000 56px)}
+.picker-row.more-l.more-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 56px,#000 calc(100% - 56px),transparent);mask-image:linear-gradient(90deg,transparent,#000 56px,#000 calc(100% - 56px),transparent)}
+.rowwrap{position:relative}
+.rowwrap .more{position:absolute;top:50%;transform:translateY(-50%);right:0;font:inherit;font-size:1.1rem;line-height:1;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--accent);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.15);display:grid;place-items:center;padding:0}
+.rowwrap .more.left{right:auto;left:0}
 .picker label{flex:none;font-size:.8rem;letter-spacing:.06em;color:var(--muted);margin-right:4px}
 .race-btn{font:inherit;font-size:.88rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;display:flex;gap:6px;align-items:baseline}
 .race-btn small{color:var(--muted);font-size:.75rem}
@@ -73,7 +81,11 @@ th{font-size:.75rem;letter-spacing:.06em;color:var(--muted);font-weight:500;back
 td.num,th.num{text-align:right;font-family:var(--f-data);font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:0}
 tbody tr{cursor:pointer}
-tbody tr:hover{background:var(--chip)}
+tbody tr:hover,tbody tr:active{background:var(--chip)}
+/* item 1: the name cell looks like a link, with a chevron */
+tbody tr[data-go] td.go b{color:var(--accent);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);text-underline-offset:3px}
+tbody tr[data-go] td.go::after{content:"›";color:var(--accent);font-weight:700;margin-left:6px}
+tbody tr[data-go]:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .sortbar{display:flex;gap:8px;align-items:center;font-size:.85rem;color:var(--muted);flex-wrap:wrap}
 .sortbar button{font:inherit;font-size:.82rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:2px 10px;cursor:pointer}
 .sortbar button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
@@ -101,6 +113,7 @@ tbody tr:hover{background:var(--chip)}
 .card-title{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
 .card-title h3{font-size:1.2rem}
 .card-title .meta{font-size:.82rem;color:var(--muted)}
+.permalink{font-size:.78rem;margin-left:6px;white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:0 8px}
 .links{font-size:.85rem;margin:8px 0 0;color:var(--muted)}
 .links a{display:inline-block;margin:0 .8em 2px 0}
 .card-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
@@ -128,23 +141,42 @@ tbody tr:hover{background:var(--chip)}
 .grade.l2,.grade.l1{border-style:dotted;color:var(--muted);text-decoration:line-through}
 .grade.lN{border-style:dotted;border-color:var(--line);color:var(--muted)}
 .grade.old{border-color:var(--line);color:var(--muted)}
-.cite{font-size:.68rem;vertical-align:super;text-decoration:none;font-family:var(--f-data);margin-left:1px}
+/* item 5: source codes are chips; a linked one has an arrow */
+.cite{display:inline-block;font-size:.7rem;line-height:1.5;vertical-align:1px;text-decoration:none;font-family:var(--f-data);margin:0 1px;padding:0 5px;border:1px solid var(--line);border-radius:4px;background:var(--chip);color:var(--muted);white-space:nowrap}
+a.cite{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+a.cite::after{content:"↗";margin-left:2px;font-size:.9em}
 .drivers{font-size:.85rem;color:var(--muted)}
-.alignbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:10px 0}
-.alignbar label{color:var(--ink);font-weight:700}
-.alignbar select{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:2px 6px;max-width:100%}
+/* item 6: the optional mayor selector is a framed box */
+.alignbar{display:flex;flex-direction:column;gap:6px;font-size:.85rem;color:var(--muted);margin:4px 0;padding:12px 14px;border:1.5px solid var(--accent);border-radius:10px;background:var(--card)}
+.alignbar .arow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.alignbar label{color:var(--ink);font-weight:700;font-size:.95rem}
+.alignbar select{font:inherit;font-size:.95rem;min-height:40px;border:1.5px solid var(--accent);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;max-width:100%}
+.alignbar .astate{color:var(--ink)}
+.alignbar p{margin:0}
 .atag{display:inline-block;font-size:.72rem;font-weight:700;border-radius:999px;padding:1px 8px;margin-left:4px;vertical-align:middle;border:1.5px solid var(--ink);color:var(--ink);background:var(--card)}
 .atag.oppose{border-style:dashed}
 .atag.mixed{border-style:dotted}
 .atag.other,.atag.none{border-color:var(--line);color:var(--muted);font-weight:400}
 details.align{margin:8px 0 0;font-size:.85rem}
-details.align summary{cursor:pointer;color:var(--muted)}
 details.align ul{margin:6px 0 0;padding-left:1.2em}
 details.align li{margin:0 0 4px}
 details.align .src a{margin-right:.6em}
 p.align-none{font-size:.82rem;color:var(--muted);margin:8px 0 0}
 details{border-top:1px solid var(--line);padding-top:8px}
-summary{cursor:pointer;font-size:.88rem;color:var(--accent);font-weight:500}
+/* item 2: every fold looks like one tappable bar, with a chevron and 展開／收合 */
+summary{cursor:pointer;font-size:.88rem;color:var(--accent);font-weight:500;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:8px;background:var(--chip)}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";flex:none;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 2px}
+details[open]>summary::before{transform:rotate(45deg)}
+summary::after{content:"展開";flex:none;margin-left:auto;font-size:.75rem;color:var(--muted);font-weight:400}
+details[open]>summary::after{content:"收合"}
+summary:hover{background:color-mix(in srgb,var(--accent) 10%,var(--chip))}
+@media (prefers-reduced-motion:no-preference){summary::before{transition:transform .15s}}
+/* item 4: marks that explain themselves on tap */
+.grade[data-tip],.warnmark,.atag,.sex[data-tip]{cursor:help}
+[data-tip]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#tip{position:fixed;z-index:20;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--paper);font-size:.82rem;line-height:1.5;padding:8px 10px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.marklegend{font-size:.8rem;color:var(--muted);margin:0}
 .profile dl{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin:10px 0 0}
 .profile dt{font-size:.78rem;letter-spacing:.06em;color:var(--muted);font-weight:700}
 .profile dd{margin:0;font-size:.9rem;overflow-wrap:anywhere}
@@ -272,9 +304,12 @@ document.getElementById("asof").textContent = DATA.asof;
 document.getElementById("asof2").textContent = DATA.asof;
 
 /* ---------- inline markdown ---------- */
+const GRADE_L = {"5":"已證實（一手紀錄）","4":"很可能（單一或同陣營來源）","3":"不確定或正反並存","2":"可能不實","1":"已推翻","N":"無法評估"};
+const GRADE_S = {"A":"一手或官方","B":"中央社、公視、國際通訊社或兩陣營媒體","C":"單一或同陣營媒體"};
+function gradeTip(l, s){ return `證據等級 ${l}${s?"-"+s:""}：${GRADE_L[l]||""}${s?`；來源 ${s}：${GRADE_S[s]||""}`:""}`; }
 function gradeHtml(inner){
   const m = inner.match(/^([1-5N])(?:-([ABC]))?$/);
-  if (m) return `<span class="grade l${m[1]}" title="證據等級 ${esc(inner)}">${esc(inner)}</span>`;
+  if (m) return `<span class="grade l${m[1]}" role="button" tabindex="0" data-tip="${esc(gradeTip(m[1], m[2]))}" aria-label="${esc(gradeTip(m[1], m[2]))}">${esc(inner)}</span>`;
   return `<span class="grade old">${esc(inner)}</span>`;
 }
 function inline(s, refs){
@@ -371,7 +406,9 @@ if (REF){
 
 function partyOf(c){ return (c.meta||"").split("；")[0]; }
 function statusOf(c){ return (c.meta||"").split("；").slice(1).join("；"); }
-function sexHtml(c){ if (c.sex!=="女" && c.sex!=="男") return ""; return `<span class="sex" role="img" title="${c.sex}性" aria-label="${c.sex}性">${c.sex==="女"?"\u2640\uFE0E":"\u2642\uFE0E"}</span>`; }
+function sexHtml(c, plain){ if (c.sex!=="女" && c.sex!=="男") return ""; const g = c.sex==="女"?"\u2640\uFE0E":"\u2642\uFE0E";
+  if (plain) return `<span class="sex" role="img" aria-label="${c.sex}性">${g}</span>`;  // inside a search-result button: no nested button
+  return `<span class="sex" role="button" tabindex="0" data-tip="${c.sex}性" aria-label="${c.sex}性">${g}</span>`; }
 function tierClass(t){ return t==="首選"?"first":t==="次選"?"second":t==="不列入推薦"?"out":""; }
 function tierHtml(s){ if(!s||!s.tier||s.tier==="一般") return ""; return `<span class="tier ${tierClass(s.tier)}">${esc(s.tier)}</span>`; }
 
@@ -409,6 +446,7 @@ function warnHtml(c, refs){
   if (!c.warn) return "";
   return `<p class="warnbox" role="note"><b>⚠ ${esc(c.warn.label)}</b><br>${inline(c.warn.text, refs)}<br>本頁規則：有暴力犯罪確定判決的候選人，不列為首選或次選。</p>`;
 }
+const MARKLEGEND = `<p class="marklegend">卡片標記：${gradeHtml("5-A")} 這類方框是證據等級，<span class="cite">D1-3</span> 是來源代號（有 ↗ 的可開啟來源）。點方框或 ⚠ 可看說明。</p>`;
 const REL = {support:"同陣營", oppose:"對立", mixed:"混合"};
 function mayorNames(){ return ((byId.mayor||{}).candidates||[]).map(c=>c.name); }
 function alignTag(c, r){
@@ -421,7 +459,8 @@ function alignTag(c, r){
     if (o.length){ t = o.map(([m,v])=>`與${m}${REL[v.rel]}`).join("、"); cls = "other"; }
     else { t = "未見"; cls = "none"; }
   }
-  return `<span class="atag ${cls}" title="與${esc(alignMayor)}的關係（推論，不計分）">${esc(t)}</span>`;
+  const tip = `與${alignMayor}的關係：${t}。依同台、站台、發言與議會行為整理，是推論，不計分。明確＝有直接引述或多家報導；傾向＝單一來源或議會行為。證據在卡片下方的折疊清單。`;
+  return `<span class="atag ${cls}" role="button" tabindex="0" data-tip="${esc(tip)}" aria-label="${esc(tip)}">${esc(t)}</span>`;
 }
 function alignHtml(c, r){
   if (!byId.mayor || r.id==="mayor") return "";
@@ -440,14 +479,15 @@ function tiesHtml(c){
 }
 function alignBar(r){
   if (!byId.mayor || r.id==="mayor") return "";
-  return `<div class="alignbar"><label for="align-mayor">我支持的市長候選人（選填）</label><select id="align-mayor"><option value="">不選</option>${mayorNames().map(n=>`<option value="${esc(n)}"${n===alignMayor?" selected":""}>${esc(n)}</option>`).join("")}</select><span>選了以後，每張卡片標出議員候選人與這位市長候選人的公開關係。依同台、站台與發言整理，是推論，不計分，也不影響推薦。</span></div>`;
+  const state = alignMayor ? `目前：表格多一欄「與${esc(alignMayor)}」，每張卡片的姓名旁有關係標籤（點標籤可看說明）。` : `目前未選。選一位後，表格會多一欄，每張卡片的姓名旁會加上「同陣營」「對立」等標籤。`;
+  return `<div class="alignbar"><div class="arow"><label for="align-mayor">我支持的市長候選人（選填）</label><select id="align-mayor"><option value="">不選</option>${mayorNames().map(n=>`<option value="${esc(n)}"${n===alignMayor?" selected":""}>${esc(n)}</option>`).join("")}</select></div><p class="astate">${state}</p><p>依同台、站台與發言整理，是推論，不計分，也不影響推薦。</p></div>`;
 }
 function cardHtml(c, r){
   const s = c.score;
   return `<article class="card${s&&s.tier==="首選"?" is-first":""}${c.warn?" has-warn":""}" id="${r.id}-c${c.no}">
     <div class="card-head">
       <span class="ballot" aria-label="號次">${c.no}</span>
-      <div class="card-title"><h3>${esc(c.name)}${sexHtml(c)} ${tierHtml(s)}${alignTag(c, r)}</h3><span class="meta"><span class="party">${esc(partyOf(c))}</span> ${esc(statusOf(c))}</span></div>
+      <div class="card-title"><h3>${esc(c.name)}${sexHtml(c)} ${tierHtml(s)}${alignTag(c, r)}</h3><span class="meta"><span class="party">${esc(partyOf(c))}</span> ${esc(statusOf(c))} <a class="permalink" href="#${r.id}-${c.no}" aria-label="${esc(c.name)}的連結，可複製分享">🔗 連結</a></span></div>
       <div class="score-badge" aria-label="總分"><span class="score">${s&&s.total!=null?esc(s.total):"—"}</span><small>總分／100</small></div>
     </div>
     ${warnHtml(c, r.refs)}
@@ -467,9 +507,9 @@ function sortedCands(r){
 }
 function tableHtml(r){
   const cs = sortedCands(r);
-  return `<div class="sortbar">排序：<button type="button" id="sort-no" aria-pressed="${sortMode==="no"}">號次</button><button type="button" id="sort-score" aria-pressed="${sortMode==="score"}">總分</button><span>點一列可跳到該候選人。</span></div>
-  <div class="tablebox"><table><thead><tr><th class="num">號次</th><th>姓名</th><th>政黨</th><th class="num">兩岸</th><th class="num">總分</th><th>依準則</th>${alignMayor&&r.id!=="mayor"?`<th>與${esc(alignMayor)}</th>`:""}</tr></thead><tbody>
-  ${cs.map(c=>{ const s=c.score; return `<tr data-go="${r.id}-c${c.no}"><td class="num">${c.no}</td><td><b>${esc(c.name)}</b>${sexHtml(c)}${c.warn?`<span class="warnmark" title="${esc(c.warn.label)}">⚠</span>`:""}</td><td>${esc(partyOf(c))}</td><td class="num">${s?(s.A==null?"不足":(s.A>0?"+":"")+s.A):"—"}</td><td class="num score">${s&&s.total!=null?s.total:"—"}</td><td>${tierHtml(s)}</td>${alignMayor&&r.id!=="mayor"?`<td>${alignTag(c, r)}</td>`:""}</tr>`; }).join("")}
+  return `<div class="sortbar">排序：<button type="button" id="sort-no" aria-pressed="${sortMode==="no"}">號次</button><button type="button" id="sort-score" aria-pressed="${sortMode==="score"}">總分</button><span>點姓名或整列，可跳到該候選人的卡片。</span></div>
+  <div class="tablebox"><table><thead><tr><th class="num">號次</th><th>姓名</th>${alignMayor&&r.id!=="mayor"?`<th>與${esc(alignMayor)}</th>`:""}<th>政黨</th><th class="num">兩岸</th><th class="num">總分</th><th>依準則</th></tr></thead><tbody>
+  ${cs.map(c=>{ const s=c.score; return `<tr data-go="${r.id}-c${c.no}" tabindex="0" aria-label="跳到 ${c.no} 號 ${esc(c.name)} 的卡片"><td class="num">${c.no}</td><td class="go"><b>${esc(c.name)}</b>${sexHtml(c, true)}${c.warn?`<span class="warnmark" role="button" tabindex="0" data-tip="${esc(c.warn.label)}：本頁不列為首選或次選" aria-label="${esc(c.warn.label)}：本頁不列為首選或次選">⚠</span>`:""}</td>${alignMayor&&r.id!=="mayor"?`<td>${alignTag(c, r)}</td>`:""}<td>${esc(partyOf(c))}</td><td class="num">${s?(s.A==null?"不足":(s.A>0?"+":"")+s.A):"—"}</td><td class="num score">${s&&s.total!=null?s.total:"—"}</td><td>${tierHtml(s)}</td></tr>`; }).join("")}
   </tbody></table></div>`;
 }
 function render(id){
@@ -499,11 +539,15 @@ function render(id){
     : scored ? `<div class="notice">依本頁準則：首選 <b>${esc(r.first||"—")}</b>，次選 <b>${esc(r.second||"—")}</b>。${(r.excluded||[]).length?"不列入推薦："+r.excluded.map(e=>`<b>${esc(e.name)}</b>（${esc(e.reason)}）`).join("、")+"。":""}${(r.notes||[]).map(n=>" 本頁規則："+esc(n)).join("")} 改用「廉潔優先」權重時首選為 ${esc(r.W1_first||"—")}；改用「主權與自由優先」時為 ${esc(r.W2_first||"—")}。</div>` : `<div class="notice">這個縣市的模型評議尚未完成。下方先列出經查核的候選人資料。</div>`;
   const verdict = r.verdict_md ? `<details class="panel"><summary>評議理由：判斷邏輯、權重影響、分歧與敏感度</summary>${(r.notes||[]).length?`<p class="notice">${r.notes.map(n=>"本頁規則："+esc(n)).join("<br>")}</p>`:""}<div class="md">${md(r.verdict_md, r.refs)}</div></details>` : "";
   const overview = `<details class="panel"><summary>選舉概況</summary><div class="md">${md(r.overview, r.refs)}</div></details>`;
-  $("#race").innerHTML = head + pick + alignBar(r) + tableHtml(r) + overview + `<div class="cards">${sortedCands(r).map(c=>cardHtml(c,r)).join("")}</div>` + verdict;
+  $("#race").innerHTML = head + pick + alignBar(r) + tableHtml(r) + overview + MARKLEGEND + `<div class="cards">${sortedCands(r).map(c=>cardHtml(c,r)).join("")}</div>` + verdict;
   $("#sort-no").onclick = ()=>{ sortMode="no"; render(r.id); };
   $("#sort-score").onclick = ()=>{ sortMode="score"; render(r.id); };
   const am = $("#align-mayor"); if (am) am.onchange = ()=>{ alignMayor = am.value; store("tpe-align", alignMayor); render(r.id); };
-  $("#race").querySelectorAll("tr[data-go]").forEach(tr=>tr.addEventListener("click",()=>{ const el=document.getElementById(tr.dataset.go); if(el) el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); }));
+  $("#race").querySelectorAll("tr[data-go]").forEach(tr=>{
+    const go = ()=>{ pendingGo = {id: tr.dataset.go}; goPending(); };
+    tr.addEventListener("click", go);
+    tr.addEventListener("keydown", e=>{ if (e.key==="Enter" || e.key===" "){ e.preventDefault(); go(); } });
+  });
   resetChat();
 }
 function renderPending(r){
@@ -603,7 +647,56 @@ function renderRef(){
 $("#methodmd").innerHTML = md(DATA.method_md, {});
 
 const pickNav = $(".picker");
-function setPickH(){ document.documentElement.style.setProperty("--pick-h", pickNav.offsetHeight+"px"); }
+function setPickH(){ document.documentElement.style.setProperty("--pick-h", pickNav.offsetHeight+"px"); fadeRows(); }
+/* item 3: phone scroll rows show a fade and an arrow button when more chips are off screen */
+function fadeRows(){
+  document.querySelectorAll(".picker-row").forEach(row=>{
+    const w = row.parentElement.classList.contains("rowwrap") ? row.parentElement : null;
+    const over = row.scrollWidth - row.clientWidth > 4;
+    const l = over && row.scrollLeft > 4, rr = over && row.scrollLeft + row.clientWidth < row.scrollWidth - 4;
+    row.classList.toggle("more-l", l); row.classList.toggle("more-r", rr);
+    if (w){ w.querySelector(".more.left").hidden = !l; w.querySelector(".more.right").hidden = !rr; }
+  });
+}
+document.querySelectorAll(".picker-row").forEach(row=>{
+  const w = document.createElement("div"); w.className = "rowwrap";
+  row.parentNode.insertBefore(w, row); w.appendChild(row);
+  [["left","‹","往左看更多"],["right","›","往右看更多"]].forEach(([d,ch,lab])=>{
+    const b = document.createElement("button"); b.type = "button"; b.className = "more "+d; b.textContent = ch; b.hidden = true;
+    b.setAttribute("aria-label", lab); b.tabIndex = -1;
+    b.addEventListener("click", ()=>row.scrollBy({left:(d==="left"?-1:1)*row.clientWidth*0.7, behavior:"smooth"}));
+    w.appendChild(b);
+  });
+  row.addEventListener("scroll", fadeRows, {passive:true});
+  new MutationObserver(()=>{ const on = row.querySelector('.race-btn[aria-pressed="true"]');  // keep the chosen chip in view
+    if (on && (on.offsetLeft < row.scrollLeft || on.offsetLeft + on.offsetWidth > row.scrollLeft + row.clientWidth)) row.scrollLeft = Math.max(0, on.offsetLeft - (row.clientWidth - on.offsetWidth)/2);
+    fadeRows(); }).observe(row, {childList:true, subtree:true, attributes:true, attributeFilter:["aria-pressed"]});
+});
+fadeRows(); addEventListener("load", fadeRows);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(fadeRows);
+/* item 4: tap a mark (grade, ⚠, sex, alignment tag) to read what it means; phones show no title tooltip */
+const tip = document.createElement("div"); tip.id = "tip"; tip.setAttribute("role","status"); tip.hidden = true; document.body.appendChild(tip);
+let tipFor = null;
+function hideTip(){ tip.hidden = true; tipFor = null; }
+function showTip(m){
+  if (tipFor === m){ hideTip(); return; }
+  tipFor = m; tip.textContent = m.dataset.tip; tip.hidden = false;
+  const b = m.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  const x = Math.min(Math.max(16, b.left + b.width/2 - tw/2), innerWidth - 16 - tw);
+  const y = b.bottom + 8 + th < innerHeight ? b.bottom + 8 : Math.max(8, b.top - 8 - th);
+  tip.style.left = x+"px"; tip.style.top = y+"px";
+}
+document.addEventListener("click", e=>{
+  const m = e.target.closest("[data-tip]");
+  if (!m){ if (!tip.hidden) hideTip(); return; }
+  e.stopPropagation(); e.preventDefault(); showTip(m);
+}, true);
+document.addEventListener("keydown", e=>{  // the marks are buttons: Enter or Space opens the explanation
+  const m = e.target.closest && e.target.closest("[data-tip]");
+  if (m && (e.key==="Enter" || e.key===" ")){ e.stopPropagation(); e.preventDefault(); showTip(m); }
+}, true);
+addEventListener("scroll", ()=>{ if (!tip.hidden) hideTip(); }, {passive:true});
+document.addEventListener("keydown", e=>{ if (e.key==="Escape" && !tip.hidden) hideTip(); });
 setPickH(); window.addEventListener("resize", setPickH);
 /* ---------- keyword search (all races) ---------- */
 const plain = s => String(s||"").replace(/\[[A-Z][A-Z0-9]*-\d+\]/g,"").replace(/【[^】]{1,12}】/g,"").replace(/<https?:[^>]*>/g,"").replace(/\[([^\]]+)\]\([^)]*\)/g,"$1").replace(/\*+/g,"").replace(/\s+/g," ");
@@ -660,7 +753,7 @@ function runSearch(){
   const shown = hits.slice(0, 40);
   kwres.innerHTML = shown.map(({e, t, w},k)=>{
     const s = e.c.score;
-    return `<li><button type="button" data-k="${k}"><span class="r-head"><b>${esc(e.c.name)}</b>${sexHtml(e.c)}${tierHtml(s)}<span class="party">${esc(partyOf(e.c))}</span><span class="r-race">${esc(e.r.label)}・${esc(e.r.area)}・${e.c.no} 號</span></span><span class="r-snip">${snippet(e.text, t, w)}</span></button></li>`;
+    return `<li><button type="button" data-k="${k}"><span class="r-head"><b>${esc(e.c.name)}</b>${sexHtml(e.c, true)}${tierHtml(s)}<span class="party">${esc(partyOf(e.c))}</span><span class="r-race">${esc(e.r.label)}・${esc(e.r.area)}・${e.c.no} 號</span></span><span class="r-snip">${snippet(e.text, t, w)}</span></button></li>`;
   }).join("") + (hits.length>shown.length?`<li class="empty">另有 ${hits.length-shown.length} 筆，請加關鍵字縮小範圍。</li>`:"");
   kwres.querySelectorAll("button[data-k]").forEach(btn=>btn.addEventListener("click", ()=>{
     const e = shown[Number(btn.dataset.k)].e;
@@ -677,13 +770,20 @@ function goPending(){
   if (g.inProfile){ const d = el.querySelector("details.profile"); if (d) d.open = true; }
   el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"start"});
   el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"), 1600);
+  const a = cardAnchor(g.id); if (a && location.hash !== "#"+a) history.replaceState(null, "", "#"+a);  // the address now points to this candidate, ready to share
+}
+function cardAnchor(id){ const m = String(id).match(/^(.+)-c(\d+)$/); return m ? `${m[1]}-${m[2]}` : null; }
+function splitHash(){
+  const h = decodeURIComponent(location.hash.replace("#",""));
+  const m = h.match(/^([A-Za-z0-9]+)-c?(\d+)$/);
+  return m ? {race: m[1].toLowerCase(), card: `${m[1].toLowerCase()}-c${m[2]}`} : {race: h, card: null};
 }
 kw.addEventListener("input", ()=>{ clearTimeout(kwTimer); kwTimer = setTimeout(runSearch, 150); });
 kw.addEventListener("focus", ()=>{ if (kw.value.trim()) runSearch(); });
 kw.addEventListener("keydown", e=>{ if (e.key==="Escape"){ kw.value=""; runSearch(); } else if (e.key==="ArrowDown"){ const b=kwres.querySelector("button"); if(b){ e.preventDefault(); b.focus(); } } });
 kwres.addEventListener("keydown", e=>{ if (e.key==="Escape"){ kwres.hidden = true; kw.focus(); } });
 document.addEventListener("click", e=>{ if (!e.target.closest(".search")) kwres.hidden = true; });
-function fromHash(){ const h = location.hash.replace("#",""); if (byId[h] && !byId[h].link) return h; const s = load("mayor-race"); return (byId[s] && !byId[s].link) ? s : races.find(x=>x.ready).id; }
+function fromHash(){ const {race: h, card} = splitHash(); if (byId[h] && !byId[h].link){ if (card) pendingGo = {id: card}; return h; } const s = load("mayor-race"); return (byId[s] && !byId[s].link) ? s : races.find(x=>x.ready).id; }
 
 /* ---------- Ask Claude (sample capability, viewer's own usage) ---------- */
 let sample = null, turns = [], controller = null;
@@ -747,7 +847,7 @@ $("#clear").addEventListener("click", resetChat);
 if (window.claude && window.claude.use){
   window.claude.use("sample").then(s=>{ if (s){ sample = s; $("#askpanel").hidden = !current; } }).catch(()=>{});
 }
-window.addEventListener("hashchange", ()=>{ render(fromHash()); goPending(); });
-render(fromHash());
+window.addEventListener("hashchange", ()=>{ const h = fromHash(); if (!(current && current.id === h && pendingGo)) render(h); goPending(); });
+render(fromHash()); if (pendingGo) requestAnimationFrame(()=>setTimeout(goPending, 50));
 })();
 </script>
