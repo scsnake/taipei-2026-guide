@@ -39,6 +39,10 @@ def main(src, name="index.html"):
     body, n = SITE_LINK.subn(r'href="\1"', body)
     out.write_text(HEAD + body, encoding="utf-8")
     print(f"{out.name}: {out.stat().st_size // 1024} KiB, {n} site link(s) made relative")
+    # Keep the maintainer's notes from additions.md on the rebuilt page.
+    sys.path.insert(0, str(ROOT / "tools"))
+    import add_info
+    add_info.run(quiet=True)
 
 
 if __name__ == "__main__":
