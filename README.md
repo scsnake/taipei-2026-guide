@@ -49,6 +49,10 @@ The ranking and the referendum result follow stated criteria and weights. They a
 
 Candidates and their teams can ask for a correction or add a reply. Open an issue with the label `reply`, or send an email to scsnake@gmail.com. Give the claim id (or the candidate and the text) and a source. Replies from the person concerned are added to the claim, next to the accusation.
 
+## Maintainer notes on cards
+
+The maintainer adds short dated notes to candidate cards in `additions.md`: one line per note, with a source URL. `python3 tools/add_info.py` checks the lines and updates `index.html`, `mayors.html` and `SHA256SUMS`. The notes do not change any score. `tools/build_site.py` keeps them when a page is rebuilt.
+
 ## License
 
 Text and data: [CC BY 4.0](LICENSE). Scripts in `tools/`: [MIT](LICENSE-CODE).
