@@ -1,0 +1,281 @@
+[
+ {
+  "code": "cyq3-2",
+  "name": "吳思蓉",
+  "kind": "neg",
+  "date": "2026-11-26",
+  "status": "偵查中（羈押禁見；2026-11 報導時）",
+  "text": "吳思蓉涉嫌以現金向選民買票，嘉義地院裁定羈押禁見2個月；羈押不代表有罪。",
+  "url": "https://udn.com/vote2026/story/7321/9904416",
+  "outlet": "聯合報",
+  "quote": "吳思蓉、吳姓樁腳羈押2個月，並禁止接見、通信及受授物件",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the same councilor and district, reports the detention and alleged vote buying, and states detention does not establish guilt."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate's district and 7-term record. Recent 2026-11-26 article supports cash vote-buying detention and presumption of innocence."
+   }
+  }
+ },
+ {
+  "code": "cyq4-5",
+  "name": "蔡政宜",
+  "kind": "neg",
+  "date": "2025-12-29",
+  "status": "判決確定",
+  "text": "蔡政宜涉及職棒假球案，依詐欺取財等罪合併判刑3年8個月定讞，曾入監服刑後假釋出獄。",
+  "url": "https://udn.com/news/story/7321/9232046",
+  "outlet": "聯合報",
+  "quote": "「雨刷」則判3年8月定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The report identifies蔡政宜 and states the 3-year-8-month final sentence and later parole release."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt identifies嘉義縣議員蔡政宜 and supports the final 3年8月 fraud conviction and parole."
+   }
+  }
+ },
+ {
+  "code": "cyq6-3",
+  "name": "張明達",
+  "kind": "neg",
+  "date": "2026-04-10",
+  "status": "起訴（審理中；2026-07 報導時）",
+  "text": "新北地檢署依不違背職務收賄罪嫌起訴嘉義縣議長張明達，指其收受精品並關說降低衛生局罰鍰。張明達否認犯罪，稱精品為朋友間餽贈。",
+  "url": "https://udn.com/news/story/7321/9632511",
+  "outlet": "聯合報",
+  "quote": "遭檢方依不違背收賄罪嫌起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the candidate and charge, and records his denial and explanation. It does not say he called the gifts simply gifts from friends; it says they were customary gifts among friends."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not name 貪污治罪條例, and the 2026-07 article requires 「（2026-07 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "cyq6-5",
+  "name": "羅士洋",
+  "kind": "neg",
+  "date": "2022-09-06",
+  "status": "偵查中（30萬元交保；2022-09 報導時，後續處分未查得）",
+  "text": "嘉義地檢署偵辦布袋漁電共生開發案，羅士洋到案說明後以30萬元交保。他表示僅提供服務，絕未收紅包。",
+  "url": "https://www.cna.com.tw/news/asoc/202209060271.aspx",
+  "outlet": "中央社",
+  "quote": "羅士洋下午被移送至嘉義地檢署複訊，檢方複訊後，依新台幣30萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "no",
+    "why": "The excerpt identifies the candidate and reports NT$300,000 bail and his denial of receiving red envelopes, but gives no later disposition. Bail alone is not a major outcome under the stated criteria."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Article is from 2022-09; must add 「（2022-09 報導時）」 since an older report cannot prove current status."
+   }
+  }
+ },
+ {
+  "code": "cyq2-2",
+  "name": "簡嘉億",
+  "kind": "neg",
+  "date": "2013-05-23",
+  "status": "判決確定（2013-05 二審判決）",
+  "text": "臺南高分院判決簡嘉億共同犯詐欺取財罪，處有期徒刑6月，得以每日新臺幣1,000元易科罰金（101年度上訴字第1035號，嘉義地檢署起訴）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TNHM%2C101%2C%E4%B8%8A%E8%A8%B4%2C1035%2C20130523%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "簡嘉億共同犯詐欺取財罪，處有期徒刑陸月，如易科罰金以新台 幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment names Chien Chia-yi and states the fraud conviction and six-month sentence; the lead note reports finality."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Judgment matches candidate's嘉義縣 and civil engineering background; fraud conviction and sentence are directly supported."
+   }
+  }
+ },
+ {
+  "code": "cyq4-5",
+  "name": "蔡政宜",
+  "kind": "neg",
+  "date": "2014-02-07",
+  "status": "一審判決（2014-02；是否確定未查得）",
+  "text": "高雄地院以簡式審判程序判決蔡政宜共同犯圖利聚眾賭博罪，處有期徒刑5月，得以每日新臺幣2,000元易科罰金（102年度審易字第1249號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=KSDM%2C102%2C審易%2C1249%2C20140207%2C2",
+  "outlet": "司法院裁判書",
+  "quote": "蔡政宜共同犯圖利聚眾賭博罪，處有期徒刑伍月，如易科罰金， 以新臺幣貳仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": null
+   },
+   "agy": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "First-instance ruling excerpt lacks clear identity match beyond name and sister's bank branch, and does not prove 判決確定."
+   }
+  }
+ },
+ {
+  "code": "cyq6-2",
+  "name": "陳柏麟",
+  "kind": "neg",
+  "date": "2017-04-13",
+  "status": "簡易判決（2017-04；是否確定未查得）",
+  "text": "嘉義地院簡易判決陳柏麟共同犯恐嚇危害安全罪，處有期徒刑4月，得以每日新臺幣1,000元易科罰金（106年度嘉簡字第150號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=CYDM%2C106%2C嘉簡%2C150%2C20170413%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "陳柏麟共同犯恐嚇危害安全罪，處有期徒刑肆月，如易科罰金， 以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "unsure",
+    "major": "yes",
+    "why": "The judgment supports the conviction and sentence, but the excerpt does not establish finality. The judgment is significant; the status must not claim it is final."
+   },
+   "agy": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "no",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not confirm defendant 陳柏麟 is the candidate (no role/bio match), omits 刑法第304條, and does not show finality."
+   }
+  }
+ },
+ {
+  "code": "cyq4-5",
+  "name": "蔡政宜",
+  "kind": "neg",
+  "date": "2025-12-29",
+  "status": "起訴（審理中；2025-12 報導時）",
+  "text": "橋頭地檢署依組織犯罪防制條例、洗錢防制法等罪起訴嘉義縣議員蔡政宜等5人，指涉跨國洗錢約225億元，具體求刑10年。",
+  "url": "https://udn.com/news/story/7321/9231540",
+  "outlet": "聯合報",
+  "quote": "另妻子唐女等7人發布通緝，蔡並具體求刑10年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The report supports the indictment, alleged amount, requested sentence, and ongoing proceedings without a first-instance judgment."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2025-12 article cannot prove case is still in trial now; remove present-tense claim and add '（2025-12 報導時）'."
+   }
+  }
+ },
+ {
+  "code": "cyq4-5",
+  "name": "蔡政宜",
+  "kind": "neg",
+  "date": "2026-01-05",
+  "status": "起訴後交保（2026-01 報導時）",
+  "text": "蔡政宜洗錢案經橋頭地院裁定3千萬元交保，檢方以有逃亡之虞提準抗告，遭駁回確定。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/5299976",
+  "outlet": "自由時報",
+  "quote": "橋頭地院合議庭今駁回並定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The article reports the bail order and final dismissal of prosecutors’ challenge; the text accurately says the case remains under trial."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2026-01 article cannot prove current trial status; replace present-tense claim with '（2026-01 報導時）' and specify 準抗告."
+   }
+  }
+ }
+]
