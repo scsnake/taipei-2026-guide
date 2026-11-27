@@ -1,7 +1,7 @@
 """Add the folded 投票小提醒 box (valid and invalid ballots, folding) to the site pages.
 
-The box goes just before the method panel (<details class="panel" id="method">) of each
-page, between <!--BALLOT--> markers, so running this again replaces it.
+The box goes right after the page header (the lede) of each page, between <!--BALLOT-->
+markers. Running this again removes the old box and adds it again after the header.
 The content follows the CEC's illustrated rules (公職人員選舉選舉票有效與無效之認定圖例).
 
 Usage: python3 tools/add_ballot.py
@@ -12,13 +12,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = ("index.html", "mayors.html", "council.html")
 BEGIN, END = "<!--BALLOT-->", "<!--/BALLOT-->"
-ANCHOR = '<details class="panel" id="method">'
+ANCHOR = "</header>"
 PDF = "https://web.cec.gov.tw/api/file/24caf042-5dbf-48c3-95d7-578267385332.pdf"
 
 BLOCK = f"""{BEGIN}
   <details class="panel" id="ballot">
     <summary>投票小提醒：有效票、無效票與摺票</summary>
     <div class="md">
+      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="{PDF}" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
+
       <h4>每張選票只圈一位</h4>
       <p>市長、縣市議員、里長各領一張選票，每張只能圈選一位候選人。議員選舉區即使有多個席次，每位選民也只有一票，由得票最高者依席次當選（另有婦女保障名額）。原住民選民投原住民選舉區，同樣只有一票。</p>
 
@@ -58,7 +60,6 @@ BLOCK = f"""{BEGIN}
         <li>不要把圈選內容給他人看，也不要拍攝選票。除執行公務外，手機或具攝影功能的器材須關閉電源才能帶進投票所（選罷法第 65 條）。</li>
       </ul>
 
-      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="{PDF}" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
     </div>
   </details>
 {END}
@@ -73,13 +74,15 @@ def run(quiet=False):
         t = p.read_text(encoding="utf-8")
         if BEGIN in t:
             a, b = t.index(BEGIN), t.index(END) + len(END)
-            t = t[:a] + BLOCK.strip() + t[b:]
-        elif ANCHOR in t:
-            i = t.index(ANCHOR)
-            line_start = t.rfind("\n", 0, i) + 1
-            t = t[:line_start] + "  " + BLOCK.strip() + "\n\n" + t[line_start:]
-        else:
-            sys.exit(f"{name}: no method panel to put the box before")
+            a = t.rfind("\n", 0, a) + 1
+            b = t.find("\n", b) + 1
+            while t[b:b + 1] == "\n":
+                b += 1
+            t = t[:a] + t[b:]
+        if ANCHOR not in t:
+            sys.exit(f"{name}: no page header to put the box after")
+        i = t.index(ANCHOR) + len(ANCHOR)
+        t = t[:i] + "\n  " + BLOCK.strip() + t[i:]
         p.write_text(t, encoding="utf-8")
         if not quiet:
             print(f"{name}: ballot box added")

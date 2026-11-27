@@ -302,23 +302,12 @@ footer a{overflow-wrap:anywhere}
     <p class="lede">2026-11-28 縣市議員選舉（台北市以外；目前收錄 <span id="readylist"></span>）。選擇縣市與選區，看每位候選人經查證的<b>重大負面紀錄</b>（前科、起訴、官方處分）與<b>重大貢獻</b>。這一頁<b>不評分</b>。</p>
     <p class="lede">台北市議員（有評分）請看 <a href="https://scsnake.github.io/taipei-2026-guide/">台北選票指南</a>；縣市長請看 <a href="mayors.html">縣市長選票指南</a>。</p>
   </header>
-  <div class="notice" role="note">
-    <b>沒有紀錄不代表清白，只代表本次查證沒有找到符合標準的公開資料。</b>未定罪前應推定無罪：每一項都寫明法律狀態與報導日期，舊報導的狀態可能已改變。各縣市陸續上線，資料截至 <span id="asof"></span>，頁面更新於 <span id="updated"></span>（台灣時間）。
-  </div>
-  <nav class="picker" aria-label="選擇縣市與選區">
-    <div class="picker-row" id="cities"><label>縣市</label></div>
-    <div class="picker-row dist-row" id="dists"><label>選區</label></div>
-    <div class="search" role="search">
-      <div class="field"><svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 10.4 14.5 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="search" id="kw" placeholder="搜尋全部縣市：姓名、政黨或關鍵字（例如：起訴、自治條例）" aria-label="搜尋候選人" autocomplete="off" aria-controls="kwres"></div>
-      <span class="hint" id="kwcount"></span>
-      <ul class="kw-results" id="kwres" hidden></ul>
-    </div>
-  </nav>
-  <section id="race" aria-live="polite" style="display:flex;flex-direction:column;gap:14px"></section>
   <!--BALLOT-->
   <details class="panel" id="ballot">
     <summary>投票小提醒：有效票、無效票與摺票</summary>
     <div class="md">
+      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="https://web.cec.gov.tw/api/file/24caf042-5dbf-48c3-95d7-578267385332.pdf" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
+
       <h4>每張選票只圈一位</h4>
       <p>市長、縣市議員、里長各領一張選票，每張只能圈選一位候選人。議員選舉區即使有多個席次，每位選民也只有一票，由得票最高者依席次當選（另有婦女保障名額）。原住民選民投原住民選舉區，同樣只有一票。</p>
 
@@ -358,11 +347,22 @@ footer a{overflow-wrap:anywhere}
         <li>不要把圈選內容給他人看，也不要拍攝選票。除執行公務外，手機或具攝影功能的器材須關閉電源才能帶進投票所（選罷法第 65 條）。</li>
       </ul>
 
-      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="https://web.cec.gov.tw/api/file/24caf042-5dbf-48c3-95d7-578267385332.pdf" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
     </div>
   </details>
 <!--/BALLOT-->
-
+  <div class="notice" role="note">
+    <b>沒有紀錄不代表清白，只代表本次查證沒有找到符合標準的公開資料。</b>未定罪前應推定無罪：每一項都寫明法律狀態與報導日期，舊報導的狀態可能已改變。各縣市陸續上線，資料截至 <span id="asof"></span>，頁面更新於 <span id="updated"></span>（台灣時間）。
+  </div>
+  <nav class="picker" aria-label="選擇縣市與選區">
+    <div class="picker-row" id="cities"><label>縣市</label></div>
+    <div class="picker-row dist-row" id="dists"><label>選區</label></div>
+    <div class="search" role="search">
+      <div class="field"><svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 10.4 14.5 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="search" id="kw" placeholder="搜尋全部縣市：姓名、政黨或關鍵字（例如：起訴、自治條例）" aria-label="搜尋候選人" autocomplete="off" aria-controls="kwres"></div>
+      <span class="hint" id="kwcount"></span>
+      <ul class="kw-results" id="kwres" hidden></ul>
+    </div>
+  </nav>
+  <section id="race" aria-live="polite" style="display:flex;flex-direction:column;gap:14px"></section>
   <details class="panel" id="method">
     <summary>查證方法：收錄標準、查證流程與限制</summary>
     <div class="md" id="methodmd"></div>

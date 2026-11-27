@@ -281,39 +281,12 @@ footer a{overflow-wrap:anywhere}
     <p class="lede">全國 22 個直轄市長與縣市長選舉，請看 <a href="mayors.html">縣市長選票指南</a>（草稿，各縣市陸續上線）。</p>
     <p class="lede">台北市以外的縣市議員：<a href="council.html">縣市議員候選人紀錄</a>（只列重大負面紀錄與重大貢獻，不評分）。</p>
   </header>
-
-  <div class="notice" role="note">
-    <b>這是依明示準則的排序，不是背書。</b>分數由三個 AI 模型依公開的評分準則評議，權重是一種價值選擇，你可以用自己的權重判斷。未定罪前應推定無罪。資料截至 <span id="asof"></span>，頁面更新於 <span id="updated"></span>（台灣時間）。投票地點與程序請查中選會。
-  </div>
-
-  <nav class="picker" aria-label="選擇選區">
-    <div class="picker-row" id="picker"><label>你的選區</label></div>
-    <div class="search" role="search">
-      <div class="field"><svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 10.4 14.5 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="search" id="kw" placeholder="搜尋全部選區：姓名、政黨或關鍵字（例如：助理費、罷免、國防）" aria-label="搜尋候選人" autocomplete="off" aria-controls="kwres"></div>
-      <span class="hint" id="kwcount"></span>
-      <ul class="kw-results" id="kwres" hidden></ul>
-    </div>
-  </nav>
-
-  <section id="race" aria-live="polite" style="display:flex;flex-direction:column;gap:18px"></section>
-
-  <section class="panel ask" id="askpanel" hidden>
-    <h2>問 Claude 這個選區</h2>
-    <p class="hint">Claude 只根據本頁這個選區的資料回答，並附證據等級與來源標籤。它不會替你決定投給誰。提問會使用你自己的 Claude 額度，第一次提問會先請你同意。</p>
-    <div class="chat" id="chat"></div>
-    <textarea id="q" placeholder="例如：這區誰有判決確定的紀錄？某位候選人對國會改革的立場有什麼證據？"></textarea>
-    <div class="ask-row">
-      <button id="send" type="button">提問</button>
-      <button id="stop" type="button" class="secondary" hidden>停止</button>
-      <button id="clear" type="button" class="secondary">清除對話</button>
-      <span class="hint" id="askstatus"></span>
-    </div>
-  </section>
-
   <!--BALLOT-->
   <details class="panel" id="ballot">
     <summary>投票小提醒：有效票、無效票與摺票</summary>
     <div class="md">
+      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="https://web.cec.gov.tw/api/file/24caf042-5dbf-48c3-95d7-578267385332.pdf" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
+
       <h4>每張選票只圈一位</h4>
       <p>市長、縣市議員、里長各領一張選票，每張只能圈選一位候選人。議員選舉區即使有多個席次，每位選民也只有一票，由得票最高者依席次當選（另有婦女保障名額）。原住民選民投原住民選舉區，同樣只有一票。</p>
 
@@ -353,10 +326,36 @@ footer a{overflow-wrap:anywhere}
         <li>不要把圈選內容給他人看，也不要拍攝選票。除執行公務外，手機或具攝影功能的器材須關閉電源才能帶進投票所（選罷法第 65 條）。</li>
       </ul>
 
-      <p>官方完整圖例（有效票 28 例、無效票 27 例）：<a href="https://web.cec.gov.tw/api/file/24caf042-5dbf-48c3-95d7-578267385332.pdf" target="_blank" rel="noopener noreferrer">中選會〈公職人員選舉選舉票有效與無效之認定圖例〉PDF ↗</a></p>
     </div>
   </details>
 <!--/BALLOT-->
+  <div class="notice" role="note">
+    <b>這是依明示準則的排序，不是背書。</b>分數由三個 AI 模型依公開的評分準則評議，權重是一種價值選擇，你可以用自己的權重判斷。未定罪前應推定無罪。資料截至 <span id="asof"></span>，頁面更新於 <span id="updated"></span>（台灣時間）。投票地點與程序請查中選會。
+  </div>
+
+  <nav class="picker" aria-label="選擇選區">
+    <div class="picker-row" id="picker"><label>你的選區</label></div>
+    <div class="search" role="search">
+      <div class="field"><svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 10.4 14.5 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="search" id="kw" placeholder="搜尋全部選區：姓名、政黨或關鍵字（例如：助理費、罷免、國防）" aria-label="搜尋候選人" autocomplete="off" aria-controls="kwres"></div>
+      <span class="hint" id="kwcount"></span>
+      <ul class="kw-results" id="kwres" hidden></ul>
+    </div>
+  </nav>
+
+  <section id="race" aria-live="polite" style="display:flex;flex-direction:column;gap:18px"></section>
+
+  <section class="panel ask" id="askpanel" hidden>
+    <h2>問 Claude 這個選區</h2>
+    <p class="hint">Claude 只根據本頁這個選區的資料回答，並附證據等級與來源標籤。它不會替你決定投給誰。提問會使用你自己的 Claude 額度，第一次提問會先請你同意。</p>
+    <div class="chat" id="chat"></div>
+    <textarea id="q" placeholder="例如：這區誰有判決確定的紀錄？某位候選人對國會改革的立場有什麼證據？"></textarea>
+    <div class="ask-row">
+      <button id="send" type="button">提問</button>
+      <button id="stop" type="button" class="secondary" hidden>停止</button>
+      <button id="clear" type="button" class="secondary">清除對話</button>
+      <span class="hint" id="askstatus"></span>
+    </div>
+  </section>
 
   <details class="panel" id="method">
     <summary>評分方法：證據分級、兩岸光譜與價值準則</summary>
