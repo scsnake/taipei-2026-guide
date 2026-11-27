@@ -1,0 +1,312 @@
+[
+ {
+  "code": "yun5-3",
+  "name": "蔡永順",
+  "kind": "neg",
+  "date": "2026-10-06",
+  "status": "偵查中（羈押禁見；2026-10 報導時）",
+  "text": "雲林地檢署偵辦蔡永順涉賄選案，雲林地院2026年10月2日裁定羈押禁見；國民黨團指其涉加發2000元紅包給新生兒家庭。",
+  "url": "https://udn.com/news/story/6656/9797497",
+  "outlet": "聯合報",
+  "quote": "雲林地方法院2日裁定蔡永順羈押禁見、蔡永富60萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt attributes the NT$2,000 allegation to a legislator, not prosecutors. It does not establish current status."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt attributes the 2000-yuan red envelope claim to KMT caucus (許宇甄), not prosecutors, omits 選罷法/起訴 status, and needs the 2026-10 reporting date qualifier."
+   }
+  }
+ },
+ {
+  "code": "yun1-5",
+  "name": "邱世文",
+  "kind": "neg",
+  "date": "2022-10-04",
+  "status": "裁處確定",
+  "text": "擔任雲林縣議員期間申報109年財產時，未據實申報本人及配偶土地與建物，經監察院認定為故意申報不實，裁處罰鍰新臺幣14萬元確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=65456",
+  "outlet": "監察院",
+  "quote": "邱世文 雲林縣議會 議員 筆、建物 1 筆，配偶土 14 萬元 月 月 地 1 筆、建物 1 筆。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "監察院確定名單支持身分、故意申報不實及14萬元罰鍰。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Control Yuan bulletin confirms Yunlin councilor 邱世文 was fined NT$140,000 (finalized 2022-10-04) for intentional false asset declaration."
+   }
+  }
+ },
+ {
+  "code": "yun3-10",
+  "name": "黃凱",
+  "kind": "neg",
+  "date": "2025-12-22",
+  "status": "一審判決（未確定；2025-12 報導時）",
+  "text": "檢方指黃凱任雲林縣議長期間收受綠能光電業者1480萬元賄款並為其護航，新北地院一審依不違背職務收受賄賂罪判處有期徒刑4年10月、褫奪公權3年；黃凱表示將上訴捍衛清白。",
+  "url": "https://www.cna.com.tw/news/asoc/202512220235.aspx",
+  "outlet": "中央社",
+  "quote": "黃凱（圖）擔任議員期間，涉收受綠能業者賄款，護航業者優先取得縣府同意函。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未列出具體罪名，且須標明當時狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt states 貪污治罪條例等罪 rather than 不違背職務收受賄賂罪, and needs （2025-12 報導時）."
+   }
+  }
+ },
+ {
+  "code": "yun5-8",
+  "name": "吳宗典",
+  "kind": "neg",
+  "date": "2026-02-06",
+  "status": "處分確定",
+  "text": "擔任麥寮鄉民代表期間，申報112年底財產時未據實申報土地4筆、建物2筆及債務3筆，經監察院認定故意申報不實，裁處罰鍰13萬元確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=81444",
+  "outlet": "監察院",
+  "quote": "吳宗典 代表 實申報本人土地4筆、建物2筆及 13萬元 代表會 月 月 債務3筆。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The official record matches the candidate's office and supports the facts and final fine."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Official Control Yuan gazette directly confirms 麥寮鄉民代表 吳宗典's finalized NT$130,000 fine for intentional false asset declaration."
+   }
+  }
+ },
+ {
+  "code": "yun1-16",
+  "name": "江文登",
+  "kind": "neg",
+  "date": "2018-12-27",
+  "status": "判決確定（2018-12；二審上易案件，不得上訴第三審）",
+  "text": "江文登涉以人頭申領議會公費助理補助費，雲林地院依行使公務員登載不實文書罪判處應執行有期徒刑10月、得易科罰金、緩刑2年；檢察官上訴，台南高分院2018年12月判決上訴駁回。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TNHM%2C107%2C上易%2C725%2C20181227%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "江文登之助理並支領薪資，江文登竟基於使公務員登載 不實之犯意，先要求李明郎、江伯寬分別開設○○市農會",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未載明原判各項刑度、緩刑條件或判決確定；案件與雲林縣議會相符。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt is truncated before sentencing details (7 counts, 4/10 months, probation, NT$200k) and does not explicitly state finalization."
+   }
+  }
+ },
+ {
+  "code": "yun2-5",
+  "name": "賴明源",
+  "kind": "neg",
+  "date": "2011-09-22",
+  "status": "一審簡易判決（2011-09；是否確定未確認）",
+  "text": "賴明源（曾任古坑鄉民代表會副主席）經雲林地院依共同犯商業會計法填製不實會計憑證罪判處有期徒刑3月，減為1月15日，得易科罰金，緩刑2年。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ULDM%2C100%2C%E7%B0%A1%2C50%2C20110922%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "賴明源共同犯商業會計法第七十一條第一款之填製不實罪，處 有 期徒刑 參月，如 易科 罰金 ，以銀元參",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "判決與候選人的第17屆古坑鄉民代表會副主席經歷相符；摘錄未證明判決確定或修法日期。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "節錄未見「95年5月24日修正施行前」及「不得上訴／判決確定」記載，應改為僅據節錄可確認之內容與狀態。"
+   }
+  }
+ },
+ {
+  "code": "yun3-10",
+  "name": "黃凱",
+  "kind": "neg",
+  "date": "",
+  "status": "判決確定（2016-11）",
+  "text": "黃凱任雲林縣議員時脅迫得標廠商轉包工程，經法院依政府採購法妨害投標罪等判刑，最高法院2016年11月駁回上訴確定。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2C105%2C%E5%8F%B0%E4%B8%8A%2C2847%2C20161103",
+  "outlet": "司法院裁判書",
+  "quote": "黃凱 上訴意旨 略稱：㈠、原判決事實欄僅記載「 如遇雲林地區以外之外地廠商得標，則夥同與其二人（按指",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄支持妨害投標罪及上訴駁回，但未顯示11罪及應執行2年。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms 政府採購法第87條第1項 conviction and dismissal of appeal, but omits 恐嚇取財罪 and 2-year sentence."
+   }
+  }
+ },
+ {
+  "code": "yun4-7",
+  "name": "李泓儀",
+  "kind": "neg",
+  "date": "2012-05-24",
+  "status": "一審判決（2012-05；後續結果未確認）",
+  "text": "李泓儀任崙背鄉長期間，抑留不發鄉民代表會研究費等款項，雲林地院2012年依公務員抑留職務上應發給款項罪判處應執行有期徒刑1年6月、緩刑3年。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ULDM%2C101%2C訴%2C23%2C20120524%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "李泓儀所犯罪名及處罰，詳如附表二「所犯罪名及處罰」欄所示 ，應執行 有期徒刑 壹年陸月， 緩刑 參年。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄為雲林地院一審判決，未顯示所列高院案號、罪名或7罪。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt is a 2012 Yunlin District Court ruling, not the Tainan High Court case; omits Criminal Code Art. 129(2) and 7 counts."
+   }
+  }
+ },
+ {
+  "code": "yun4-7",
+  "name": "李泓儀",
+  "kind": "neg",
+  "date": "2026-09-17",
+  "status": "起訴（2026-09 報導時）",
+  "text": "李泓儀任崙背鄉長期間入住公所建物，並以公費核銷水電等費用，遭雲林地檢署依背信罪嫌起訴；李泓儀稱對建物用途有認知誤差。",
+  "url": "https://udn.com/news/story/7321/9760810",
+  "outlet": "新聞報導",
+  "quote": "李泓儀住「鄉長宿舍」6年被起訴 這宿舍已讓2名鄉長吃官司 2026-09-17 14:34 聯合報／",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "起訴有據，但摘錄無法證明目前尚未判決；應標明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms Lunbei Township Mayor Li Hong-yi was indicted for breach of trust on 2026-09-17."
+   }
+  }
+ },
+ {
+  "code": "yun6-7",
+  "name": "黃文祥",
+  "kind": "neg",
+  "date": "2011-09-22",
+  "status": "一審簡易判決（2011-09；是否確定未確認）",
+  "text": "黃文祥任水林鄉民代表期間，與其他代表共同要求旅行社出具不實團費收據交付鄉代會，雲林地院依共同犯行使公務員登載不實文書罪判處有期徒刑1年，減為6月，得易科罰金，緩刑2年。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ULDM%2C100%2C%E7%B0%A1%2C55%2C20110922%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "黃文祥共同犯行使公務員登載不實文書罪，處有期徒刑壹年，減 為有期徒刑陸月，如易科罰金，以銀元參佰元即新臺幣玖佰元折 算壹日，緩刑貳年。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The judgment mentions the Shuilin representative council but does not clearly identify this defendant as the candidate. It also does not establish finality."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Person matches Shuilin Township representative history and facts match the judgment, but the 2011 district court summary judgment alone does not prove finality (判決確定)."
+   }
+  }
+ }
+]
