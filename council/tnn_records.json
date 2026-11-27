@@ -1,0 +1,529 @@
+[
+ {
+  "code": "tnn6-2",
+  "name": "郭信良",
+  "kind": "neg",
+  "date": "2026-08-05",
+  "status": "起訴（2026-08 報導時）",
+  "text": "台南地檢署以公益侵占罪嫌起訴郭信良，指他侵占政治獻金專戶等款項1072萬元清償私債；郭信良否認犯行。",
+  "url": "https://udn.com/news/story/7321/9672605",
+  "outlet": "聯合報",
+  "quote": "檢方今依涉公益侵占罪嫌起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article reports an indictment but cannot establish the current status or prove no judgment has occurred."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, amount, denial, and indictment status match the 2026-08-05 excerpt."
+   }
+  }
+ },
+ {
+  "code": "tnn6-2",
+  "name": "郭信良",
+  "kind": "neg",
+  "date": "2025-12-15",
+  "status": "起訴（2025-12 報導時）",
+  "text": "郭信良涉光電開發弊案，橋頭地檢署依貪污等罪嫌起訴；另以廢棄物清理法追加起訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202512150198.aspx",
+  "outlet": "中央社",
+  "quote": "郭信良涉光電開發弊案，遭橋檢依貪污等罪嫌起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not establish that no judgment existed. It reports that he denied the waste-related offense."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2025-12 article cannot prove current status '尚無判決'; must add date qualifier."
+   }
+  }
+ },
+ {
+  "code": "tnn6-8",
+  "name": "李中岑",
+  "kind": "neg",
+  "date": "2020-12-14",
+  "status": "偵查中（2020-12 報導時）",
+  "text": "報導指2020年12月台南檢調以涉詐領助理費搜索約談李中岑，檢方偵訊後諭知20萬元交保。",
+  "url": "https://news.ltn.com.tw/news/Tainan/breakingnews/3380494",
+  "outlet": "自由時報",
+  "quote": "上週傳出因涉嫌詐領助理費遭台南檢調位搜索偵辦，檢方偵訊後以20萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt reports an unconfirmed account and an unanswered call. It does not establish later search results."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2020-12 article cannot prove current investigation status; must add date qualifier."
+   }
+  }
+ },
+ {
+  "code": "tnn10-4",
+  "name": "王家貞",
+  "kind": "neg",
+  "date": "2023-12-15",
+  "status": "判決確定",
+  "text": "王家貞涉助理費案，南檢以偽造文書罪嫌起訴；台南地院2023年3月判刑7個月、緩刑2年，未上訴，全案定讞。",
+  "url": "https://www.cna.com.tw/news/asoc/202312150168.aspx",
+  "outlet": "中央社",
+  "quote": "偵結改以偽造文書罪嫌起訴，台南地方法院今年3月判刑7個月、緩刑2年",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the final judgment and sentence."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms KMT Tainan councilor Wang Chia-chen was sentenced to 7 months, 2-year probation for forgery in Mar 2023 and did not appeal (final)."
+   }
+  }
+ },
+ {
+  "code": "tnn11-7",
+  "name": "陳皇宇",
+  "kind": "neg",
+  "date": "2022-04-14",
+  "status": "緩起訴（2022-04 報導時）",
+  "text": "同選區參選人朱明宏指陳皇宇曾因詐領健保費案遭搜索並獲緩起訴；陳皇宇回應健保局裁罰2萬9千元、案件以緩起訴結案，並對朱明宏提毀謗告訴。",
+  "url": "https://newtalk.tw/news/view/2022-04-14/739524",
+  "outlet": "新頭殼",
+  "quote": "同選區之市議員參選人陳皇宇，曾因詐領健保費案，遭到檢方搜索並遭緩起訴之處分",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article reports the past disposition, not its current status."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches Tainan District 11 (Nanguan) councilor; facts, concluded deferred prosecution status, and both sides' statements are supported and neutral."
+   }
+  }
+ },
+ {
+  "code": "tnn2-1",
+  "name": "王詩媛",
+  "kind": "neg",
+  "date": "2026-10-16",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "台南地檢署指王詩媛涉與父親王文宗安排大北門區里長及選民赴中國接受旅遊招待，涉投票行賄及反滲透法罪嫌，搜索約談後兩人分別以150萬元、100萬元交保候傳。",
+  "url": "https://udn.com/vote2026/story/7321/9818398",
+  "outlet": "聯合報",
+  "quote": "王詩媛兩人今天凌晨3時許分別以150萬、100萬元交保候傳。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持偵查與交保，但不能證明目前狀態。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄完整支持王詩媛涉犯選罷法投票行賄及反滲透法、100萬元交保候傳等事實，身分與狀態皆相符。"
+   }
+  }
+ },
+ {
+  "code": "tnn2-6",
+  "name": "方一峰",
+  "kind": "neg",
+  "date": "2007-11-01",
+  "status": "當選無效判決確定（2007-11）",
+  "text": "方一峰2005年參選臺南縣議員，涉以鈦合金炒鍋賄選，刑事二審判刑2年；2007年11月臺南高分院判決當選無效定讞。",
+  "url": "https://news.ltn.com.tw/news/local/paper/167868",
+  "outlet": "自由時報",
+  "quote": "方一峰賄選 議員當選無效",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "當選無效已定讞，但摘錄未證明刑事判決確定；解職當時尚未完成。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "報導時尚未完成解職，係稱內政部收到判決文後將解職，且刑事部分僅載二審判刑2年，微調以符摘錄。"
+   }
+  }
+ },
+ {
+  "code": "tnn3-1",
+  "name": "吳通龍",
+  "kind": "neg",
+  "date": "2022-03-07",
+  "status": "判決確定（2022-03 報導時）",
+  "text": "吳通龍涉助理費案，臺南高分院更一審認定無貪污犯行，改依使公務員登載不實罪判刑4月、緩刑2年，並應向公庫支付5萬元；未上訴確定。",
+  "url": "https://news.ltn.com.tw/news/life/paper/1504359",
+  "outlet": "自由時報",
+  "quote": "吳通龍被控在第一屆直轄市南市議員任內與妻子趙蓮瑛共同詐領助理費，從檢方起訴指涉詐領一七○萬多元，到二",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未提及得易科罰金；報導日期為2022年3月7日。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt does not mention 得易科罰金; remove that parenthetical."
+   }
+  }
+ },
+ {
+  "code": "tnn5-1",
+  "name": "陳碧玉",
+  "kind": "neg",
+  "date": "2019-03-22",
+  "status": "偵查中（2019-03 報導時）",
+  "text": "2019年3月台南地檢署搜索並約談陳碧玉與夫婿前市議員林慶鎮，複訊後兩人各以50萬元交保。",
+  "url": "https://www.cna.com.tw/news/asoc/201903220057.aspx",
+  "outlet": "中央社",
+  "quote": "陳碧玉的市議會辦公室等處，今天訊後，陳碧玉夫婦各以新台幣50萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the search and bail, but not the claim about later records. The investigation status needs a date."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not say '土地開發案' or '因夫婿', nor later records; 2019 status needs reporting-time qualifier."
+   }
+  }
+ },
+ {
+  "code": "tnn5-4",
+  "name": "李偉智",
+  "kind": "neg",
+  "date": "2017-09-01",
+  "status": "起訴（2017-09 報導時）",
+  "text": "台南地檢署2017年9月指新化區農會選舉有候選人招待會員代表當選人免費旅遊，依農會法起訴時任理事長李偉智等31名被告。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/2185135",
+  "outlet": "自由時報",
+  "quote": "李偉智、方明順與楊輝雄等31名被告均被依農會法起訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the indictment, but provides no verdict, sentence, or final judgment."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2017 excerpt only covers the indictment; it has no mention of a second-instance conviction or 1-year sentence."
+   }
+  }
+ },
+ {
+  "code": "tnn6-4",
+  "name": "唐儀靜",
+  "kind": "neg",
+  "date": "2018-07-18",
+  "status": "判決確定（緩刑4年）",
+  "text": "唐儀靜2011年駕車與機車騎士擦撞，致對方不治；一審依過失致死罪判刑8月，二審因達成和解改判緩刑4年並付保護管束；2018年7月獲准免除保護管束。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/2492572",
+  "outlet": "自由時報",
+  "quote": "唐儀靜辦公室提供） 前台南市議員（升格改制前）唐儀靜今年原本通過民進黨台南市安南區市議員初選，但因車",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt says early July, not June. It does not explicitly establish finality."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt from 2018-07-18 says waiver was approved earlier that month (July), not June 2018."
+   }
+  }
+ },
+ {
+  "code": "tnn7-1",
+  "name": "林燕祝",
+  "kind": "neg",
+  "date": "2014-12-01",
+  "status": "判決確定",
+  "text": "2011年因會勘行程取消，率眾至時任台南市副議長郭信良辦公室潑灑廚餘並辱罵，刑事依公然侮辱罪判拘役40日（得易科罰金）定讞，民事於2014年12月經最高法院判賠30萬元並登報道歉確定。",
+  "url": "https://news.ltn.com.tw/news/local/paper/839817",
+  "outlet": "自由時報",
+  "quote": "林燕祝昨天獲悉判決結果表示，尊重法院的判決，但很不公平，當時的動機很單純，只是為了民眾請託的案件，一",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄支持刑事與民事判決均已確定，及事件經過。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms identity, 2011 incident, final criminal conviction (40 days detention), and final Dec 2014 civil judgment (NT$300k and apology)."
+   }
+  }
+ },
+ {
+  "code": "tnn7-5",
+  "name": "朱正軒",
+  "kind": "neg",
+  "date": "2026-06-25",
+  "status": "判決確定（2026-06）",
+  "text": "朱正軒2024年6月駕車左轉未禮讓直行機車，致騎士受傷後駛離，法院依肇事致人傷害逃逸罪判處有期徒刑6月、得易科罰金；2026年6月最高法院判決定讞。",
+  "url": "https://www.mirrormedia.mg/external/mirrordaily_76008",
+  "outlet": "鏡週刊",
+  "quote": "朱正軒有期徒刑6月，得易科罰金定讞。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄稱最高法院判決於6月出爐並定讞，但未明說駁回上訴。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms DPP Tainan councilor Chu Cheng-hsuan's June 2024 hit-and-run and Supreme Court's final 6-month sentence in June 2026."
+   }
+  }
+ },
+ {
+  "code": "tnn7-6",
+  "name": "林乃立",
+  "kind": "neg",
+  "date": "2026-11-20",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "臺南地檢署指林乃立涉受中國大陸滲透來源指示與資助助選，2026年11月20日搜索約談後，認其違反反滲透法罪嫌重大，諭知20萬元交保；林乃立發聲明否認。",
+  "url": "https://www.mirrormedia.mg/external/setn_1942884",
+  "outlet": "鏡週刊",
+  "quote": "受滲透來源指示、資助而為助選或參與競選",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "「查出」將涉嫌內容寫成既定事實；摘錄僅載檢方認定罪嫌重大。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms TPP Yongkang candidate Lin Nai-li was searched on Nov 20, 2026, released on NT$200k bail under Anti-Infiltration Act, and denied allegations."
+   }
+  }
+ },
+ {
+  "code": "tnn8-6",
+  "name": "謝秉舟",
+  "kind": "neg",
+  "date": "2026-05-01",
+  "status": "有罪判決，緩刑3年（2019-04）",
+  "text": "謝秉舟2017年2月在成大醫院門診大樓觸摸女子胸部，經臺南地院依性騷擾防治法判處有期徒刑3月、得易科罰金，緩刑3年；2026年2月民進黨因此撤銷其議員初選資格。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/5425058",
+  "outlet": "自由時報",
+  "quote": "謝秉舟於2017年2月24日，在成功大學醫學院附設醫院門診大樓六樓摸女子胸部2下",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未證實刑事判決確定或具體法條；行政判決可上訴。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Administrative lawsuit was appealable as of 2026-05; add 一審敗訴、可上訴（2026-05 報導時）."
+   }
+  }
+ },
+ {
+  "code": "tnn11-3",
+  "name": "翁語含",
+  "kind": "neg",
+  "date": "2026-10-28",
+  "status": "偵查中，羈押禁見（2026-10 報導時）",
+  "text": "台南地檢署指翁語含涉於2026年7至8月以低價招攬選民赴中國旅遊並接受落地招待，涉投票行賄及反滲透法罪嫌，經搜索聲押，法院裁定她與助理羈押禁見。",
+  "url": "https://news.ltn.com.tw/news/politics/paper/1776306",
+  "outlet": "自由時報",
+  "quote": "翁語含，涉嫌揪團低價赴中旅遊買票，台南地院裁定翁與助理羈押禁見。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt names a Tainan candidate but identifies her party differently and does not establish the district. The text omits the reported response and date qualifier."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Major criminal detention case, but text omits the denial during questioning and lacks the 2026-10 reporting-time caveat for ongoing investigation."
+   }
+  }
+ },
+ {
+  "code": "tnn8-5",
+  "name": "邱莉莉",
+  "kind": "neg",
+  "date": "2023-07-25",
+  "status": "簡易判決（2023-07）",
+  "text": "臺南地院簡易判決認定，邱莉莉於2022年12月時任市議員、競選連任期間，犯侮辱公務員罪，判處拘役30日、得易科罰金。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TNDM%2C112%2C%E7%B0%A1%2C2371%2C20230725%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "邱莉莉犯 侮辱公務員罪 ，處 拘役 參拾日，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "應明示這是地院簡易判決，且摘錄無法證實是否確定。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, identity, and legal status match the cited Tainan District Court judgment."
+   }
+  }
+ }
+]
