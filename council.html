@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>直轄市議員候選人紀錄 2026</title>
+<meta name="color-scheme" content="light dark">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;900&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a ballot-paper column. Sticky race selector, then summary table, then one card per candidate, then the panel's reasoning and the Ask box. */
+:root{
+  color-scheme:light;
+  --paper:#f7f8f6; --card:#ffffff; --ink:#1d2430; --muted:#5d6675; --line:#d9dde3;
+  --accent:#23408e;            /* ballot-ink blue */
+  --good:#1f7a55; --good-bg:#e5f3ec; --bad:#a24a12; --bad-bg:#fbeee3;
+  --warn-bg:#fff6d8; --chip:#eef1f6; --bar:#23408e; --bar-bg:#e4e8ef;
+  --f-display:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --f-data:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12161d; --card:#1a2029; --ink:#e7eaf0; --muted:#a1a9b7; --line:#2e3644;
+  --accent:#8fb0ff; --good:#5fd3a0; --good-bg:#16332a; --bad:#f0a46a; --bad-bg:#3a2416;
+  --warn-bg:#3a3317; --chip:#232b37; --bar:#8fb0ff; --bar-bg:#2a3240; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12161d; --card:#1a2029; --ink:#e7eaf0; --muted:#a1a9b7; --line:#2e3644;
+  --accent:#8fb0ff; --good:#5fd3a0; --good-bg:#16332a; --bad:#f0a46a; --bad-bg:#3a2416;
+  --warn-bg:#3a3317; --chip:#232b37; --bar:#8fb0ff; --bar-bg:#2a3240; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.65;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 64px;display:flex;flex-direction:column;gap:22px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.3;margin:0}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;letter-spacing:.02em}
+h2{font-size:1.3rem;font-weight:900}
+h3{font-size:1.05rem;font-weight:600}
+a{color:var(--accent)}
+header .lede a{white-space:nowrap}
+.lede{color:var(--muted);max-width:62ch;margin:6px 0 0}
+.notice{background:var(--warn-bg);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.9rem}
+.notice b{font-weight:700}
+/* race selector */
+.picker{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:10px;border-bottom:1px solid var(--line)}
+.picker-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+@media (max-width:640px){.picker-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.picker-row::-webkit-scrollbar{display:none}.race-btn{flex:none}}
+/* item 3: fade + arrow on a phone scroll row that has more chips off screen */
+.picker-row.more-r{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 56px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 56px),transparent)}
+.picker-row.more-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 56px);mask-image:linear-gradient(90deg,transparent,#000 56px)}
+.picker-row.more-l.more-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 56px,#000 calc(100% - 56px),transparent);mask-image:linear-gradient(90deg,transparent,#000 56px,#000 calc(100% - 56px),transparent)}
+.rowwrap{position:relative}
+.rowwrap .more{position:absolute;top:50%;transform:translateY(-50%);right:0;font:inherit;font-size:1.1rem;line-height:1;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--accent);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.15);display:grid;place-items:center;padding:0}
+.rowwrap .more.left{right:auto;left:0}
+.picker label{flex:none;font-size:.8rem;letter-spacing:.06em;color:var(--muted);margin-right:4px}
+.race-btn{font:inherit;font-size:.88rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer;display:flex;gap:6px;align-items:baseline}
+.race-btn small{color:var(--muted);font-size:.75rem}
+.race-btn[aria-pressed="true"]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.race-btn[aria-pressed="true"] small{color:var(--paper);opacity:.85}
+.race-btn:focus-visible,button:focus-visible,summary:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.search{display:flex;gap:8px;align-items:center;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);position:relative}
+.search .field{flex:1;min-width:0;position:relative}
+.search .sicon{position:absolute;left:10px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search input{width:100%;font:inherit;font-size:.9rem;padding:7px 10px 7px 34px;border-radius:4px;border:1px solid transparent;border-bottom:2px solid var(--muted);background:var(--chip);color:var(--ink)}
+.search input::placeholder{color:var(--muted)}
+.search input:focus{outline:none;background:var(--card);border-color:var(--line);border-bottom-color:var(--accent)}
+.search .hint{flex:none}
+.kw-results{position:absolute;left:0;right:0;top:100%;margin-top:4px;max-height:min(60vh,480px);overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18);z-index:6;list-style:none;margin-block:4px 0;padding:4px}
+.kw-results li button{all:unset;box-sizing:border-box;display:block;width:100%;padding:8px 10px;border-radius:6px;cursor:pointer;font-size:.86rem}
+.kw-results li button:hover,.kw-results li button:focus-visible{background:var(--chip)}
+.kw-results .r-head{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.kw-results .r-race{font-size:.75rem;color:var(--muted)}
+.kw-results .r-snip{display:block;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}
+.kw-results .empty{padding:8px 10px;color:var(--muted);font-size:.85rem}
+mark{background:var(--warn-bg);color:inherit;padding:0 1px;border-radius:2px;box-shadow:0 0 0 1px var(--line)}
+.card.flash{outline:3px solid var(--accent);outline-offset:2px}
+/* summary table */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.tablebox:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle;white-space:nowrap}
+th{font-size:.75rem;letter-spacing:.06em;color:var(--muted);font-weight:500;background:var(--chip)}
+td.num,th.num{text-align:right;font-family:var(--f-data);font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}
+tbody tr:hover,tbody tr:active{background:var(--chip)}
+/* item 1: the name cell looks like a link, with a chevron */
+tbody tr[data-go] td.go b{color:var(--accent);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);text-underline-offset:3px}
+tbody tr[data-go] td.go::after{content:"›";color:var(--accent);font-weight:700;margin-left:6px}
+tbody tr[data-go]:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.sortbar{display:flex;gap:8px;align-items:center;font-size:.85rem;color:var(--muted);flex-wrap:wrap}
+.sortbar button{font:inherit;font-size:.82rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:2px 10px;cursor:pointer}
+.sortbar button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+/* ballot number + score */
+.ballot{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:2px solid var(--ink);font-family:var(--f-data);font-weight:600;font-size:.9rem;flex:none}
+.score{font-family:var(--f-data);font-weight:600;font-variant-numeric:tabular-nums}
+.score-badge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-width:64px;padding:4px 10px;border-radius:10px;background:var(--chip);border:1px solid var(--line)}
+.score-badge .score{font-size:1.5rem;line-height:1.1}
+.score-badge small{font-size:.68rem;color:var(--muted);letter-spacing:.06em}
+.tier{display:inline-block;font-size:.75rem;font-weight:700;border-radius:999px;padding:1px 9px;border:1.5px solid var(--line);color:var(--muted)}
+.tier.first{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.tier.second{border-color:var(--ink);color:var(--ink)}
+.tier.out{border-color:var(--bad);color:var(--bad)}
+.sex{display:inline-grid;place-items:center;width:1.25em;height:1.25em;font-size:.85em;line-height:1;border-radius:50%;border:1px solid var(--line);color:var(--muted);font-family:var(--f-body);font-weight:400;vertical-align:.08em;margin-left:2px}
+.party{font-size:.78rem;background:var(--chip);border-radius:4px;padding:1px 7px;color:var(--ink)}
+/* cards */
+.cards{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;scroll-margin-top:calc(var(--pick-h,96px) + 12px)}
+.card.is-first{border-color:var(--ink);border-width:2px}
+.card.has-warn{border-color:var(--bad);border-width:2px}
+.warnbox{margin:10px 0 4px;padding:9px 12px;border-left:5px solid var(--bad);background:var(--bad-bg);border-radius:6px;font-size:.92rem;line-height:1.6}
+.warnbox b{color:var(--bad);font-weight:700}
+.warnmark{color:var(--bad);font-weight:700;margin-left:4px}
+.card-head{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.card-title{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.card-title h3{font-size:1.2rem}
+.card-title .meta{font-size:.82rem;color:var(--muted)}
+.permalink{font-size:.78rem;margin-left:6px;white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:0 8px}
+.links{font-size:.85rem;margin:8px 0 0;color:var(--muted)}
+.links a{display:inline-block;margin:0 .8em 2px 0}
+.card-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+@media (max-width:640px){.card-grid{grid-template-columns:minmax(0,1fr)}}
+.crit{display:grid;grid-template-columns:3.2em minmax(0,1fr) 2em;gap:4px 8px;align-items:center;font-size:.82rem}
+.crit .track{display:block;height:8px;background:var(--bar-bg);border-radius:4px;overflow:hidden}
+.crit .fill{display:block;height:100%;background:var(--bar);border-radius:4px}
+.crit .v{font-family:var(--f-data);text-align:right;font-variant-numeric:tabular-nums}
+.xs{display:flex;flex-direction:column;gap:4px;font-size:.8rem}
+.xs-track{position:relative;height:18px;border-radius:9px;background:linear-gradient(90deg,var(--bad-bg),var(--chip) 50%,var(--good-bg));border:1px solid var(--line)}
+.xs-mid{position:absolute;left:50%;top:2px;bottom:2px;width:1px;background:var(--muted)}
+.xs-dot{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid var(--card);transform:translate(-50%,-50%)}
+.xs-ends{display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem}
+.recs{display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+.rec{display:flex;gap:8px;align-items:flex-start;padding:6px 10px;border-radius:8px;font-size:.88rem}
+.rec.good{background:var(--good-bg)}
+.rec.bad{background:var(--bad-bg)}
+.rec .ico{font-weight:700;flex:none;width:1.1em;text-align:center}
+.rec.good .ico{color:var(--good)}
+.rec.bad .ico{color:var(--bad)}
+.rec .txt{flex:1;min-width:0}
+.grade{display:inline-block;font-family:var(--f-data);font-size:.72rem;font-weight:600;padding:0 5px;border-radius:4px;margin:0 2px;vertical-align:1px;border:1.5px solid var(--ink);color:var(--ink);white-space:nowrap}
+.grade.l4{border-color:var(--muted)}
+.grade.l3{border-style:dashed;border-color:var(--muted);color:var(--muted)}
+.grade.l2,.grade.l1{border-style:dotted;color:var(--muted);text-decoration:line-through}
+.grade.lN{border-style:dotted;border-color:var(--line);color:var(--muted)}
+.grade.old{border-color:var(--line);color:var(--muted)}
+/* item 5: source codes are chips; a linked one has an arrow */
+.cite{display:inline-block;font-size:.7rem;line-height:1.5;vertical-align:1px;text-decoration:none;font-family:var(--f-data);margin:0 1px;padding:0 5px;border:1px solid var(--line);border-radius:4px;background:var(--chip);color:var(--muted);white-space:nowrap}
+a.cite{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+a.cite::after{content:"↗";margin-left:2px;font-size:.9em}
+.drivers{font-size:.85rem;color:var(--muted)}
+/* item 6: the optional mayor selector is a framed box */
+.alignbar{display:flex;flex-direction:column;gap:6px;font-size:.85rem;color:var(--muted);margin:4px 0;padding:12px 14px;border:1.5px solid var(--accent);border-radius:10px;background:var(--card)}
+.alignbar .arow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.alignbar label{color:var(--ink);font-weight:700;font-size:.95rem}
+.alignbar select{font:inherit;font-size:.95rem;min-height:40px;border:1.5px solid var(--accent);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;max-width:100%}
+.alignbar .astate{color:var(--ink)}
+.alignbar p{margin:0}
+.atag{display:inline-block;font-size:.72rem;font-weight:700;border-radius:999px;padding:1px 8px;margin-left:4px;vertical-align:middle;border:1.5px solid var(--ink);color:var(--ink);background:var(--card)}
+.atag.oppose{border-style:dashed}
+.atag.mixed{border-style:dotted}
+.atag.other,.atag.none{border-color:var(--line);color:var(--muted);font-weight:400}
+/* 選舉公報 fold */
+details.bul{margin:10px 0 0}
+details.bul>summary .bsum{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+details.bul>summary .bk{font-family:var(--f-data);font-size:.82rem;color:var(--ink);white-space:nowrap}
+details.bul.bwarn>summary{border-color:var(--bad);background:var(--bad-bg)}
+details.bul.bwarn>summary .bk.decl{color:var(--bad);font-weight:700}
+.bul .bsec{margin:12px 0 0}
+.bul h4{margin:0 0 6px;font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.bul .decl{list-style:none;margin:0;padding:0;font-size:.9rem}
+.bul .decl li{display:flex;gap:8px;align-items:flex-start;margin:0 0 4px;line-height:1.5}
+.bul .decl .box{flex:none;font-size:1.05rem;line-height:1.35}
+.bul .decl .no{color:var(--bad);font-weight:700}
+.bul .bnote{font-size:.8rem;color:var(--muted);line-height:1.6;margin:6px 0 0}
+.bul .fcbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--bar-bg);margin:2px 0 8px}
+.bul .fcbar i{display:block;height:100%}
+.bul .fcbar .ok{background:var(--good)} .bul .fcbar .no{background:var(--bad)}
+.bul .fcbar .unk{background:color-mix(in srgb,var(--muted) 55%,var(--bar-bg))} .bul .fcbar .skip{background:transparent}
+.bul .fcbar .pending{background:repeating-linear-gradient(45deg,var(--line) 0 3px,transparent 3px 6px)}
+.bul ul.fc{list-style:none;margin:0;padding:0;font-size:.88rem}
+.bul ul.fc li{display:grid;grid-template-columns:1.6em minmax(0,1fr);gap:2px 4px;margin:0 0 5px;line-height:1.5}
+.bul .vm{font-family:var(--f-data);font-weight:700;text-align:center;border-radius:4px;font-size:.8rem;line-height:1.6;height:1.6em}
+.bul .vm.ok{color:var(--good);background:var(--good-bg)} .bul .vm.no{color:var(--bad);background:var(--bad-bg)}
+.bul .vm.unk{color:var(--muted);background:var(--chip)} .bul .vm.skip,.bul .vm.pending{color:var(--muted)}
+.bul .fct{overflow-wrap:anywhere} .bul .fcd{grid-column:2;font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.bul .fcd a{margin-right:.6em}
+.bul .flegend{font-size:.78rem;color:var(--muted);margin:0 0 6px;line-height:1.7}
+.bul .plat{white-space:pre-wrap;font-size:.88rem;line-height:1.7;margin:0;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);max-height:28em;overflow:auto}
+.bul .uq{color:var(--bad);background:var(--bad-bg);border-radius:2px}
+.bul ul.qr{margin:0;padding-left:1.2em;font-size:.85rem;overflow-wrap:anywhere}
+.bul .evsec{border-top:1px solid var(--line);padding-top:10px}
+.bul h4.evh{color:var(--ink);font-size:.9rem}
+.bul ul.ev{list-style:none;margin:0 0 6px;padding:0;font-size:.88rem}
+.bul ul.ev li{margin:0 0 8px;line-height:1.6;overflow-wrap:anywhere}
+.bul .evd{display:block;font-size:.8rem;color:var(--muted)}
+.bul .evd b{color:var(--ink)}
+.bul .rel,.bul .xst{display:inline-block;font-size:.75rem;font-weight:700;border-radius:4px;padding:0 6px;margin-right:6px;background:var(--chip);color:var(--ink)}
+.bul .rel-ok{background:var(--good-bg);color:var(--good)} .bul .rel-no{background:var(--bad-bg);color:var(--bad)}
+.bul .bfoot{font-size:.78rem;color:var(--muted);margin:12px 0 0;line-height:1.7}
+details.align{margin:8px 0 0;font-size:.85rem}
+details.align ul{margin:6px 0 0;padding-left:1.2em}
+details.align li{margin:0 0 4px}
+details.align .src a{margin-right:.6em}
+p.align-none{font-size:.82rem;color:var(--muted);margin:8px 0 0}
+details{border-top:1px solid var(--line);padding-top:8px}
+/* item 2: every fold looks like one tappable bar, with a chevron and 展開／收合 */
+summary{cursor:pointer;font-size:.88rem;color:var(--accent);font-weight:500;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));border-radius:8px;background:var(--chip)}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";flex:none;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 2px}
+details[open]>summary::before{transform:rotate(45deg)}
+summary::after{content:"展開";flex:none;margin-left:auto;font-size:.75rem;color:var(--muted);font-weight:400}
+details[open]>summary::after{content:"收合"}
+summary:hover{background:color-mix(in srgb,var(--accent) 10%,var(--chip))}
+@media (prefers-reduced-motion:no-preference){summary::before{transition:transform .15s}}
+/* item 4: marks that explain themselves on tap */
+.grade[data-tip],.warnmark,.atag,.sex[data-tip]{cursor:help}
+[data-tip]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#tip{position:fixed;z-index:20;max-width:min(320px,calc(100vw - 32px));background:var(--ink);color:var(--paper);font-size:.82rem;line-height:1.5;padding:8px 10px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.marklegend{font-size:.8rem;color:var(--muted);margin:0}
+.profile dl{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin:10px 0 0}
+.profile dt{font-size:.78rem;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.profile dd{margin:0;font-size:.9rem;overflow-wrap:anywhere}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.md{font-size:.92rem;overflow-wrap:anywhere}
+.md table{font-size:.82rem}
+.md td,.md th{white-space:normal}
+.md td.nw,.md th.nw{white-space:nowrap}
+.md td{min-width:5em}
+.md h3,.md h4{font-family:var(--f-display);margin:14px 0 4px;font-size:1rem}
+.md p{margin:6px 0}
+.md ul,.md ol{margin:4px 0;padding-left:1.4em}
+.pending{color:var(--muted);font-style:italic}
+/* ask box */
+.ask textarea{width:100%;min-height:76px;font:inherit;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);resize:vertical}
+.ask-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ask button{font:inherit;border-radius:8px;padding:6px 16px;border:1px solid var(--accent);background:var(--accent);color:var(--paper);cursor:pointer;font-weight:700}
+.ask button.secondary{background:var(--card);color:var(--accent)}
+.ask button:disabled{opacity:.5;cursor:default}
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 12px;border-radius:10px;font-size:.92rem}
+.msg.me{background:var(--chip);align-self:flex-end;max-width:85%}
+.msg.ai{background:var(--paper);border:1px solid var(--line)}
+.msg .who{font-size:.72rem;color:var(--muted);letter-spacing:.06em;display:block;margin-bottom:2px}
+.hint{font-size:.8rem;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+/* referendum quiz */
+.race-btn.ref{border-style:dashed}
+.mainq{font-family:var(--f-display);font-size:1.15rem;font-weight:600;border-left:4px solid var(--accent);padding:8px 14px;margin:0;background:var(--card);border-radius:0 8px 8px 0}
+.quiz{display:flex;flex-direction:column;gap:12px;counter-reset:qn}
+.quiz fieldset{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:12px 16px 14px;margin:0;min-width:0}
+.quiz legend{font-weight:700;font-size:.95rem;padding:0 4px;counter-increment:qn}
+.quiz legend::before{content:counter(qn) ". ";font-family:var(--f-data);color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt span{display:inline-block;font-size:.88rem;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:4px 14px;cursor:pointer}
+.opt input:checked+span{background:var(--accent);border-color:var(--accent);color:var(--paper)}
+.opt input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.qnote{font-size:.86rem;color:var(--muted);margin:8px 0 0}
+.qnote:empty{display:none}
+.result{border:2px solid var(--ink)}
+.result .lean{font-family:var(--f-display);font-size:1.25rem;font-weight:900}
+.result ul{margin:4px 0;padding-left:1.3em;font-size:.9rem}
+.result button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:3px 12px;cursor:pointer;align-self:flex-start}
+.resetbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.9rem}
+.terms{font-size:.88rem;background:var(--chip);border-radius:8px;padding:8px 12px}
+.terms ul{margin:4px 0 0;padding-left:1.2em}
+.terms li{margin:2px 0}
+footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+footer p{margin:0 0 .6em}
+footer .site{color:var(--ink)}
+footer a{overflow-wrap:anywhere}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
+
+.dist-row{margin-top:8px}
+.clist{display:flex;flex-direction:column;gap:10px;list-style:none;margin:0;padding:0}
+.cand{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;scroll-margin-top:calc(var(--pick-h,120px) + 12px)}
+.cand.has-neg{border-left:5px solid var(--bad)}
+.cand .top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.cand .no{font-family:var(--f-data);font-weight:600;color:var(--muted);min-width:1.6em}
+.cand .nm{font-family:var(--f-display);font-weight:600;font-size:1.08rem}
+.cand .meta{font-size:.8rem;color:var(--muted)}
+.cand .tags{margin-left:auto;display:flex;gap:6px}
+.tag{font-size:.75rem;border-radius:999px;padding:0 8px;border:1px solid var(--line);white-space:nowrap}
+.tag.neg{color:var(--bad);border-color:var(--bad)}
+.tag.con{color:var(--good);border-color:var(--good)}
+.cand .none{font-size:.82rem;color:var(--muted);margin:4px 0 0}
+.cand .recs{margin-top:8px}
+.rec .st{font-size:.75rem;font-weight:700;margin-right:4px}
+.rec .src{font-size:.78rem;color:var(--muted);display:block;margin-top:2px}
+.rec .src a{word-break:break-all}
+.rec .rv{font-size:.72rem;color:var(--muted)}
+.dsum{font-size:.85rem;color:var(--muted);margin:0}
+.pending{color:var(--muted)}
+.city-btn[aria-disabled="true"]{opacity:.55}
+
+</style>
+<div class="wrap">
+  <header>
+    <h1>直轄市議員候選人紀錄 2026</h1>
+    <p class="lede">2026-11-28 新北、桃園、臺中、臺南、高雄市議員選舉。選擇城市與選區，看每位候選人經查證的<b>重大負面紀錄</b>（前科、起訴、官方處分）與<b>重大貢獻</b>。這一頁<b>不評分</b>。</p>
+    <p class="lede">台北市議員（有評分）請看 <a href="https://scsnake.github.io/taipei-2026-guide/">台北選票指南</a>；縣市長請看 <a href="mayors.html">縣市長選票指南</a>。</p>
+  </header>
+  <div class="notice" role="note">
+    <b>沒有紀錄不代表清白，只代表本次查證沒有找到符合標準的公開資料。</b>未定罪前應推定無罪：每一項都寫明法律狀態與報導日期，舊報導的狀態可能已改變。各城市陸續上線，資料截至 <span id="asof"></span>。
+  </div>
+  <nav class="picker" aria-label="選擇城市與選區">
+    <div class="picker-row" id="cities"><label>城市</label></div>
+    <div class="picker-row dist-row" id="dists"><label>選區</label></div>
+    <div class="search" role="search">
+      <div class="field"><svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10.4 10.4 14.5 14.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="search" id="kw" placeholder="搜尋全部城市：姓名、政黨或關鍵字（例如：起訴、自治條例）" aria-label="搜尋候選人" autocomplete="off" aria-controls="kwres"></div>
+      <span class="hint" id="kwcount"></span>
+      <ul class="kw-results" id="kwres" hidden></ul>
+    </div>
+  </nav>
+  <section id="race" aria-live="polite" style="display:flex;flex-direction:column;gap:14px"></section>
+  <details class="panel" id="method">
+    <summary>查證方法：收錄標準、查證流程與限制</summary>
+    <div class="md" id="methodmd"></div>
+  </details>
+  <footer>
+    <div class="site">
+      <p>狀態：<b>草稿</b>，資料截至 <span id="asof2"></span>。各城市完成查證後陸續上線。</p>
+      <p>完整資料與查證方式：<a href="https://github.com/scsnake/taipei-2026-guide">github.com/scsnake/taipei-2026-guide</a>。每一項都附來源連結與原文摘句，你可以自行查證。</p>
+      <p>更正或回應：請寄信到 <a href="mailto:scsnake@gmail.com">scsnake@gmail.com</a>，寫明候選人、要更正的內容與來源。候選人本人或團隊的回應，會附在該項資料旁。</p>
+    </div>
+    <p id="sig"></p>
+  </footer>
+</div>
+<script id="data" type="application/json">{"asof": "2026-11-27", "cities": [{"id": "ntpc", "label": "新北市", "ready": true, "districts": [{"id": "ntpc-d1", "short": "第1區", "label": "第1選舉區", "areas": "石門區、三芝區、淡水區、八里區", "seats": "4 席（婦女保障 1 席）", "cands": [{"code": "ntpc1-1", "no": 1, "name": "呂鈞鴻", "alias": "", "party": "中國國民黨", "sex": "男", "born": "62年3月8", "items": []}, {"code": "ntpc1-2", "no": 2, "name": "游明諺", "alias": "", "party": "民主進步黨", "sex": "男", "born": "80年", "items": []}, {"code": "ntpc1-3", "no": 3, "name": "鄭宇恩", "alias": "", "party": "民主進步黨", "sex": "女", "born": "75", "items": []}, {"code": "ntpc1-4", "no": 4, "name": "陳偉杰", "alias": "", "party": "中國國民黨", "sex": "男", "born": "67年", "items": []}, {"code": "ntpc1-5", "no": 5, "name": "陳家琪", "alias": "", "party": "中國國民黨", "sex": "女", "born": "66年11月3日", "items": []}]}, {"id": "ntpc-d2", "short": "第2區", "label": "第2選舉區", "areas": "林口區、五股區、泰山區", "seats": "5 席（婦女保障 1 席）", "cands": [{"code": "ntpc2-1", "no": 1, "name": "陳明義", "alias": "", "party": "中國國民黨", "sex": "男", "born": "56", "items": []}, {"code": "ntpc2-2", "no": 2, "name": "戴翎育", "alias": "", "party": "民主進步黨", "sex": "女", "born": "79年10月30日", "items": []}, {"code": "ntpc2-3", "no": 3, "name": "鄭丞宏", "alias": "", "party": "中國國民黨", "sex": "男", "born": "59年12月24日", "items": []}, {"code": "ntpc2-4", "no": 4, "name": "李宇翔", "alias": "", "party": "民主進步黨", "sex": "男", "born": "81年6月4日", "items": []}, {"code": "ntpc2-5", "no": 5, "name": "蔡佩呈", "alias": "", "party": "中國國民黨", "sex": "女", "born": "81年3月15日", "items": []}, {"code": "ntpc2-6", "no": 6, "name": "蔡淑君", "alias": "", "party": "中國國民黨", "sex": "女", "born": "59年3月5日", "items": []}, {"code": "ntpc2-7", "no": 7, "name": "張昭隆", "alias": "", "party": "無", "sex": "男", "born": "55年10月22日", "items": [{"kind": "neg", "date": "2026-09-18", "status": "起訴（2026-09 報導時）", "text": "張昭隆涉於2026年競選期間發放蘿蔔糕與1美元紅包，9月10日遭搜索並羈押禁見，新北地檢署9月18日依違反選罷法起訴。", "url": "https://news.ltn.com.tw/news/politics/breakingnews/5578431", "outlet": "自由時報", "quote": "新北地檢署今火速依違反選罷法起訴。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}]}, {"id": "ntpc-d3", "short": "第3區", "label": "第3選舉區", "areas": "新莊區", "seats": "7 席（婦女保障 1 席）", "cands": [{"code": "ntpc3-1", "no": 1, "name": "甘崇緯", "alias": "", "party": "台灣綠黨", "sex": "男", "born": "76年5月24日", "items": []}, {"code": "ntpc3-2", "no": 2, "name": "林秉宥", "alias": "", "party": "民主進步黨", "sex": "男", "born": "72年12月17日", "items": []}, {"code": "ntpc3-3", "no": 3, "name": "蕭夙玲", "alias": "", "party": "親民黨", "sex": "女", "born": "56年5月4日", "items": []}, {"code": "ntpc3-4", "no": 4, "name": "簡麗花", "alias": "", "party": "無", "sex": "女", "born": "48年9月9日", "items": []}, {"code": "ntpc3-5", "no": 5, "name": "蔣根煌", "alias": "", "party": "中國國民黨", "sex": "男", "born": "52年5月1日", "items": []}, {"code": "ntpc3-6", "no": 6, "name": "吳奕萱", "alias": "", "party": "民主進步黨", "sex": "女", "born": "82年10月27日", "items": []}, {"code": "ntpc3-7", "no": 7, "name": "蔡健棠", "alias": "", "party": "中國國民黨", "sex": "男", "born": "52年1月19日", "items": []}, {"code": "ntpc3-8", "no": 8, "name": "陳世軒", "alias": "", "party": "台灣民眾黨", "sex": "男", "born": "84年12月17日", "items": []}, {"code": "ntpc3-9", "no": 9, "name": "陳岱吟", "alias": "", "party": "民主進步黨", "sex": "女", "born": "73年4月28日", "items": []}, {"code": "ntpc3-10", "no": 10, "name": "王珮宇", "alias": "", "party": "中國國民黨", "sex": "女", "born": "81年10月27日", "items": []}, {"code": "ntpc3-11", "no": 11, "name": "陳茂嘉", "alias": "", "party": "無", "sex": "男", "born": "61年3月3日", "items": []}, {"code": "ntpc3-12", "no": 12, "name": "翁震州", "alias": "", "party": "民主進步黨", "sex": "男", "born": "75年2月15日", "items": []}]}, {"id": "ntpc-d4", "short": "第4區", "label": "第4選舉區", "areas": "蘆洲區、三重區", "seats": "9 席（婦女保障 2 席）", "cands": [{"code": "ntpc4-1", "no": 1, "name": "黃桂蘭", "alias": "", "party": "中國國民黨", "sex": "女", "born": "46年2月25日", "items": []}, {"code": "ntpc4-2", "no": 2, "name": "彭佳芸", "alias": "", "party": "民主進步黨", "sex": "女", "born": "71年10月13日", "items": []}, {"code": "ntpc4-3", "no": 3, "name": "蔡政呈", "alias": "", "party": "中國國民黨", "sex": "男", "born": "78年7月24日", "items": [{"kind": "neg", "date": "2026-11-26", "status": "偵查中（父親等人涉案；2026-11 報導時）", "text": "檢調偵辦蔡政呈之父、前議員蔡明堂等人涉嫌為蔡政呈現金賄選，搜索競選總部等地查扣現金逾2715萬元；蔡明堂無保請回並否認。報導未指蔡政呈本人為被告。", "url": "https://www.cna.com.tw/news/asoc/202611260258.aspx", "outlet": "中央社", "quote": "蔡政呈競選總部等地搜索，共查扣現金新台幣2715萬9500元。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc4-4", "no": 4, "name": "李余典", "alias": "", "party": "民主進步黨", "sex": "男", "born": "47年1月27日", "items": []}, {"code": "ntpc4-5", "no": 5, "name": "陳彥廷", "alias": "", "party": "台灣民眾黨", "sex": "男", "born": "72年3月3日", "items": []}, {"code": "ntpc4-6", "no": 6, "name": "陳俊維", "alias": "", "party": "民主進步黨", "sex": "男", "born": "82年3月24日", "items": []}, {"code": "ntpc4-7", "no": 7, "name": "李倩萍", "alias": "", "party": "民主進步黨", "sex": "女", "born": "59年8月12日", "items": []}, {"code": "ntpc4-8", "no": 8, "name": "劉成謙", "alias": "", "party": "親民黨", "sex": "男", "born": "88年9月24日", "items": []}, {"code": "ntpc4-9", "no": 9, "name": "董俊良", "alias": "", "party": "無", "sex": "男", "born": "59年7月30日", "items": []}, {"code": "ntpc4-10", "no": 10, "name": "李翁月娥", "alias": "", "party": "無", "sex": "女", "born": "47年1月5日", "items": []}, {"code": "ntpc4-11", "no": 11, "name": "陳東雲", "alias": "", "party": "無", "sex": "男", "born": "47年11月20日", "items": []}, {"code": "ntpc4-12", "no": 12, "name": "許宏平", "alias": "", "party": "台聯黨", "sex": "男", "born": "59年9月26日", "items": []}, {"code": "ntpc4-13", "no": 13, "name": "邱婷蔚", "alias": "", "party": "民主進步黨", "sex": "女", "born": "69年10月11日", "items": []}, {"code": "ntpc4-14", "no": 14, "name": "王威元", "alias": "", "party": "中國國民黨", "sex": "男", "born": "70年12月26日", "items": [{"kind": "neg", "date": "2026-08-26", "status": "起訴（2026-08 報導時）", "text": "新北地檢署依貪污治罪條例行求賄賂罪嫌起訴王威元，指他以禮盒藏20萬元行賄市場處長，求刑3年以上；王威元否認犯行。", "url": "https://cna.com.tw/news/asoc/202608260218.aspx", "outlet": "中央社", "quote": "新北檢依貪污治罪條例行求賄賂罪嫌起訴，並求刑3年以上", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc4-15", "no": 15, "name": "顏蔚慈", "alias": "", "party": "民主進步黨", "sex": "女", "born": "75年1月5日", "items": []}, {"code": "ntpc4-16", "no": 16, "name": "陳宛毓", "alias": "", "party": "小民參政歐巴桑聯盟", "sex": "女", "born": "77年4月18日", "items": []}, {"code": "ntpc4-17", "no": 17, "name": "蕭告", "alias": "", "party": "無", "sex": "男", "born": "84年10月27日", "items": []}]}, {"id": "ntpc-d5", "short": "第5區", "label": "第5選舉區", "areas": "板橋區", "seats": "9 席（婦女保障 2 席）", "cands": [{"code": "ntpc5-1", "no": 1, "name": "周韋翰", "alias": "", "party": "中國國民黨", "sex": "男", "born": "72年9月29日", "items": []}, {"code": "ntpc5-2", "no": 2, "name": "山田摩衣", "alias": "", "party": "民主進步黨", "sex": "女", "born": "79年1月10日", "items": []}, {"code": "ntpc5-3", "no": 3, "name": "黃淑君", "alias": "", "party": "民主進步黨", "sex": "女", "born": "78年10月3日", "items": []}, {"code": "ntpc5-4", "no": 4, "name": "戴瑋姗", "alias": "", "party": "民主進步黨", "sex": "女", "born": "79年1月23日", "items": []}, {"code": "ntpc5-5", "no": 5, "name": "曾煥嘉", "alias": "", "party": "中國國民黨", "sex": "男", "born": "65年9月10日", "items": [{"kind": "neg", "date": "2023-11-08", "status": "判決確定（緩刑）", "text": "曾煥嘉與父親曾文振被控隱匿凶宅資訊詐貸千萬元，二審判曾煥嘉有期徒刑3月，緩刑2年，全案定讞。", "url": "https://www.setn.com/news/1380151", "outlet": "三立新聞網", "quote": "二審今天判父4月，可科罰金；子3月獲緩刑定讞。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱一致"}, {"kind": "neg", "date": "2026-05-22", "status": "一審判決（未確定；2026-05 報導時）", "text": "曾煥嘉涉以人頭詐領公費助理補助費128萬餘元，新北地院一審判有期徒刑3年、褫奪公權4年；上訴二審審理中，他改口否認貪污。", "url": "https://www.setn.com/news/1842558", "outlet": "三立新聞網", "quote": "判處有期徒刑3年、褫奪公權4年。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc5-6", "no": 6, "name": "林子宇", "alias": "", "party": "台灣民眾黨", "sex": "女", "born": "84年9月6日", "items": []}, {"code": "ntpc5-7", "no": 7, "name": "劉美芳", "alias": "", "party": "中國國民黨", "sex": "女", "born": "67年12月7日", "items": []}, {"code": "ntpc5-8", "no": 8, "name": "林國春", "alias": "", "party": "中國國民黨", "sex": "男", "born": "57年1月8日", "items": []}, {"code": "ntpc5-9", "no": 9, "name": "陳俊諺", "alias": "", "party": "民主進步黨", "sex": "男", "born": "78年9月30日", "items": []}, {"code": "ntpc5-10", "no": 10, "name": "黃淑珍", "alias": "", "party": "司法改革黨", "sex": "女", "born": "54年9月1日", "items": []}, {"code": "ntpc5-11", "no": 11, "name": "鄧凱勛", "alias": "", "party": "中國國民黨", "sex": "男", "born": "83年11月4日", "items": []}, {"code": "ntpc5-12", "no": 12, "name": "李昆穎", "alias": "", "party": "民主進步黨", "sex": "男", "born": "81年5月21日", "items": []}]}, {"id": "ntpc-d6", "short": "第6區", "label": "第6選舉區", "areas": "中和區", "seats": "6 席（婦女保障 1 席）", "cands": [{"code": "ntpc6-1", "no": 1, "name": "邱烽堯", "alias": "", "party": "中國國民黨", "sex": "男", "born": "62年10月3日", "items": [{"kind": "neg", "date": "2026-09-03", "status": "二審判決（未確定；2026-09 報導時）", "text": "中和安樂市場標售圖利案，邱烽堯一審依對主管事務圖利罪判有期徒刑3年6月；高院二審駁回上訴、維持原判，全案可上訴。", "url": "https://www.cna.com.tw/news/asoc/202609030120.aspx", "outlet": "中央社", "quote": "邱烽堯犯後均未坦承，也未繳回犯罪所得，一審分別判刑10年、5年6月及3年6月並無不當；檢方主張量刑過", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc6-2", "no": 2, "name": "林達", "alias": "", "party": "無", "sex": "男", "born": "78年1月6日", "items": []}, {"code": "ntpc6-3", "no": 3, "name": "陳錦錠", "alias": "", "party": "中國國民黨", "sex": "女", "born": "43年11月28日", "items": [{"kind": "neg", "date": "2013-10-01", "status": "緩起訴（2013-10 報導時）", "text": "2013年8月陳錦錠酒後駕車在板橋擦撞機車，造成2人受傷；新北地檢署依公共危險罪給予2年緩起訴，並須支付國庫10萬元。", "url": "https://news.ltn.com.tw/news/society/breakingnews/877989", "outlet": "自由時報", "quote": "陳錦錠酒駕認罪，獲檢方緩起訴處分。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc6-4", "no": 4, "name": "張志豪", "alias": "", "party": "民主進步黨", "sex": "男", "born": "70年8月24日", "items": []}, {"code": "ntpc6-5", "no": 5, "name": "金瑞龍", "alias": "", "party": "中國國民黨", "sex": "男", "born": "58年7月15日", "items": []}, {"code": "ntpc6-6", "no": 6, "name": "陳怡君", "alias": "", "party": "台灣民眾黨", "sex": "女", "born": "72年7月28日", "items": []}, {"code": "ntpc6-7", "no": 7, "name": "游輝宂", "alias": "", "party": "中國國民黨", "sex": "男", "born": "72年2月26日", "items": []}, {"code": "ntpc6-8", "no": 8, "name": "張嘉玲", "alias": "", "party": "民主進步黨", "sex": "女", "born": "64年10月31日", "items": []}, {"code": "ntpc6-9", "no": 9, "name": "張維倩", "alias": "", "party": "民主進步黨", "sex": "女", "born": "74年1月14日", "items": []}]}, {"id": "ntpc-d7", "short": "第7區", "label": "第7選舉區", "areas": "永和區", "seats": "3 席（婦女保障 0 席）", "cands": [{"code": "ntpc7-1", "no": 1, "name": "許昭興", "alias": "", "party": "民主進步黨", "sex": "女", "born": "60年3月6日", "items": []}, {"code": "ntpc7-2", "no": 2, "name": "陳以樂", "alias": "", "party": "中國國民黨", "sex": "男", "born": "80年7月11日", "items": []}, {"code": "ntpc7-3", "no": 3, "name": "蘇昭龍", "alias": "", "party": "無", "sex": "男", "born": "63年8月2日", "items": []}, {"code": "ntpc7-4", "no": 4, "name": "羅文崇", "alias": "", "party": "民主進步黨", "sex": "男", "born": "53年7月8日", "items": []}, {"code": "ntpc7-5", "no": 5, "name": "陳鴻源", "alias": "", "party": "中國國民黨", "sex": "男", "born": "56年4月21日", "items": []}]}, {"id": "ntpc-d8", "short": "第8區", "label": "第8選舉區", "areas": "樹林區、鶯歌區、土城區、三峽區", "seats": "9 席（婦女保障 2 席）", "cands": [{"code": "ntpc8-1", "no": 1, "name": "彭一書", "alias": "", "party": "民主進步黨", "sex": "男", "born": "70年10月28日", "items": []}, {"code": "ntpc8-2", "no": 2, "name": "呂家愷", "alias": "", "party": "中國國民黨", "sex": "男", "born": "78年9月2日", "items": []}, {"code": "ntpc8-3", "no": 3, "name": "吳昇翰", "alias": "", "party": "民主進步黨", "sex": "男", "born": "86年1月11日", "items": []}, {"code": "ntpc8-4", "no": 4, "name": "林金結", "alias": "", "party": "中國國民黨", "sex": "男", "born": "57年7月21日", "items": []}, {"code": "ntpc8-5", "no": 5, "name": "黃永昌", "alias": "", "party": "中國國民黨", "sex": "男", "born": "51年12月6日", "items": [{"kind": "neg", "date": "2025-02-27", "status": "二審判決（被告不得上訴；2025-02）", "text": "檢方指控黃永昌以親友名義詐領助理費；高院認定不構成貪污，判使公務員登載不實罪有期徒刑1年、緩刑3年。判決書（113年度上訴字第1784號）載被告不得上訴。", "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C113%2C上訴%2C1784%2C20250227%2C1", "outlet": "司法院裁判書", "quote": "被告3人均不得上訴。", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}, {"kind": "neg", "date": "2026-10-08", "status": "偵查中（2026-10 報導時）", "text": "黃永昌涉嫌發放關廟麵賄選，新北地院裁定100萬元交保、限制出境出海8月；他回應尊重調查，稱文宣及競選小物皆未超過30元。", "url": "https://news.ltn.com.tw/news/politics/breakingnews/5600438", "outlet": "自由時報", "quote": "新北地院今午裁定黃永昌100萬元交保、限制出境出海8月，並命他不得與證人有直接或間接接觸往來", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc8-6", "no": 6, "name": "高乃芸", "alias": "", "party": "民主進步黨", "sex": "女", "born": "82年4月15日", "items": []}, {"code": "ntpc8-7", "no": 7, "name": "廖宜琨", "alias": "", "party": "民主進步黨", "sex": "男", "born": "71年7月5日", "items": [{"kind": "neg", "date": "2026-10-29", "status": "偵查中（2026-10 報導時）", "text": "廖宜琨涉嫌以免費磨菜刀服務及請客吃飯賄選，檢方訊後向法院聲請羈押禁見。", "url": "https://udn.com/news/story/6656/9844185", "outlet": "聯合報", "quote": "民進黨新北市二連霸議員廖宜琨，涉嫌以提供選區多個社區選民免費「磨菜刀」服務", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc8-8", "no": 8, "name": "洪佳君", "alias": "", "party": "中國國民黨", "sex": "女", "born": "66年6月28日", "items": []}, {"code": "ntpc8-9", "no": 9, "name": "卓冠廷", "alias": "", "party": "民主進步黨", "sex": "男", "born": "75年4月10日", "items": []}, {"code": "ntpc8-10", "no": 10, "name": "蘇泓欽", "alias": "", "party": "無", "sex": "男", "born": "68年3月7日", "items": []}, {"code": "ntpc8-11", "no": 11, "name": "陳膺涵", "alias": "", "party": "愛民黨", "sex": "女", "born": "55年7月21日", "items": []}, {"code": "ntpc8-12", "no": 12, "name": "吳亞倫", "alias": "", "party": "台灣民眾黨", "sex": "女", "born": "65年12月9日", "items": []}]}, {"id": "ntpc-d9", "short": "第9區", "label": "第9選舉區", "areas": "新店區、深坑區、石碇區、坪林區、烏來區", "seats": "5 席（婦女保障 1 席）", "cands": [{"code": "ntpc9-1", "no": 1, "name": "黃心華", "alias": "", "party": "中國國民黨", "sex": "男", "born": "65年6月2日", "items": []}, {"code": "ntpc9-2", "no": 2, "name": "張柏詠", "alias": "", "party": "無", "sex": "男", "born": "84年8月1日", "items": []}, {"code": "ntpc9-3", "no": 3, "name": "游皓麟", "alias": "", "party": "中國國民黨", "sex": "男", "born": "80年2月6日", "items": []}, {"code": "ntpc9-4", "no": 4, "name": "劉哲彰", "alias": "", "party": "中國國民黨", "sex": "男", "born": "61年7月7日", "items": []}, {"code": "ntpc9-5", "no": 5, "name": "陳韋任", "alias": "", "party": "民主進步黨", "sex": "男", "born": "86年9月15日", "items": []}, {"code": "ntpc9-6", "no": 6, "name": "陳儀君", "alias": "", "party": "中國國民黨", "sex": "女", "born": "62年7月2日", "items": []}, {"code": "ntpc9-7", "no": 7, "name": "陳乃瑜", "alias": "", "party": "民主進步黨", "sex": "女", "born": "71年2月26日", "items": []}, {"code": "ntpc9-8", "no": 8, "name": "張佑輔", "alias": "", "party": "台灣綠黨", "sex": "男", "born": "66年9月3日", "items": []}, {"code": "ntpc9-9", "no": 9, "name": "邸聖德", "alias": "", "party": "台灣民眾黨", "sex": "男", "born": "65年2月10日", "items": []}]}, {"id": "ntpc-d10", "short": "第10區", "label": "第10選舉區", "areas": "平溪區、瑞芳區、雙溪區、貢寮區", "seats": "1 席（婦女保障 0 席）", "cands": [{"code": "ntpc10-1", "no": 1, "name": "林裔綺", "alias": "", "party": "民主進步黨", "sex": "女", "born": "57年4月26日", "items": []}]}, {"id": "ntpc-d11", "short": "第11區", "label": "第11選舉區", "areas": "金山區、萬里區、汐止區", "seats": "4 席（婦女保障 1 席）", "cands": [{"code": "ntpc11-1", "no": 1, "name": "郭書成", "alias": "", "party": "無", "sex": "男", "born": "81年12月18日", "items": []}, {"code": "ntpc11-2", "no": 2, "name": "何元楷", "alias": "", "party": "中國國民黨", "sex": "男", "born": "84年11月18日", "items": []}, {"code": "ntpc11-3", "no": 3, "name": "張錦豪", "alias": "", "party": "民主進步黨", "sex": "男", "born": "68年10月15日", "items": []}, {"code": "ntpc11-4", "no": 4, "name": "黃瑞傳", "alias": "", "party": "無", "sex": "男", "born": "39年4月7日", "items": []}, {"code": "ntpc11-5", "no": 5, "name": "白珮茹", "alias": "", "party": "中國國民黨", "sex": "女", "born": "64年5月17日", "items": [{"kind": "neg", "date": "2026-09-29", "status": "起訴（2026-09 報導時）", "text": "士林地檢署指白珮茹涉於98年9月至100年3月詐領助理費63萬元，依貪污等罪起訴，求刑8年6月。", "url": "https://cna.com.tw/news/asoc/202609290045.aspx", "outlet": "中央社", "quote": "認白珮茹涉犯貪污治罪條例公務員利用職務上機會詐取財物罪", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc11-6", "no": 6, "name": "蔡美華", "alias": "", "party": "民主進步黨", "sex": "女", "born": "74年4月13日", "items": []}, {"code": "ntpc11-7", "no": 7, "name": "陳語倢", "alias": "", "party": "台灣民眾黨", "sex": "女", "born": "74年11月8日", "items": []}, {"code": "ntpc11-8", "no": 8, "name": "陳竹音", "alias": "", "party": "勞動黨", "sex": "女", "born": "69年11月11日", "items": [{"kind": "neg", "date": "2026-11-19", "status": "偵查中（2026-11 報導時）", "text": "士林地檢署偵辦陳竹音涉嫌違反反滲透法、選罷法、政治獻金法，搜索其住處等處，訊後諭令50萬元交保並限制出境、出海。", "url": "https://news.ltn.com.tw/news/society/breakingnews/5645659", "outlet": "自由時報", "quote": "涉犯反滲透法、公職人員選舉罷免法、政治獻金法", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc11-9", "no": 9, "name": "劉財鑫", "alias": "", "party": "無", "sex": "男", "born": "56年9月25日", "items": [{"kind": "neg", "date": "2020-09-10", "status": "起訴（2016-12）；二審判決（2020-09）", "text": "士林地檢署指劉財鑫（時任新北市議員周雅玲服務處助理）涉與天傑會成員共謀，以選民服務名義恐嚇汐止工地承包商，2016年12月起訴。高院2020年9月二審判決（108年度上訴字第2484號）；刑度與是否確定，本頁未確認。", "url": "https://news.ltn.com.tw/news/society/paper/1063974", "outlet": "自由時報", "quote": "劉財鑫、蘇宗鍰共謀犯案。 請繼續往下閱讀... 檢警表示，洪男等人鎖定當地美容護膚、卡拉OK等八大行", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}]}, {"id": "ntpc-d12", "short": "第12區", "label": "第12選舉區", "areas": "平地原住民", "seats": "4 席（婦女保障 1 席）", "cands": [{"code": "ntpc12-1", "no": 1, "name": "忠仁・達祿斯", "alias": "", "party": "無", "sex": "男", "born": "50年1月27日", "items": [{"kind": "neg", "date": "", "status": "二審判決（被告不得上訴；2021-11）", "text": "2020年立委選舉期間共同預備交付賄賂，臺中高分院2021年11月駁回上訴（110年度原選上訴字第1號）；判決書載被告不得上訴。", "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C110%2C%E5%8E%9F%E9%81%B8%E4%B8%8A%E8%A8%B4%2C1%2C20211124%2C1", "outlet": "司法院裁判書", "quote": "忠仁‧達祿斯 選任辯護人 李永裕律師 陳忠儀律師 彭祐宸律師 上列 上訴人 因被告違反公職人員選舉罷", "review": "線索：台灣前進刑事紀錄圖鑑；查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}, {"kind": "neg", "date": "2026-10-14", "status": "偵查中（2026-10 報導時）", "text": "忠仁・達祿斯涉嫌於2026年3月免費招待選民飲宴賄選，檢方聲押禁見；法院裁定8萬元交保並限制住居。", "url": "https://udn.com/news/story/7321/9818650", "outlet": "聯合報", "quote": "忠仁．達祿斯，2021年因 賄選 遭判刑、解職，今年再度再度參選議員，竟又涉嫌今年3月在樹林某婚宴會", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc12-2", "no": 2, "name": "吳建智", "alias": "咖啡哥", "party": "親民黨", "sex": "男", "born": "71年5月12日", "items": []}, {"code": "ntpc12-3", "no": 3, "name": "楊春妹", "alias": "", "party": "中國國民黨", "sex": "女", "born": "50年2月19日", "items": [{"kind": "neg", "date": "2026-11-05", "status": "起訴（2026-11 報導時）", "text": "楊春妹涉發放洗衣精賄選，經新北地檢署起訴。", "url": "https://www.cna.com.tw/news/asoc/202611050101.aspx", "outlet": "中央社", "quote": "楊春妹發洗衣精涉賄選 新北檢起訴", "review": "查證：來源原文比對；GPT-6.1 Terra、Gemini 4 Neon 審閱，歧見由 Claude Opus 5.5 對照原文裁定"}]}, {"code": "ntpc12-4", "no": 4, "name": "連祐崧", "alias": "", "party": "無", "sex": "男", "born": "52年2月11日", "items": []}, {"code": "ntpc12-5", "no": 5, "name": "宋雨蓁", "alias": "", "party": "無", "sex": "女", "born": "70年7月17日", "items": []}, {"code": "ntpc12-6", "no": 6, "name": "吳國譽", "alias": "", "party": "中國國民黨", "sex": "男", "born": "70年9月14日", "items": []}, {"code": "ntpc12-7", "no": 7, "name": "蘇錦雄", "alias": "Paylang・Caya", "party": "民主進步黨", "sex": "男", "born": "53年2月22日", "items": []}]}, {"id": "ntpc-d13", "short": "第13區", "label": "第13選舉區", "areas": "山地原住民", "seats": "2 席（婦女保障 0 席）", "cands": [{"code": "ntpc13-1", "no": 1, "name": "羅美菁", "alias": "", "party": "無", "sex": "女", "born": "58年3月5日", "items": []}, {"code": "ntpc13-2", "no": 2, "name": "布落・馬信", "alias": "", "party": "民主進步黨", "sex": "男", "born": "70年2月8日", "items": []}, {"code": "ntpc13-3", "no": 3, "name": "王珍珍", "alias": "", "party": "無", "sex": "女", "born": "52年12月24日", "items": []}, {"code": "ntpc13-4", "no": 4, "name": "馬見", "alias": "", "party": "無", "sex": "男", "born": "81年2月25日", "items": []}, {"code": "ntpc13-5", "no": 5, "name": "林啟明", "alias": "", "party": "親民黨", "sex": "男", "born": "51年5月19日", "items": []}, {"code": "ntpc13-6", "no": 6, "name": "何應明", "alias": "", "party": "中國國民黨", "sex": "男", "born": "58年10月12日", "items": []}]}]}, {"id": "tyc", "label": "桃園市", "ready": false, "districts": []}, {"id": "txg", "label": "臺中市", "ready": false, "districts": []}, {"id": "tnn", "label": "臺南市", "ready": false, "districts": []}, {"id": "khh", "label": "高雄市", "ready": false, "districts": []}], "method_md": "## 收錄標準\n\n- **負面紀錄**：刑事案件（判決、起訴、偵查中的搜索或羈押）、賄選與選罷法案件、助理費案件、官方處分（監察院、選委會、陸委會等）、政黨因不當行為開除或停權。只有指控、沒有官方行動也沒有當事人回應的，不收錄。\n- **重大貢獻**：主導並已通過的自治條例或法律、已採行的政策、揭弊後有官方結果、官方或全國性公共服務獎項。例行質詢、選民服務、爭取預算、競選文宣中的自述，不算。\n- 每一項都寫明**法律狀態與日期**。起訴不等於有罪；舊報導的狀態可能已經改變。\n\n## 查證流程\n\n1. 候選人名單、號次、政黨取自中選會選舉公報；各選區應選名額取自中選會 2026-08-20 公告。\n2. 搜尋：Claude Sonnet 5.5 與 Gemini 4 Neon 各自對每位候選人做至少三次具名搜尋；另以[台灣前進「刑事紀錄圖鑑」](https://council2026.taiwangogo.tw/)（資料截至 2026-11-20，CC BY 4.0）的案件作為線索。該站由時代力量代為管理，所以本頁不直接採用它的結論：每一案都回到它引用的判決書或具名報導重新查證。\n3. 程式檢查：來源頁必須能開啟，頁面上必須有候選人姓名，且引用的原文摘句必須一字不差出現在頁面上。社群媒體、論壇、維基百科與內容農場不採用。\n4. 審閱：GPT-6.1 Terra 與 Gemini 4 Neon 各自依來源原文判斷：是否同一人、內容是否有原文支持、法律狀態是否正確、是否重大、用語是否中立。兩者都同意才直接收錄；意見不同時，由 Claude Opus 5.5 對照原文決定收錄、修正或刪除。\n\n## 限制\n\n- 搜尋無法窮盡。**沒有紀錄不代表清白**，也不代表沒有貢獻。\n- 同名同姓可能混淆；本頁只收錄來源中能對應到該候選人身分的項目。\n- 本頁不評分、不排序、不提供投票建議。發現錯誤請來信更正。\n", "signature": "使用者提出題目與收錄標準；Claude Sonnet 5.5 與 Gemini 4 Neon 搜尋；程式比對來源原文；GPT-6.1 Terra 與 Gemini 4 Neon 審閱；Claude Opus 5.5 彙整並裁決歧見。LLM 也會出錯，請以原始來源為準。"}</script>
+<script>
+(function(){
+"use strict";
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+$("#asof").textContent = DATA.asof; $("#asof2").textContent = DATA.asof; $("#sig").textContent = DATA.signature;
+function mdlite(s){ return s.split(/\n\n+/).map(p=>{
+  let h = esc(p).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  if (/^- /.test(p)) return "<ul>"+h.split(/\n/).map(l=>"<li>"+l.replace(/^- /,"")+"</li>").join("")+"</ul>";
+  if (/^## /.test(p)) return "<h3>"+h.slice(3)+"</h3>";
+  return "<p>"+h+"</p>"; }).join(""); }
+$("#methodmd").innerHTML = mdlite(DATA.method_md);
+const cities = DATA.cities, byCity = Object.fromEntries(cities.map(c=>[c.id,c]));
+let city = null, dist = null;
+const cityRow = $("#cities"), distRow = $("#dists");
+cities.forEach(c=>{
+  const b = document.createElement("button"); b.type="button"; b.className="race-btn city-btn"; b.dataset.id=c.id;
+  b.innerHTML = esc(c.label)+(c.ready?"":"<small>查證中</small>");
+  if (!c.ready) b.setAttribute("aria-disabled","true");
+  b.onclick = ()=>{ if (c.ready) go(c.id, null); };
+  cityRow.appendChild(b);
+});
+function recHtml(it){
+  const neg = it.kind==="neg";
+  return `<li class="rec ${neg?"bad":"good"}"><span class="ico" aria-hidden="true">${neg?"!":"★"}</span><span class="txt">`+
+    `${it.status&&it.status!=="n/a"?`<span class="st">［${esc(it.status)}］</span>`:""}${esc(it.text)}`+
+    `<span class="src">${esc(it.date)}・<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.outlet||"來源")}</a>・原文：「${esc(it.quote)}」</span>`+
+    `<span class="rv">${esc(it.review)}</span></span></li>`;
+}
+function candHtml(c, d){
+  const neg = c.items.filter(i=>i.kind==="neg"), con = c.items.filter(i=>i.kind==="contrib");
+  return `<li class="cand${neg.length?" has-neg":""}" id="c-${esc(c.code)}"><div class="top"><span class="no">${c.no}</span><span class="nm">${esc(c.name)}</span>`+
+    `${c.alias?`<span class="meta">（${esc(c.alias)}）</span>`:""}<span class="party">${esc(c.party)}</span><span class="meta">${esc(c.sex)}・${esc(c.born)}</span>`+
+    `<span class="tags">${neg.length?`<span class="tag neg">負面紀錄 ${neg.length}</span>`:""}${con.length?`<span class="tag con">重大貢獻 ${con.length}</span>`:""}</span></div>`+
+    (c.items.length?`<ul class="recs">${neg.concat(con).map(recHtml).join("")}</ul>`:`<p class="none">本次查證沒有找到符合標準的重大紀錄。</p>`)+`</li>`;
+}
+function render(){
+  const c = byCity[city], d = c.districts.find(x=>x.id===dist) || c.districts[0]; dist = d.id;
+  cityRow.querySelectorAll(".city-btn").forEach(b=>b.setAttribute("aria-pressed", b.dataset.id===city));
+  distRow.replaceChildren(Object.assign(document.createElement("label"),{textContent:"選區"}));
+  c.districts.forEach(x=>{
+    const b = document.createElement("button"); b.type="button"; b.className="race-btn"; b.setAttribute("aria-pressed", x.id===dist);
+    b.innerHTML = esc(x.short)+`<small>${x.cands.length} 人</small>`; b.onclick = ()=>go(city, x.id); distRow.appendChild(b);
+  });
+  const nNeg = d.cands.filter(x=>x.items.some(i=>i.kind==="neg")).length, nCon = d.cands.filter(x=>x.items.some(i=>i.kind==="contrib")).length;
+  $("#race").innerHTML = `<h2>${esc(c.label)}議員${esc(d.label)}</h2><p class="dsum">${esc(d.areas)}；應選 ${esc(d.seats)}，${d.cands.length} 位候選人。有負面紀錄 ${nNeg} 人，有重大貢獻 ${nCon} 人。依號次排列。</p>`+
+    `<ul class="clist">${d.cands.map(x=>candHtml(x,d)).join("")}</ul>`;
+  const sel = distRow.querySelector('[aria-pressed="true"]'); if (sel) sel.scrollIntoView({block:"nearest",inline:"center"});
+}
+function go(cid, did, card){
+  city = cid; dist = did; render(); store("council-city", city); store("council-dist", dist);
+  history.replaceState(null, "", "#"+dist+(card?"/"+card:""));
+  if (card){ const el = document.getElementById("c-"+card); if (el) el.scrollIntoView({block:"start"}); }
+}
+function fromHash(){
+  const [h, card] = decodeURIComponent(location.hash.slice(1)).split("/");
+  for (const c of cities) if (c.ready){
+    if (c.id===h) return [c.id, null, null];
+    const d = c.districts.find(x=>x.id===h); if (d) return [c.id, d.id, card||null];
+  }
+  const sc = load("council-city"), sd = load("council-dist");
+  if (byCity[sc] && byCity[sc].ready) return [sc, sd, null];
+  return [cities.find(c=>c.ready).id, null, null];
+}
+const [c0, d0, k0] = fromHash(); go(c0, d0, k0);
+window.addEventListener("hashchange", ()=>{ const [c,d,k] = fromHash(); go(c,d,k); });
+/* search */
+const kw = $("#kw"), kwres = $("#kwres"), kwcount = $("#kwcount");
+const ALL = []; cities.filter(c=>c.ready).forEach(c=>c.districts.forEach(d=>d.cands.forEach(x=>ALL.push({c,d,x,
+  hay:[x.name,x.alias||"",x.party,c.label,d.label,d.areas].concat(x.items.map(i=>i.text+" "+i.status)).join(" ")}))));
+kw.addEventListener("input", ()=>{
+  const q = kw.value.trim(); kwres.replaceChildren();
+  if (!q){ kwres.hidden = true; kwcount.textContent = ""; return; }
+  const hits = ALL.filter(a=>a.hay.includes(q)); kwcount.textContent = hits.length+" 筆";
+  hits.slice(0,60).forEach(a=>{ const li = document.createElement("li"); const b = document.createElement("button"); b.type="button";
+    b.textContent = `${a.x.name}（${a.x.party}）${a.c.label}${a.d.label}`+(a.x.items.length?`・紀錄 ${a.x.items.length}`:"");
+    b.onclick = ()=>{ kw.value=""; kwres.hidden=true; kwcount.textContent=""; go(a.c.id, a.d.id, a.x.code); }; li.appendChild(b); kwres.appendChild(li); });
+  kwres.hidden = !hits.length;
+});
+})();
+</script>
