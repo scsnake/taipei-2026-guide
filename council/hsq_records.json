@@ -1,0 +1,312 @@
+[
+ {
+  "code": "hsq3-1",
+  "name": "余筱菁",
+  "kind": "neg",
+  "date": "2020-06-19",
+  "status": "議會停權5天（2020-08 報導時）",
+  "text": "新竹縣議會以19比5表決，決議余筱菁於2020年8月10日至14日停權，不得出席臨時會；議會稱其臉書貼文妨害議會名譽。",
+  "url": "https://news.pts.org.tw/article/483742",
+  "outlet": "公視",
+  "quote": "議會上個月以19:5表決方式，決定將余筱菁8月10日到14日停權",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The excerpt supports the vote and sanction, but says the secretary-general cited the rule; it does not say a discipline committee made the finding."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "文中的綠黨新竹縣議員余筱菁與名單相符。19比5表決停權5天屬議會正式處分。內容與出處一致，用語中性。"
+   }
+  }
+ },
+ {
+  "code": "hsq3-7",
+  "name": "吳菊花",
+  "kind": "neg",
+  "date": "2016-01-26",
+  "status": "當選無效判決確定（2016-01）",
+  "text": "吳菊花因丈夫涉賄選，被提起當選無效之訴；高等法院駁回上訴，判決當選無效確定。她曾稱未買票，並表示法官有誤解。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1586994",
+  "outlet": "自由時報",
+  "quote": "但高等法院昨天仍予以駁回，判決當選無效確定。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the civil election ruling and her response. The text wrongly says her husband bought votes on her behalf as an established fact."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "國民黨湖口鄉議員吳菊花相符。當選無效定讞，其夫行賄經法院認定，她否認，皆有出處。狀態「判決確定（當選無效）」正確。"
+   }
+  }
+ },
+ {
+  "code": "hsq3-9",
+  "name": "何建樺",
+  "kind": "neg",
+  "date": "2026-11-14",
+  "status": "偵查中（10萬元交保；2026-11 報導時）",
+  "text": "新竹地檢署指何建樺與戴姓男子涉嫌以湯鍋拜票，檢方訊後諭知何建樺10萬元交保、限制住居；他否認知情、授權或指示。",
+  "url": "https://udn.com/news/story/6656/9878227",
+  "outlet": "聯合報",
+  "quote": "檢方訊後諭知何建樺10萬元交保、限制住居",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The article reports allegations and release conditions, and includes his denial. State the alleged conduct as the prosecutor’s claim to keep the account neutral."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "原文寫「指稱」，報導用「涉嫌」。偵查階段需標明報導時點，因案件狀態可能已變。其餘事實有出處。"
+   }
+  }
+ },
+ {
+  "code": "hsq9-4",
+  "name": "彭余美玲",
+  "kind": "neg",
+  "date": "2011-05-10",
+  "status": "當選無效判決確定（2011-05）",
+  "text": "第17屆新竹縣議員彭余美玲因選罷法第120條第1項第3款情事，經高等法院民事判決當選無效確定；內政部自2011年5月10日起解除其議員職權。",
+  "url": "https://web.cec.gov.tw/api/file/0b83027d-3775-4985-87e1-b45ed8ddc547.pdf",
+  "outlet": "中央選舉委員會",
+  "quote": "經臺灣高等法院民事判決「當選無效」確定",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The official record supports the final civil judgment and removal from office, but does not establish that the judgment date was May 10; that is the effective date."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "CEC minutes confirm final civil judgment invalidating her 17th Hsinchu County Council election on 2011-05-10 and removal from office."
+   }
+  }
+ },
+ {
+  "code": "hsq9-6",
+  "name": "上官秋燕",
+  "kind": "neg",
+  "date": "2023-09-11",
+  "status": "行政罰鍰；行政訴訟一審敗訴（2023-09 報導時，可上訴）",
+  "text": "上官秋燕經營未經核准的殯葬設施，遭新竹縣府裁處50萬元罰鍰；她提起行政訴訟，一審敗訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202309110234.aspx",
+  "outlet": "中央社",
+  "quote": "遭新竹縣政府開罰50萬元。她不服提告抗罰，法院日前判她敗訴，可上訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies Shangguan, the NT$500,000 fine, and her first-instance administrative-court loss with appeal available."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2023-09 article cannot prove current status; text and status must specify （2023-09 報導時）."
+   }
+  }
+ },
+ {
+  "code": "hsq14-1",
+  "name": "張益生",
+  "kind": "neg",
+  "date": "2024-06-19",
+  "status": "一審判決（2024-06 報導時，可上訴）",
+  "text": "新竹地院依貪污治罪條例收受賄賂罪，判處張益生有期徒刑9年、褫奪公權5年。",
+  "url": "https://www.cna.com.tw/news/asoc/202406190048.aspx",
+  "outlet": "中央社",
+  "quote": "依貪污治罪條例收受賄賂罪重判9年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies Hsinchu County Councilor Chang Yi-sheng and reports the first-instance sentence and appeal availability."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The facts match the article. But a 2024 article cannot prove the current status, so the text needs 「（2024-06 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "hsq3-1",
+  "name": "余筱菁",
+  "kind": "neg",
+  "date": "2021-06-03",
+  "status": "判決確定（二審上易案件，依法不得上訴第三審；2021-06）",
+  "text": "臺灣高等法院判決余筱菁犯散布文字、圖畫誹謗罪，處拘役30日，得以每日新臺幣1,000元易科罰金（110年度上易字第696號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C110%2C上易%2C696%2C20210603%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "余筱菁犯散布文字、圖畫 誹謗罪 ，處 拘役 叁拾日，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The court judgment names Yu, states the conviction and sentence, and says the judgment cannot be appealed."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "被告余筱菁為新竹縣議員。主文為拘役30日、易科罰金。判決末有「不得上訴」，確定成立。刑事有罪屬重大事項。"
+   }
+  }
+ },
+ {
+  "code": "hsq3-9",
+  "name": "何建樺",
+  "kind": "neg",
+  "date": "2025-07-18",
+  "status": "一審協商判決（2025-07；協商判決除例外情形不得上訴）",
+  "text": "何建樺因詐欺取財罪，經認罪協商，新竹地院判處有期徒刑1年、緩刑3年；判決載明犯罪所得已返還告訴人（113年度易字第1182號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=SCDM%2C113%2C易%2C1182%2C20250718%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "何建樺犯詐欺取財罪，處 有期徒刑 壹年。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the conviction, sentence, suspended sentence, and repayment, but says appeals are barred only with specified exceptions, not that finality is established."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄證實判刑1年、緩刑3年，但未載確定，只寫「除例外不得上訴」。原文漏協商判決與緩刑。"
+   }
+  }
+ },
+ {
+  "code": "hsq9-2",
+  "name": "林昭錡",
+  "kind": "neg",
+  "date": "2017-10-02",
+  "status": "簡易判決（2017-10；是否確定未查得）",
+  "text": "新竹地院判決林昭錡犯侮辱公務員罪及酒駕公共危險罪（累犯），各處有期徒刑4月，應執行6月，均得易科罰金（106年度竹交簡字第668號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=SCDM%2C106%2C竹交簡%2C668%2C20171002%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "林昭錡犯 侮辱公務員罪 ， 累犯 ，處 有期徒刑 肆月，如 易科 罰金 ， 以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment excerpt supports both offenses, repeat-offender findings, individual sentences, and the combined six-month sentence. Status correctly says finality is unconfirmed."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2017-10 summary judgment is appealable and cannot prove current status; text also exceeded 120 characters."
+   }
+  }
+ },
+ {
+  "code": "hsq13-3",
+  "name": "林世偉",
+  "kind": "neg",
+  "date": "2025-08-27",
+  "status": "二審判決（2025-08；是否確定未查得）",
+  "text": "臺灣高等法院花蓮分院駁回林世偉上訴，維持違反性騷擾防治法之性騷擾罪有期徒刑4月，得易科罰金；強制猥褻部分原審不另為無罪（114年度原侵上訴字第1號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLHM%2C114%2C%E5%8E%9F%E4%BE%B5%E4%B8%8A%E8%A8%B4%2C1%2C20250827%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "林世偉〈下稱被告〉被訴 強制猥褻 部分)，未據檢察官上訴(見本院卷第68、129、130頁)，依刑事",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt confirms the conviction and sentence, but gives no city, district, or other detail linking this defendant to the listed council candidate."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not say the judgment is final, so 判決確定 is unproven. Same person is only circumstantial: name, Atayal custom, art exhibition. The omitted 強制猥褻 part was not guilty at first instance."
+   }
+  }
+ }
+]
