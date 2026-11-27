@@ -1,0 +1,481 @@
+[
+ {
+  "code": "chc1-8",
+  "name": "顧勝敏",
+  "kind": "neg",
+  "date": "2026-10-27",
+  "status": "一審判決（未確定；2026-10 報導時）",
+  "text": "顧勝敏任花壇鄉長期間，涉利用清潔隊資源清運私人土地竹木，彰化地院一審依共同犯公務員對主管事務圖利罪判處有期徒刑5年8月、褫奪公權4年，可上訴。",
+  "url": "https://udn.com/news/story/7321/9840429",
+  "outlet": "聯合報",
+  "quote": "顧勝敏與前清潔隊長涉未經申請程序，利用清潔隊資源砍除私有土地竹木並清運，2人分別遭彰院依共同犯公務員",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未明示無償清運；一審狀態須標明報導時間。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "判刑內容有據。「無償」不在摘錄內，應刪。報導已過一個月，上訴情形不明，需加「報導時」。"
+   }
+  }
+ },
+ {
+  "code": "chc1-8",
+  "name": "顧勝敏",
+  "kind": "neg",
+  "date": "2026-06-10",
+  "status": "監察院彈劾（2026-06 公告時；懲戒結果未見）",
+  "text": "監察院通過彈劾案，指顧勝敏任花壇鄉長期間濫用懲戒權違法解僱屬員、構成職場霸凌，並涉嫌動用清潔隊行政資源協助特定私人土地竹木砍除及廢棄物清運，核有重大違失。",
+  "url": "https://www.cy.gov.tw/News_Content.aspx?n=124&sms=8912&s=37547",
+  "outlet": "監察院",
+  "quote": "彰化縣花壇鄉鄉長顧勝敏，恣意濫用懲戒權違法解僱屬員，構成職場霸凌；另涉嫌動用清潔隊行政資源，協助特定私人土地進行竹木砍除及廢棄物清運，核有重大違失，監察院通過王幼玲、王美玉委員所提彈劾案",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未顯示案號、三度解僱或移送，公告日期為6月10日。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄只顯示標題與首段。「3度解僱」「劾字第15號」不在摘錄內，應刪。與 chc-001 同一事件，建議合併。"
+   }
+  }
+ },
+ {
+  "code": "chc1-9",
+  "name": "白玉如",
+  "kind": "neg",
+  "date": "2010-09-16",
+  "status": "當選無效判決確定（2010-09）",
+  "text": "2009年彰化縣議員選舉，胞姊白明麗涉嫌替白玉如賄選，彰化地檢署提起當選無效之訴，台中高分院判決當選無效定讞；白玉如稱刑事部分沒事，無法接受判決。",
+  "url": "https://news.ltn.com.tw/news/politics/paper/428402",
+  "outlet": "自由時報",
+  "quote": "白玉如因胞姊白明麗涉嫌替她賄選，遭彰化地檢署向法院提出當選無效之訴，台中高分院昨判她當選無效定讞。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未證明胞姊2011年刑事判決，解職當時尚待收到判決書。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "「胞姊2011年二審改判無罪」不在摘錄內，應刪。其餘有據，當選無效屬官方處分。"
+   }
+  }
+ },
+ {
+  "code": "chc1-11",
+  "name": "林世賢",
+  "kind": "neg",
+  "date": "2022-05-18",
+  "status": "判決確定（2022-05 報導時）",
+  "text": "林世賢2019年11月在造勢場合稱「彰化縣縣長貪污最嚴重的就是卓伯源」，遭卓伯源提告；刑事依誹謗罪判處有期徒刑4月、得易科罰金定讞，民事二審判賠100萬元確定。",
+  "url": "https://www.cna.com.tw/news/asoc/202205180299.aspx",
+  "outlet": "中央社",
+  "quote": "林世賢4月徒刑、得易科罰金定讞；民事部分，卓伯源提告求償100萬元，經彰化地院審理後，去年9月判決，林世賢應給付100萬元。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄支持刑事與民事判決結果及確定狀態。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "事實與狀態正確。原文引號內措辭與報導不同，須改為原話。已含 chc-029 的刑事判決。"
+   }
+  }
+ },
+ {
+  "code": "chc3-3",
+  "name": "柯振杯",
+  "kind": "neg",
+  "date": "2017-12-07",
+  "status": "判決確定（2017-12）",
+  "text": "柯振杯2017年第3度酒駕肇事，台中高分院駁回上訴，維持有期徒刑7月、併科罰金6萬元，全案確定；報導稱其將遭解職入監。",
+  "url": "https://www.cna.com.tw/news/asoc/201712080317.aspx",
+  "outlet": "中央社",
+  "quote": "柯振杯5月酒駕肇事，彰化地方法院判處7個月徒刑，併科罰金新台幣6萬元，他主張肇事後有自首，上訴爭取減",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未證明不得易科罰金或全台首例；報導時解職及入監尚未發生。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt supports 3rd DUI, 7 months, NT$60,000 fine, final. It does not say 不得易科罰金, 'first in Taiwan', or that he served time. Remove those claims."
+   }
+  }
+ },
+ {
+  "code": "chc4-3",
+  "name": "陳秋蓉",
+  "kind": "neg",
+  "date": "2018-07-05",
+  "status": "緩起訴（2018-07 報導時）",
+  "text": "陳秋蓉任彰化縣議員時虛報林姓女子為公費助理，但將薪資發給實際聘請的助理；檢方認涉偽造文書及使公務員登載不實罪，予緩起訴，須向公庫支付100萬元。陳秋蓉稱沒中飽私囊，因不清楚制度才弄錯。",
+  "url": "https://www.cna.com.tw/news/asoc/201807050287.aspx",
+  "outlet": "中央社",
+  "quote": "陳秋蓉、溪湖鎮長楊福建獲檢方緩起訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "未中飽私囊是陳的說法，非檢方認定；須標明報導時間。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "「檢方認定未中飽私囊」文中沒有，是本人說法。緩起訴為2018年報導時的狀態，需加註。"
+   }
+  }
+ },
+ {
+  "code": "chc4-6",
+  "name": "賴澤民",
+  "kind": "neg",
+  "date": "2024-04-30",
+  "status": "二審判決（2024-04 報導時）",
+  "text": "2022年選舉期間，賴澤民指控員林市長候選人游振雄使用公家資源及向廠商詐騙；一審依選罷法傳播不實罪判處有期徒刑3月、緩刑2年、褫奪公權1年，台中高分院二審駁回上訴。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/4657717",
+  "outlet": "自由時報",
+  "quote": "賴澤民助選指控游振雄挨告 二審仍判緩刑2年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "二審駁回上訴獲支持，但摘錄未說明判決是否確定；須標明報導時間。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "內容有據。原文有錯字「候選手」。二審後仍可上訴，需加註「報導時」。"
+   }
+  }
+ },
+ {
+  "code": "chc4-9",
+  "name": "黃正盛",
+  "kind": "neg",
+  "date": "2010-11-30",
+  "status": "當選無效判決確定（2010-11）",
+  "text": "2009年彰化縣議員選舉，多名樁腳涉替黃正盛買票，同選區落選人提起當選無效之訴；台中高分院判決當選無效確定，須解職。黃正盛稱判決不公平。",
+  "url": "https://news.ltn.com.tw/news/focus/paper/448281",
+  "outlet": "自由時報",
+  "quote": "台中高分院判決當選無效定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄稱須解職，未證實報導時已解職；報導日期為2010-12-01。"
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "報導載2010-11-30台中高分院判決當選無效定讞，同選區落選人葉麗娟提告，樁腳涉賄。黃正盛未列被告。文字中性。"
+   }
+  }
+ },
+ {
+  "code": "chc5-1",
+  "name": "許文萍",
+  "kind": "contrib",
+  "date": "2021-01-01",
+  "status": "n/a",
+  "text": "許文萍任埔鹽鄉長時，鄉公所自2021年1月起發放每位產婦6,000元坐月子津貼；許文萍表示所需預算200萬元已經鄉民代表會通過。",
+  "url": "https://news.ltn.com.tw/news/life/paper/1428829",
+  "outlet": "自由時報",
+  "quote": "許文萍表示，鄉公所為鼓勵青年人口留下與生產，撙節並省下200萬元，希望讓鄉民幸福有感。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "報導支持預算通過及津貼發放，但未證實自治條例或1月1日施行。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Article supports the 6,000 allowance from Jan 2021 and council-approved NT$2M budget. It does not mention an ordinance (自治條例) or its name or the 'led' role, so the text overstates. Keep as a policy adopted under the mayor."
+   }
+  }
+ },
+ {
+  "code": "chc5-2",
+  "name": "黃佳惠",
+  "kind": "neg",
+  "date": "2026-10-30",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "彰化地檢署偵辦議長謝典霖涉以公帑辦餐會輔選案，國民黨議員參選人黃佳惠以10萬元交保；報導未載明黃佳惠的具體罪名。",
+  "url": "https://news.ltn.com.tw/news/society/paper/1776435",
+  "outlet": "自由時報",
+  "quote": "黃佳惠與陳玉姬各十萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "報導未指明黃佳惠的具體罪名、複訊或交保日期，也未提供她的回應。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt dated 2026-10-30, not Sept. It says only that she posted 100k bail in a bribery/corruption probe. No specific charge (投票行賄) is stated, and 'after re-questioning' is unsupported. Status must carry the report date."
+   }
+  }
+ },
+ {
+  "code": "chc6-5",
+  "name": "許書維",
+  "kind": "neg",
+  "date": "2023-11-01",
+  "status": "罰鍰處分確定（監察院公報廉政專刊第319期）",
+  "text": "許書維申報2023年11月1日財產時，未據實申報配偶存款6筆，監察院認定為故意申報不實，處罰鍰10萬元。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=81444",
+  "outlet": "監察院",
+  "quote": "許書維 彰化縣議會 議員 實申報配偶存款6筆。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄指申報基準日為2023年11月1日，未證明當日辦理申報。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The list supports the fact and fine. But the date 2023-11-01 is the declaration date, not the decision. The excerpt says 'determined 114/12/29' (column dates are ambiguous but fit)."
+   }
+  }
+ },
+ {
+  "code": "chc7-2",
+  "name": "江熊一楓",
+  "kind": "neg",
+  "date": "2026-10-14",
+  "status": "一審判決（未確定；2026-10 判決時）",
+  "text": "彰化地院一審認定江熊一楓任第17至19屆縣議員期間，以人頭公費助理等方式詐領補助費等775萬餘元，判處應執行有期徒刑4年6月。",
+  "url": "https://www.judicial.gov.tw/tw/dl-276452-1d8b305b75f1455983299a52702a9188.html",
+  "outlet": "臺灣彰化地方法院",
+  "quote": "江熊一楓應執行有期徒刑 4 年 6 月；其餘 4 名被告 分別判處有期徒刑 1 年 9 月至 2 年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "775萬餘元包含春節慰勞金；摘錄未載褫奪公權4年或可上訴。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "「褫奪公權4年」和「可上訴」不在摘錄中，已刪除。判決是10月14日的，現在的確定狀態未知，所以要加時間。"
+   }
+  }
+ },
+ {
+  "code": "chc7-3",
+  "name": "謝典霖",
+  "kind": "neg",
+  "date": "2026-11-12",
+  "status": "偵查中（羈押中；2026-11 報導時）",
+  "text": "彰化地檢署指謝典霖涉期約賄選及巧立名目詐取公款私用，2026年9月聲請羈押獲准；彰化地院11月12日裁定自11月17日起延長羈押2月並禁止接見通信，家屬決定提起抗告。",
+  "url": "https://udn.com/news/story/7321/9873407",
+  "outlet": "聯合報",
+  "quote": "謝典霖涉貪汙遭羈押 彰地院今裁定延押兩個月 2026-11-12 09:48 聯合報／ 記者 簡慧珍",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未提公款餐敘助選、具體法條或已提抗告；後續狀態未明。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "文中沒有「以議會公款舉辦餐敘」。家屬是「決定提起抗告」，不是「已提抗告」。「貪污罪嫌」改成文中的說法。"
+   }
+  }
+ },
+ {
+  "code": "chc1-10",
+  "name": "李成濟",
+  "kind": "neg",
+  "date": "2023-05-16",
+  "status": "判決確定（2023-05；最重本刑3年以下，依刑事訴訟法第376條不得上訴第三審）",
+  "text": "李成濟任花壇鄉長時處理耕地三七五租約案，批示將地主個人資料文件交給承租人，彰化地院一審依公務員洩密罪判處有期徒刑3月；台中高分院2023年5月駁回上訴。李成濟稱依職權處理，否認犯行。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C112%2C上易%2C160%2C20230516%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "李成濟於民國104年擔任彰化縣花壇鄉鄉長 期間 ，負責綜理鄉務，為依法令服務於地方自治團體所屬機關而具有法定職務權限之公務員。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未顯示原審刑度、易科罰金條件或確定狀態。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄只見「上訴駁回」與事實。刑度、易科金額與「確定」不在摘錄內，故改寫。原 text 是罪名標籤，不夠中立完整。"
+   }
+  }
+ },
+ {
+  "code": "chc2-2",
+  "name": "凃淑媚",
+  "kind": "neg",
+  "date": "2019-10-17",
+  "status": "二審判決（2019-10 判決時）",
+  "text": "凃淑媚涉以人頭申報議員助理，彰化地院一審依使公務員登載不實罪判處應執行有期徒刑2年、緩刑5年，並應向公庫支付200萬元；檢察官上訴，台中高分院判決上訴駁回。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C108%2C上訴%2C1681%2C20191017%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "凃淑媚助理及領取薪資， 竟與凃淑媚共同基於使公務員登載不實之 犯意聯絡 ，由何美 惠提供其不知情之子",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未顯示刑度、7罪、刑法條號或凃淑媚的判決已確定。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "節錄只顯示主文「上訴駁回」。刑度與罪數、以及「確定」都不在此頁節錄中，故刪去，狀態改為二審駁回上訴。"
+   }
+  }
+ },
+ {
+  "code": "chc5-4",
+  "name": "陳玉姫",
+  "kind": "neg",
+  "date": "2026-10-30",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "彰化地檢署偵辦議長謝典霖涉以公帑辦餐會輔選案，國民黨議員參選人陳玉姬以10萬元交保；報導未載明陳玉姬的具體罪名。",
+  "url": "https://news.ltn.com.tw/news/society/paper/1776435",
+  "outlet": "自由時報",
+  "quote": "黃佳惠與陳玉姬各十萬元交保。",
+  "lead": "",
+  "decided": "added",
+  "review": {}
+ }
+]
