@@ -1,0 +1,684 @@
+[
+ {
+  "code": "tyc1-11",
+  "name": "詹江村",
+  "kind": "neg",
+  "date": "2021-10-27",
+  "status": "判決確定（2021-10）",
+  "text": "詹江村在直播中指稱陳柏惟「賺紅錢」，被依誹謗罪判處拘役80日，二審駁回上訴確定。",
+  "url": "https://www.cna.com.tw/news/asoc/202110270036.aspx",
+  "outlet": "中央社",
+  "quote": "二審今天駁回上訴，全案確定。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄載明誹謗罪、拘役80日及二審確定。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt identifies Taoyuan councilor Chan Chiang-tsun and confirms final 80-day detention sentence for defamation."
+   }
+  }
+ },
+ {
+  "code": "tyc1-14",
+  "name": "佀廣洋",
+  "kind": "neg",
+  "date": "2026-10-30",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "桃園地檢署偵辦佀廣洋涉嫌賄選，2026年10月29日搜索、傳喚後諭知12萬元交保。",
+  "url": "https://cna.com.tw/news/asoc/202610300057.aspx",
+  "outlet": "中央社",
+  "quote": "公職人員選舉罷免法對於有投票權之人行求賄賂罪嫌",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "須標明報導時間；摘錄未載佀廣洋對此案的回應。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts are supported, but text omits the year and states '仍在偵查中' without qualifying the reporting date."
+   }
+  }
+ },
+ {
+  "code": "tyc2-6",
+  "name": "周曉芸",
+  "kind": "neg",
+  "date": "2026-11-11",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "新北地檢署以涉反滲透法等罪嫌約談周曉芸，諭知50萬元交保；周曉芸否認，稱從未接受境外勢力的指示、委託或資助。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5636936",
+  "outlet": "自由時報",
+  "quote": "涉嫌收受中資介選，遭新北地檢署依反滲透法等罪嫌約談，並以50萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The article cannot establish the case’s status at election time."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt supports identity, Anti-Infiltration Act investigation with NT$500k bail, and candidate's denial."
+   }
+  }
+ },
+ {
+  "code": "tyc3-3",
+  "name": "段林淑婷",
+  "kind": "neg",
+  "date": "2026-11-06",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "段林淑婷與丈夫段樹文涉嫌賄選，被桃園地檢署傳喚後，兩人分別以50萬元、30萬元交保；段樹文表示夫妻均未出資，並配合調查。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5631536",
+  "outlet": "自由時報",
+  "quote": "涉嫌賄選被桃園地檢署傳喚後，分別以50、30萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持所述事實，但未標明法律狀態的時間點。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt matches candidate and supports all facts, bail amount, response, and investigation status."
+   }
+  }
+ },
+ {
+  "code": "tyc5-1",
+  "name": "游吾和",
+  "kind": "neg",
+  "date": "2025-11-18",
+  "status": "起訴（2025-11 報導時）",
+  "text": "桃園地檢署2025年11月起訴游吾和，指他任市議員期間與女兒虛報助理薪資、詐領助理費，涉貪污治罪條例等罪，聲請沒收犯罪所得356萬餘元。",
+  "url": "https://news.pts.org.tw/article/781765",
+  "outlet": "公視",
+  "quote": "詐領助理補助費案於今日偵結起訴，並向法院申請沒收犯罪所得356萬餘元",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導證實起訴，但未證實目前一審審理中或尚未判決。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2025-11 article cannot prove current trial status; status and text must note （2025-11 報導時）."
+   }
+  }
+ },
+ {
+  "code": "tyc8-1",
+  "name": "舒翠玲",
+  "kind": "neg",
+  "date": "2025-08-21",
+  "status": "一審判決（2025-08 報導時，未確定）",
+  "text": "桃園地院審理舒翠玲與丈夫涉不實申報助理費案，2025年8月依使公務員登載不實罪各判有期徒刑1年、緩刑3年，並須向公庫支付50萬元。",
+  "url": "https://www.cna.com.tw/news/asoc/202508210271.aspx",
+  "outlet": "中央社",
+  "quote": "判處舒翠玲夫妻皆有期徒刑1年、緩刑3年，可上訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "一審結果有來源支持，但須註明報導時間，不能視為目前狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Article is from 2025-08 and cannot prove current status; text must add （2025-08 報導時）."
+   }
+  }
+ },
+ {
+  "code": "tyc14-6",
+  "name": "陳瑛",
+  "kind": "neg",
+  "date": "2024-02-22",
+  "status": "偵查中（2024-02 報導時）",
+  "text": "桃園地檢署2024年2月搜索陳瑛辦公室，並依貪污治罪條例罪嫌約談她，複訊後無保請回。",
+  "url": "https://news.tvbs.com.tw/politics/2402922",
+  "outlet": "TVBS",
+  "quote": "經檢方複訊後，陳瑛無保請回，簡志偉於今日凌晨3時許諭令20萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄無法證明目前是否有起訴報導，亦不能證明目前狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "「目前未見起訴報導」無摘錄支持，且2024年2月報導須標註「（2024-02 報導時）」。"
+   }
+  }
+ },
+ {
+  "code": "tyc1-10",
+  "name": "黃家齊",
+  "kind": "neg",
+  "date": "2022-04-11",
+  "status": "罰鍰確定（2022-04）",
+  "text": "監察院認定黃家齊作為2018年桃園市議員擬參選人，未依規定按日逐筆記載政治獻金，屬故意不實申報，裁處罰鍰新臺幣12萬元，2022年4月確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=64491",
+  "outlet": "監察院",
+  "quote": "黃家齊 H123****** 黃家齊政 式申報，違反本法第 21 條第 1 12 萬元 月 月 治獻金專 項規定故意為不實申報。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄記載故意申報不實；未確認違規行為發生於競選期間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Control Yuan bulletin confirms 2018 Taoyuan councilor candidate Huang Chia-chi was fined NT$120,000, finalized 2022-04-11."
+   }
+  }
+ },
+ {
+  "code": "tyc1-17",
+  "name": "黃婉如",
+  "kind": "neg",
+  "date": "2019-11-20",
+  "status": "一審判決（2019-11 報導時）",
+  "text": "黃婉如於2018年國慶升旗典禮阻擋警方驅離抗議民眾並與員警發生肢體衝突，桃園地院2019年11月依妨害公務罪判處有期徒刑4月、得易科罰金。",
+  "url": "https://www.cna.com.tw/news/asoc/201911200157.aspx",
+  "outlet": "中央社",
+  "quote": "依妨害公務罪判處有期徒刑4個月，得易科罰金",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "須標明報導時間，並呈現黃婉如的否認。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2019 article cannot prove current status; text must qualify with '（2019-11 報導時）'."
+   }
+  }
+ },
+ {
+  "code": "tyc1-18",
+  "name": "朱永煇",
+  "kind": "neg",
+  "date": "2026-03-01",
+  "status": "起訴（2026-03 報導時）",
+  "text": "桃園地檢署2026年3月依違反律師法起訴朱永煇等3人，指他無律師資格卻成立集團兼營多間法律事務所並招攬訴訟，具體求刑1年。",
+  "url": "https://www.setn.com/news/1813650",
+  "outlet": "三立新聞",
+  "quote": "朱永煇還計畫參選議員。（圖／翻攝自臉書） 桃園一名53歲男子朱永煇與42歲王姓女子明明沒有律師執照，",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未載查扣金額及房產；須加入回應和報導時間。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not mention seized cash of NT$17.13M or 11 properties, and older 2026-03 article needs reporting-date qualification."
+   }
+  }
+ },
+ {
+  "code": "tyc2-4",
+  "name": "孫韻璇",
+  "kind": "neg",
+  "date": "2026-07-30",
+  "status": "二審判決（2026-07 報導時，未確定）",
+  "text": "孫韻璇與丈夫前市議員李雲強被控以人頭詐領公費助理補助款，臺灣高等法院2026年7月二審駁回上訴，依貪污治罪條例判處孫韻璇有期徒刑8年；孫韻璇表示遺憾、研議上訴。",
+  "url": "https://udn.com/news/story/7321/9660615",
+  "outlet": "聯合報",
+  "quote": "孫韻璇身為李雲強的配偶，並受聘於李擔任公費助理，明知李雲強不法作為，竟沒有思考制止，而是與 丈夫 共同犯罪。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Add her response and limit the legal status to the report date."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt supports identity, second-instance conviction upholding 8-year sentence, and appealability."
+   }
+  }
+ },
+ {
+  "code": "tyc2-7",
+  "name": "林明義",
+  "kind": "neg",
+  "date": "2026-10-29",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "桃園地檢署指林明義涉挪用壽山巖觀音寺公款招待龜山區里長赴澎湖旅遊，依選罷法等罪嫌聲押禁見。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5622283",
+  "outlet": "自由時報",
+  "quote": "免費澎湖3日遊惹議 林明義涉招待澎湖旅遊遭聲押",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt does not report bail, his response, or 公益侵占. It supports the detention request and investigation."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt does not mention NT$160k bail, 林明義's statement, or 公益侵占; it only reports detention request and 刑法侵占."
+   }
+  }
+ },
+ {
+  "code": "tyc3-8",
+  "name": "朱珍瑤",
+  "kind": "neg",
+  "date": "2026-10-15",
+  "status": "一審判決（2026-10 報導時，未確定）",
+  "text": "朱珍瑤被控自2018年12月起以親友掛名詐領公費助理補助費17萬餘元，桃園地院2026年10月一審依貪污治罪條例判處有期徒刑8年、褫奪公權5年；朱珍瑤表示將上訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202610150221.aspx",
+  "outlet": "中央社",
+  "quote": "判處朱珍瑤有期徒刑8年、褫奪公權5年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄指掛名期間自2018年12月起，並非整個2018至2019年；須標明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt matches candidate and supports all facts, dates, sentence, appeal statement, and first-instance status."
+   }
+  }
+ },
+ {
+  "code": "tyc4-1",
+  "name": "郭麗華",
+  "kind": "neg",
+  "date": "2025-09-30",
+  "status": "一審判決（2025-09 報導時，未確定）",
+  "text": "郭麗華被控於2023年總統連署期間透過助理以每份300元收購連署書，桃園地院2025年9月依總統副總統選舉罷免法判處有期徒刑3年10月、併科罰金300萬元、褫奪公權5年；她否認犯行。",
+  "url": "https://www.cna.com.tw/news/asoc/202509300212.aspx",
+  "outlet": "中央社",
+  "quote": "判處郭麗華有期徒刑3年10月，併科罰金新台幣300萬元，褫奪公權5年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持一審判決及可上訴，但不能證明目前狀態；應補報導時間及郭的否認。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts are supported, but the 2025-09 article cannot prove current status; must add （2025-09 報導時）."
+   }
+  }
+ },
+ {
+  "code": "tyc4-5",
+  "name": "劉勝全",
+  "kind": "neg",
+  "date": "2023-05-11",
+  "status": "起訴（2023-05 報導時）",
+  "text": "桃園地檢署2023年5月指劉勝全（時任民進黨籍市議員）利用議員補助款介入蘆竹區國小冷氣等標案，收取回扣約141萬7500元，依貪污治罪條例起訴；檢方稱他僅坦承部分犯行。",
+  "url": "https://www.cna.com.tw/news/asoc/202305110086.aspx",
+  "outlet": "中央社",
+  "quote": "劉勝全及賴長泓，以給付議員補助款15%、新台幣75萬元的金額，作為劉勝全簽發議員補助款同意書的賄款，",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "應補報導時間，並加入摘錄所載的部分坦承；起訴罪名以摘錄用語表述。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts are supported, but the 2023-05 article cannot prove current status; must add （2023-05 報導時）."
+   }
+  }
+ },
+ {
+  "code": "tyc7-7",
+  "name": "劉曾玉春",
+  "kind": "neg",
+  "date": "2025-01-02",
+  "status": "裁罰確定",
+  "text": "明知其子土地納入中壢龍岡地區都市計畫變更案，仍以議員身分參與市府都發局研商會議並溝通，遭監察院依違反公職人員利益衝突迴避法第12條處罰鍰30萬元（2025年2月5日確定）。",
+  "url": "https://www-ws.cy.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvMS9yZWxmaWxlLzg4NjAvMzQxMTkvNzdmOTFlYzgtYTdlZi00NzI3LWFjOTMtOWJhN2RkZWU2NGVmLnBkZg%3D%3D&n=572w6Y2w6JmV5YiG56K65a6a5ZCN5ZauKDExNOW5tDHmnIgtM%2BaciCkucGRm",
+  "outlet": "監察院",
+  "quote": "劉曾玉春 桃園市議會 議員 30 萬元 關人員溝通，期望儘速促成其 月 月 子所有土地之使用分區變更",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "監察院確定名單支持處分事實、金額與確定日期。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Control Yuan final fine list matches candidate, role, facts, law article, 300k NTD amount, and 2025-02-05 finality date."
+   }
+  }
+ },
+ {
+  "code": "tyc8-4",
+  "name": "羅文欽",
+  "kind": "neg",
+  "date": "2015-12-26",
+  "status": "判決確定（2015-12）",
+  "text": "羅文欽2014年2月在平鎮酒店遇警方臨檢時辱罵員警並拉扯其衣領、槍袋，因辱警案被判有期徒刑8月定讞，2015年12月入監服刑。",
+  "url": "https://news.ltn.com.tw/news/society/paper/943789",
+  "outlet": "自由時報",
+  "quote": "羅文欽遭民進黨開除黨籍、市議員落選、判刑、參選立委失格、最後入獄服刑，一連串衰事上身，可說皆因辱警。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄記載拉扯衣領及槍袋，未記載推打；所附日期也與報導日期不符。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt states 拉扯許的衣領、槍袋 rather than 推打; adjusted wording to match excerpt."
+   }
+  }
+ },
+ {
+  "code": "tyc9-2",
+  "name": "鄭淑方",
+  "kind": "neg",
+  "date": "2016-04-11",
+  "status": "罰鍰確定（2016-04）",
+  "text": "鄭淑方任桃園縣楊梅市民代表時，申報財產未據實申報存款、保險及配偶事業投資，監察院認定故意申報不實，裁處罰鍰新臺幣12萬元確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=45181",
+  "outlet": "監察院",
+  "quote": "未據實申報本人存款2筆、本人為要保人之保險3筆及配偶事業投資1筆",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄支持處分確定，但未列出裁處所依法律名稱。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "監察院廉政專刊明確記載楊梅市民代表鄭淑方故意申報財產不實，遭裁處12萬元罰鍰確定，事實與狀態均相符。"
+   }
+  }
+ },
+ {
+  "code": "tyc9-4",
+  "name": "古振豐",
+  "kind": "neg",
+  "date": "2026-11-20",
+  "status": "判決確定、已服刑（本人聲明）",
+  "text": "2026年11月媒體報導，古振豐約20多年前服兵役期間與未滿16歲少女發生性行為。古振豐發布聲明坦承合意性行為且已服刑完畢，並出示高等軍事法院判決書，稱使人施用毒品及過失致死部分均獲判無罪確定。",
+  "url": "https://www.setn.com/news/1942259",
+  "outlet": "三立新聞網",
+  "quote": "古振豐發布聲明坦承合意性行為且已服刑完畢，但嚴正否認餵毒及殺人指控",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未證實性交發生於2002年，也未明確確認該罪的判決確定；無罪結果須歸屬於本人說法。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "報導摘錄僅稱「20多年前」，未出現「2002年」字樣，應改為依摘錄表述。"
+   }
+  }
+ },
+ {
+  "code": "tyc10-5",
+  "name": "林昭賢",
+  "kind": "neg",
+  "date": "2026-11-17",
+  "status": "起訴（2026-11 報導時）",
+  "text": "桃園地檢署指林昭賢與團隊於模範父母表揚活動外贈送石墨烯床墊與乳膠枕賄選，依選罷法起訴並具體求刑5年。",
+  "url": "https://www.cna.com.tw/news/asoc/202611170167.aspx",
+  "outlet": "中央社",
+  "quote": "具體求處有期徒刑5年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄支持起訴及求刑，但未記載林昭賢否認或回應；應標明報導時間。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt supports the indictment and 5-year sentence request for vote-buying, but does not contain any denial or response from Lin Chao-hsien."
+   }
+  }
+ },
+ {
+  "code": "tyc14-2",
+  "name": "張倉豪",
+  "kind": "neg",
+  "date": "2026-10-22",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "桃園地檢署2026年10月21日搜索約談張倉豪等人，指其涉於同年7月在龍潭區免費設宴招待選民，訊後諭知張倉豪15萬元交保。",
+  "url": "https://news.ltn.com.tw/news/politics/paper/1775649",
+  "outlet": "自由時報",
+  "quote": "張倉豪，涉嫌於今年七月五日晚間在龍潭區一處餐廳，以每桌五千元席開三桌，招待有投票權的選民免費飲宴，桃",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未明確說明交保日期；原文未標示報導時點。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未提及「10月22日」交保日期，僅稱21日搜索傳訊、訊後諭知交保，應修正。"
+   }
+  }
+ },
+ {
+  "code": "tyc14-3",
+  "name": "簡志偉",
+  "kind": "neg",
+  "date": "2024-02-22",
+  "status": "偵查中（2024-02 報導時）",
+  "text": "桃園地檢署2024年2月搜索約談簡志偉，報導指他涉利用議員配合款補助學校設備採購綁標收取回扣，訊後諭令20萬元交保；簡志偉稱相信司法會還其清白。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/4585810",
+  "outlet": "自由時報",
+  "quote": "簡志偉經檢察官複訊後，於今天凌晨3點諭知20萬元交保候傳（記者余瑞仁攝） 首次上稿 04:21 更新",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "未標示報導時點；檢舉來源未具名，應歸屬於報導。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2024年2月舊報導無法證明目前偵查進度，須標註「（2024-02 報導時）」。"
+   }
+  }
+ }
+]
