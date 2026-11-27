@@ -43,6 +43,9 @@ def main(src, name="index.html"):
     sys.path.insert(0, str(ROOT / "tools"))
     import add_info
     add_info.run(quiet=True)
+    # Keep the 投票小提醒 box (valid and invalid ballots) on every page.
+    import add_ballot
+    add_ballot.run(quiet=True)
 
 
 if __name__ == "__main__":
