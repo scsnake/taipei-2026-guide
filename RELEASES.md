@@ -2,6 +2,63 @@
 
 Each release lists the SHA-256 hash of every published file. Check your copy with `shasum -a 256 -c SHA256SUMS` (macOS) or `sha256sum -c SHA256SUMS` (Linux). Each release is also a signed git tag.
 
+## v0.6.0 — 2026-11-27
+
+New page council.html (縣市議員候選人紀錄): no scores; only major negative records (前科、起訴、官方處分) and major contributions for 縣市議員 candidates outside Taipei. Nine 縣市: 新北、桃園、臺中、臺南、高雄、彰化、雲林、屏東、基隆 (140 records). Each record was checked against its source text and reviewed by GPT-6.1 Terra plus Gemini 4 Neon or Claude Sonnet 5.5; disputes were decided by Claude Opus 5.5. 2026-11-27 status refresh of 11 open cases, and 6 records restored with an identity note (two marked as inferred, not officially confirmed). All pages show the page update time (台灣時間).
+
+- Claims: 1269 (active). Ledger lines: 0.
+- SHA-256 of SHA256SUMS: `a48dda7775f074bbaf2061600077a1d373fe7ab7969dcc7836db6ea2e8e43d46`
+
+| File | SHA-256 |
+|---|---|
+| `guide.md` | `c07736f947c94a8b9c43612f83ba91173e6931e18f148b7fd7020f659ea0b833` |
+| `index.html` | `4555edf9046f97b1f8bd60ae5ae580f0b3d9012f6afe07abcd99302b29a9e399` |
+| `mayors.html` | `c422c87854b34fb62f69c488baac4a2da83e78eac37fb48e4142b4d5f7dee1e2` |
+| `council.html` | `0ced9cabeffe41b3fac48b985711638ef496f6ff5b8e13a62c255bc2f69f81fe` |
+| `rubric.md` | `d632be7ae2a51dd07804bb0c192997f497f5dc0d90a4efd6df352a0589b48c2c` |
+| `rubric_r22.md` | `603c79a79fe20993fd7e50cb55b16117f3520cc1e4eaaf3b2166d28906c28166` |
+| `VERIFY.md` | `6b258b552a3209ffc5c20b50213c29662ffca666ed2900179dc502b0b60a0ce1` |
+| `claims/D1.jsonl` | `caeccd651de9b4c2a451c46e467d105c55b5ffe41bf3750f257c433520830031` |
+| `claims/D2.jsonl` | `195c78c4b988265dc4fcb07a0f16160632282f4fed0f90342a4f8a79336900e1` |
+| `claims/D3.jsonl` | `44094f3d62bf907d932e3c37dcf7d6f5edf76cf9968f464b5382d2230edb0bf4` |
+| `claims/D4.jsonl` | `596cbdd009054548fd564ab42c4c4765b525479be8fa3a05da1f69045dd185b3` |
+| `claims/D5.jsonl` | `52d38312e5cd6777ea4f668c02e827fd80f5604412bac46ecdd2aad6fcf4bcd7` |
+| `claims/D6.jsonl` | `84afa83eaaf0b9ef6cf5f6dd3135cd1f18f59cb8e6bd215b78c57641091b8b5a` |
+| `claims/D7.jsonl` | `fae83a474ad25916458d790545b29bbb113f5f530840613d2b81bc36c2267de3` |
+| `claims/D8.jsonl` | `c60584cae423d1c8f5f9885e1a15450a307614071a9c2afbbb27bf1f97f5b41a` |
+| `claims/M.jsonl` | `324d6079d81f1060b1617806d747b70d98b84229b6734e2809f0f89250103e4a` |
+| `claims/R22.jsonl` | `6eeff34daf44626399a7d107e99d5e47a773e2c4ebcff2589934654bfd4ff448` |
+| `panel/D1.json` | `e9911fa5797942ab7d92e4b655599df0b51bd8f431daa007d072528cea023ea0` |
+| `panel/D2.json` | `8c07fd2209a78fe5bc3aed4f33c17d7ce09bc32b287e683c3d9ba7294ec444e6` |
+| `panel/D3.json` | `f8bdd27301f38f2dd1ab5e988b977ea4ffb72590b1b04a95146ec9a67a099aeb` |
+| `panel/D4.json` | `3fd5d67694bcae10b80d338421a9cde045ccdbf19c99a6ab3cf747a4fde972b4` |
+| `panel/D5.json` | `40c8548f6f69af6e5b350f085edbffc0f20ec78036553f26210557840b3a0728` |
+| `panel/D6.json` | `38db0e5823c81c6591922ddfd5998c0562e73ff86e7dfae12fd9e0d495b2e289` |
+| `panel/D7-D8.json` | `3c669d808519beac9202f2a405505db2e2ef8a21d3dedf4105dd552842f3a726` |
+| `panel/M.json` | `74eaf59e89d5fb607dd8227db80a51a2c05e2b060d9bba96ac188946969acf70` |
+| `panel/R22.json` | `6e1199fed9a4eafa18845ac9c366cc2dda82094761ce9817c60a5a9390ad6f3a` |
+| `panel/adjustments.json` | `864665ed5f54300afc374b794c72939c09e1d86b7a5b5dbe0913a0f9ec3d6a0c` |
+| `align/mayors.jsonl` | `c2406b4916872d10ef365ad13c59071001d4f0367a7beebc2ea6bebef1466e17` |
+| `align/taipei.jsonl` | `4e5faeb59e5d1ba05095cac41e39a90a67cc472e69b1574e14dd5a7b3ee6d707` |
+| `council/chc_candidates.json` | `be6e07192938beb025e7ae2caefbbcfa9a4c38c0b230c452e7df8f3ad967ced5` |
+| `council/chc_records.json` | `4130cdf4e3b9a56e2458ad59b0464e1de0fe1758023c1bc57bd8bc06f50d6c1a` |
+| `council/kee_candidates.json` | `e2d65a55683b9e3a4f9d6327f89c6559234065c2608decee09790639d6497ca5` |
+| `council/kee_records.json` | `97187b5759a3c0e4d04f330df3764f7136683164484c53e1078de14d7d085705` |
+| `council/khh_candidates.json` | `beecc94cd0345ac30c9bfcfe08a50af318503af6770f3a5dcd18e7bb9feabea9` |
+| `council/khh_records.json` | `f33aac0246270bed011ac9ba8b03e16ab9a4c969534bde5f68a284921a1762ae` |
+| `council/ntpc_candidates.json` | `89e67e217dbdeba597653b110b28aa29afb45ea58d5c7a63da4cd0509bbe63bd` |
+| `council/ntpc_records.json` | `e9131dbca30eff3fc422c895f53b8a64866658beec5ce86885cbec04d369f6f1` |
+| `council/pif_candidates.json` | `c18b3a2d7874170318e5c20c4aad6b0ca3776a68c2ca66e817ab91d0bb01bfe7` |
+| `council/pif_records.json` | `fe955c53cc80e1b97cab9404da8a9f68fa7e5940ffbe045c248f414aa89a5eae` |
+| `council/tnn_candidates.json` | `d795aec209b9a12515af63588524930dc77b68fe04c6ddd546af4dc6be71cd4c` |
+| `council/tnn_records.json` | `c1d7023e2009d35c152c0c2ad0d8a35c965a8d2fef392b7a892bb06d0c632270` |
+| `council/txg_candidates.json` | `30081a6937a964d88dd85723f45f9af1a8fd9441db84448d76b7822d2f846e13` |
+| `council/txg_records.json` | `8af423ca90d8821df1c854bf3f7038a09a52e709f5b717c0c6704ca550a14eec` |
+| `council/tyc_candidates.json` | `3c8832db2d7af965ff80b2c7b63b0d2da59fad184d7e8843cf180ef481deaa8f` |
+| `council/tyc_records.json` | `822131389545d7af51f766d7988a49c603616b417b5e00179c0780b1b8d68f53` |
+| `council/yun_candidates.json` | `04fc7402cdf2d9e0799f0167782550667ce24dedbe32f2a5b15972b3cfb4692e` |
+| `council/yun_records.json` | `e4c7ca571659f5c5fb29cd1d137f679a0b48d8d3ebb66ae5c5fe7659e84bc467` |
+
 ## v0.5.0 — 2026-11-17
 
 Both pages: a closed 選舉公報與查核 fold on every candidate card (103 Taipei cards, 75 cards in 21 county mayor races). It shows the 具結情形 as printed in the 2026 bulletin, 學歷 and 經歷 lines marked ✓ / ✗ / ? (✓ only when a fetched source page names the candidate and holds the quote; ✗ only after a hand check against an official or primary source), the official 政見 text, and QR code URLs decoded from the bulletin. 政見評估, with no score effect: 超出職權 (hand-reviewed against 憲法 §107 and 地方制度法 §18–19), cost estimates for cash promises from 內政部戶政司 open data, 言行對照 with checked sources, and quoted cross-strait wording. New: additions.md and tools/add_info.py for dated maintainer notes on cards. Scores, 首選 and 次選 are unchanged. claims/*.jsonl are not re-exported for the bulletin data.

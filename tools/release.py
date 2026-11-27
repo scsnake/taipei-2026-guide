@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILES = ["guide.md", "index.html", "mayors.html", "rubric.md", "rubric_r22.md", "VERIFY.md"]
+FILES = ["guide.md", "index.html", "mayors.html", "council.html", "rubric.md", "rubric_r22.md", "VERIFY.md"]
 
 
 def sha(p):
@@ -19,7 +19,8 @@ def sha(p):
 
 def main(version, note):
     paths = ([ROOT / f for f in FILES if (ROOT / f).exists()] + sorted((ROOT / "claims").glob("*.jsonl"))
-             + sorted((ROOT / "panel").glob("*.json")) + sorted((ROOT / "align").glob("*.jsonl")))
+             + sorted((ROOT / "panel").glob("*.json")) + sorted((ROOT / "align").glob("*.jsonl"))
+             + sorted((ROOT / "council").glob("*.json")))
     sums = [(sha(p), p.relative_to(ROOT).as_posix()) for p in paths]
     (ROOT / "SHA256SUMS").write_text("".join(f"{h}  {n}\n" for h, n in sums))
     n_claims = sum(1 for p in (ROOT / "claims").glob("*.jsonl") for l in p.read_text().splitlines()

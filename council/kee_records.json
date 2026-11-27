@@ -1,0 +1,157 @@
+[
+ {
+  "code": "kee3-1",
+  "name": "林杏潔",
+  "kind": "neg",
+  "date": "2026-11-17",
+  "status": "偵查中（35萬元交保；2026-11 報導時）",
+  "text": "檢方認為林杏潔涉嫌以免費福宴招待里民賄選，搜索、訊問後諭知35萬元交保。",
+  "url": "https://org-today.line-apps.com/tw/v3/article/YapDqYj",
+  "outlet": "自由電子報",
+  "quote": "另諭知林杏潔35萬元、潘等4名里長5萬到8萬元不等交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持涉嫌賄選及交保；偵查狀態須註明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "身分、涉賄事由、35萬元交保及近期偵查中狀態均與報導相符，表述中立且具重大性。"
+   }
+  }
+ },
+ {
+  "code": "kee3-3",
+  "name": "曾維祥",
+  "kind": "neg",
+  "date": "2026-10-01",
+  "status": "偵查中（50萬元交保；2026-10 報導時）",
+  "text": "基隆地檢署指曾維祥涉嫌以發送月餅禮盒賄選；檢方搜索、訊問後諭知50萬元交保。",
+  "url": "https://udn.com/vote2026/story/7321/9787502",
+  "outlet": "聯合報",
+  "quote": "仁愛區市議員參選人曾維祥和陳姓里長候選人，共同涉嫌以發送月餅禮盒方式賄選",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持檢方指控及交保；偵查狀態須註明報導時間。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導為2026-10-01，無法證明目前司法進度，須補註「（2026-10 報導時）」。"
+   }
+  }
+ },
+ {
+  "code": "kee4-6",
+  "name": "李昀靜",
+  "kind": "neg",
+  "date": "2026-10-30",
+  "status": "偵查中（20萬元交保；2026-10 報導時）",
+  "text": "基隆地檢署指李昀靜涉嫌以餐會及生活物資賄選，搜索並傳喚她說明；檢察官訊後諭令20萬元交保。",
+  "url": "https://www.cna.com.tw/news/asoc/202610300048.aspx",
+  "outlet": "中央社",
+  "quote": "涉嫌宴請並發放選民物資賄選，經檢察官複訊後，今天諭令20萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The report establishes the investigation status at the time of publication, not its current status."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate, accurately reports recent 2026-10-30 bribery investigation and NT$200,000 bail in neutral tone."
+   }
+  }
+ },
+ {
+  "code": "kee5-10",
+  "name": "黃永翔",
+  "kind": "neg",
+  "date": "2024-11-20",
+  "status": "判決確定（已執行完畢；2024-11 監察院報告時）",
+  "text": "黃永翔協助技工甄選時涉及不實在職證明，基隆地院依共同行使業務登載不實文書罪判處有期徒刑6月，得易科罰金；監察院報告載明判決確定並已執行完畢。",
+  "url": "https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/68782",
+  "outlet": "監察院",
+  "quote": "度基簡字第70號判決確定，並已執行完畢",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The final judgment and completed execution are supported. Add the report date to identify the status as historical."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "同人確認，監察院報告完整支持案情、刑度與判決確定並執行完畢，屬重大負面紀錄且表述中立。"
+   }
+  }
+ },
+ {
+  "code": "kee7-5",
+  "name": "蔡旺璉",
+  "kind": "neg",
+  "date": "2026-11-04",
+  "status": "偵查中（10萬元交保；2026-11 報導時）",
+  "text": "檢方指蔡旺璉涉嫌在重陽餐會贈酒賄選，搜索約談後諭令10萬元交保。蔡旺璉表示餐會由協會主辦，他受邀出席，並非由他設宴。",
+  "url": "https://udn.com/vote2026/story/7321/9856568",
+  "outlet": "聯合報",
+  "quote": "嫌疑重大，命交保10萬元，其餘選民及證人均請回。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持偵查及交保，但不能證明目前狀態。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate, all facts and bail status are directly supported by the 2026-11-04 UDN report, major criminal investigation, and neutral with response."
+   }
+  }
+ }
+]

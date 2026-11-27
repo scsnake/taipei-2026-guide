@@ -186,6 +186,37 @@
   }
  },
  {
+  "code": "chc4-5",
+  "name": "曹嘉豪",
+  "kind": "neg",
+  "date": "2007-07-24",
+  "status": "一審判決（2007-07；二審及確定情形未查得）",
+  "text": "2007年報導，彰化縣議員曹明正之子曹嘉豪被指在其父服務處經營職棒簽賭站並出借場地供人聚賭，彰化地院一審判處有期徒刑1年，不得緩刑及易科罰金；檢方另就曹明正部分表示將上訴。",
+  "url": "https://news.ltn.com.tw/news/local/paper/143172",
+  "outlet": "自由時報",
+  "quote": "其子曹嘉豪當時同遭查獲，因另涉經營職棒簽賭站，判刑1年，不可緩刑與易科罰金。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅稱彰化縣議員之子，同名不足以確認身分；文章是2007年一審報導，未支持定讞及減刑。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "no",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "文中只有一審判刑1年。高分院、減刑6月、易科罰金、定讞均無依據，且與「不可易科」相矛盾。"
+   }
+  }
+ },
+ {
   "code": "chc4-6",
   "name": "賴澤民",
   "kind": "neg",
@@ -375,12 +406,12 @@
   "code": "chc7-3",
   "name": "謝典霖",
   "kind": "neg",
-  "date": "2026-11-12",
-  "status": "偵查中（羈押中；2026-11 報導時）",
-  "text": "彰化地檢署指謝典霖涉期約賄選及巧立名目詐取公款私用，2026年9月聲請羈押獲准；彰化地院11月12日裁定自11月17日起延長羈押2月並禁止接見通信，家屬決定提起抗告。",
-  "url": "https://udn.com/news/story/7321/9873407",
-  "outlet": "聯合報",
-  "quote": "謝典霖涉貪汙遭羈押 彰地院今裁定延押兩個月 2026-11-12 09:48 聯合報／ 記者 簡慧珍",
+  "date": "2026-11-24",
+  "status": "偵查中（羈押中；抗告審理中；2026-11 報導時）",
+  "text": "彰化地檢署指謝典霖涉期約賄選及巧立名目詐取公款私用，彰化地院11月12日裁定自11月17日起延長羈押2月並禁止接見通信；家屬提出抗告，台中高分院於11月24日收到抗告案卷並分案審理。",
+  "url": "https://news.ltn.com.tw/news/Changhua/breakingnews/5652072",
+  "outlet": "自由時報",
+  "quote": "台中高分院證實今天下午已收到抗告案卷，並分案給法官審理",
   "lead": "",
   "decided": "manual",
   "review": {
@@ -465,15 +496,46 @@
   }
  },
  {
+  "code": "chc3-3",
+  "name": "柯振杯",
+  "kind": "neg",
+  "date": "2014-06-19",
+  "status": "二審更審判決（2014-06；是否確定未查得）",
+  "text": "臺灣高等法院臺中分院2014年判決：柯振杯冒用堂親柯朝清名義向多家保險公司投保，依共同連續行使偽造私文書罪處有期徒刑1年，減為6月，得易科罰金。TVBS 2004年報導，時任伸港鄉代表會副主席的柯振杯為堂弟柯朝清投保15家保險公司。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C102%2C重上更(三)%2C22%2C20140619%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "柯振杯部分撤銷。 柯振杯共同連續行使偽造 私文書 ， 足以生損害 於他人，處 有期徒 刑 壹年，減為",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅有姓名及彰化地區關聯，未明確連結候選人的職務或其他身分；判決本身也未證明確定。"
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts match. But this is a retrial appellate judgment with no sign of finality in the excerpt. The excerpt gives the date 2014-06-19, while another case cites 103-07 and a finalization. Status needs a hedge."
+   }
+  }
+ },
+ {
   "code": "chc5-4",
   "name": "陳玉姫",
   "kind": "neg",
-  "date": "2026-10-30",
-  "status": "偵查中（2026-10 報導時）",
-  "text": "彰化地檢署偵辦議長謝典霖涉以公帑辦餐會輔選案，國民黨議員參選人陳玉姬以10萬元交保；報導未載明陳玉姬的具體罪名。",
-  "url": "https://news.ltn.com.tw/news/society/paper/1776435",
+  "date": "2026-11-06",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "陳玉姬先前以10萬元交保（2026-10 報導）；11月6日彰化地檢署再傳訊陳玉姬及其夫陳文漢，夫婦與議會公務員均無保請回。報導未載明陳玉姬的具體罪名。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5632057",
   "outlet": "自由時報",
-  "quote": "黃佳惠與陳玉姬各十萬元交保。",
+  "quote": "但夫婦倆與議會公務員均無保請回。",
   "lead": "",
   "decided": "added",
   "review": {}

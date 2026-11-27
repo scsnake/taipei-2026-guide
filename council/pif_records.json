@@ -556,5 +556,36 @@
     "why": "First-instance 2013 judgment cannot prove current status; added judgment date qualifier and clarified status."
    }
   }
+ },
+ {
+  "code": "pif3-11",
+  "name": "潘連周",
+  "kind": "neg",
+  "date": "2024-01-31",
+  "status": "當選無效判決確定（第17屆；2011-01）",
+  "text": "自由時報2024年報導，潘連周曾當選第16、17、19、20屆屏東縣議員，含第20屆共有2次當選無效。另一次為第17屆（2009年選舉）：高雄高分院2011年判決認定當選人配偶透過他人買票，當選無效確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/4568724",
+  "outlet": "自由時報",
+  "quote": "60歲的潘連周曾經當選4任的屏東縣議員，含本屆就有2次當選無效",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "節錄未明確指出潘連周就是上訴人；也未載明選舉年份、屆次或所列案號。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms the 2011-01-26 final ruling upholding 當選無效 for bribery, but does not show 第17屆 or the listed docket numbers."
+   }
+  }
  }
 ]
