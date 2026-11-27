@@ -1,0 +1,95 @@
+[
+ {
+  "code": "cyi1-6",
+  "name": "黃盈智",
+  "kind": "neg",
+  "date": "2014-07-16",
+  "status": "判決確定（當選無效確定）",
+  "text": "黃盈智於第8屆議員選舉當選後，因其父黃慶隆涉鄰長賄選案，當選無效確定而遭解職；黃慶隆被判刑確定。",
+  "url": "https://news.ltn.com.tw/news/local/paper/796298",
+  "outlet": "自由時報",
+  "quote": "黃盈智當選無效定讞遭解職",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The report identifies Huang Ying-zhi, states the election result was final, and says his father was convicted in the vote-buying case."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate and excerpt confirms final ruling of election invalidation and father's conviction."
+   }
+  }
+ },
+ {
+  "code": "cyi1-14",
+  "name": "郭文居",
+  "kind": "neg",
+  "date": "2017-12-27",
+  "status": "判決確定（2017-12）",
+  "text": "郭文居因虛遷戶籍犯妨害投票正確罪（刑法第146條第2項），二審改判有罪並宣告緩刑及褫奪公權，最高法院駁回上訴確定（106年度台上字第4093號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPSM%2C106%2C台上%2C4093%2C20171227%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "郭文居 上列 上訴人 因妨害投票案件，不服臺灣高等法院臺南分院中華民 國106年4月19日第二審判決",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": null
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms conviction, probation, and deprivation of civil rights, but omits exact sentence lengths and year 2014."
+   }
+  }
+ },
+ {
+  "code": "cyi2-11",
+  "name": "魏志軒",
+  "kind": "neg",
+  "date": "2020-03-25",
+  "status": "判決確定（2020-03）",
+  "text": "魏志軒犯傷害罪，判處拘役20日，得以每日新臺幣1,000元易科罰金；上訴駁回（嘉義地院108年度簡上字第166號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=CYDM%2C108%2C%E7%B0%A1%E4%B8%8A%2C166%2C20200325%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "魏志軒所為係 犯修正前刑法第277條第1項傷害罪，罪證明確， 適 用刑事訴 訟法第449條第1項前段",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment confirms the offense, sentence, and dismissal of the appeal. It does not state the fine was paid; say the sentence may be commuted at NT$1,000 per day."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Chiayi court judgment (107選偵字) matches candidate and supports the assault conviction, 20-day detention convertible to fine, and final status on 2020-03-25."
+   }
+  }
+ }
+]
