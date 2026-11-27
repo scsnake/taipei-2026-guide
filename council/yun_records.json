@@ -62,6 +62,37 @@
   }
  },
  {
+  "code": "yun3-9",
+  "name": "陳乙辰",
+  "kind": "neg",
+  "date": "2022-01-30",
+  "status": "一審判決（2014；是否確定未查得）",
+  "text": "2022年報導，陳乙辰2012年隨友人到苗栗某礦業公司辦公室恐嚇負責人，2014年雲林地院依共同犯恐嚇危害安全罪判處有期徒刑，可易科罰金（6個月以下）；陳乙辰表示當時只是跟著去，現場沒說話。",
+  "url": "https://news.tvbs.com.tw/politics/1704668",
+  "outlet": "TVBS",
+  "quote": "2014年被雲林地院依共同犯恐嚇危害安全罪判有期徒刑",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄明示刑期月數為亂碼，亦未證明判決確定。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt says sentence months were garbled (not 3 months), omits 2012, and does not confirm finality."
+   }
+  }
+ },
+ {
   "code": "yun3-10",
   "name": "黃凱",
   "kind": "neg",
@@ -89,6 +120,37 @@
     "status_ok": "no",
     "major": "yes",
     "why": "Excerpt states 貪污治罪條例等罪 rather than 不違背職務收受賄賂罪, and needs （2025-12 報導時）."
+   }
+  }
+ },
+ {
+  "code": "yun5-7",
+  "name": "吳蕙蘭",
+  "kind": "neg",
+  "date": "2007-06-15",
+  "status": "偵查中（50萬元交保；2007-06 報導時；判決結果未查得）",
+  "text": "2007年6月高雄檢警破獲職棒簽賭集團，報導指時任台西鄉長李培元之妻吳蕙蘭為中部集團主持人，遭逮捕後以50萬元交保；李培元當時稱相信妻子未涉案。2018、2019年報導均稱縣議員吳蕙蘭為李培元之妻。",
+  "url": "https://news.ltn.com.tw/news/society/paper/135722",
+  "outlet": "自由時報",
+  "quote": "吳蕙蘭50萬元、陳怡秀20萬元交保，其餘分別以2至40萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The name and 台西 connection alone do not clearly establish identity. The 2007 report cannot establish current legal status."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2007-06 article cannot prove current status; must add 「（2007-06 報導時）」 and include the husband's response noted in the excerpt."
    }
   }
  },
@@ -275,6 +337,37 @@
     "status_ok": "yes",
     "major": "yes",
     "why": "Excerpt confirms Lunbei Township Mayor Li Hong-yi was indicted for breach of trust on 2026-09-17."
+   }
+  }
+ },
+ {
+  "code": "yun5-7",
+  "name": "吳蕙蘭",
+  "kind": "neg",
+  "date": "2008-12-18",
+  "status": "法院認定為共同正犯（2009-11 判決；本人刑度與確定情形未查得）",
+  "text": "臺灣高等法院臺南分院2009年判決（另一被告之上訴案）認定，吳蕙蘭等人在雲林共同經營簽賭網站帳號供賭客對賭，均為意圖營利聚眾賭博罪共同正犯；該判決未載吳蕙蘭本人的刑度。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TNHM%2C98%2C%E4%B8%8A%E6%98%93%2C517%2C20091124%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "吳蕙蘭、韓青森、吳昭儀、林東敏、吳茂芳、廖哲 偉、洪政賢、曾文煌等人均有犯意聯絡及 行為分擔 ，均為共 同 正犯 。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not clearly establish the candidate's identity or show that her conviction became final. The lead note is not part of the excerpt."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt supports 吳蕙蘭 as 共同正犯 of 意圖營利聚眾賭博罪, but does not mention 97年度簡字第125號, 判決確定, or anonymized main text."
    }
   }
  },
