@@ -1,0 +1,653 @@
+[
+ {
+  "code": "khh2-3",
+  "name": "黃明太",
+  "kind": "neg",
+  "date": "2023-09-05",
+  "status": "起訴（2023-09 報導時）",
+  "text": "橋頭地檢署2023年9月依違反證券交易法起訴黃明太，指控他操縱和勤精機股價並獲利逾千萬元；黃明太否認炒股。",
+  "url": "https://news.ltn.com.tw/news/society/paper/1603244",
+  "outlet": "自由時報",
+  "quote": "橋頭地檢署昨天偵結，將黃依違反證券交易法提起公訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持起訴與回應，但不能證明目前訴訟狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2023-09 article cannot prove current status; must add 「（2023-09 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "khh3-2",
+  "name": "張騏晟",
+  "kind": "neg",
+  "date": "2026-10-12",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "2026年10月橋頭地檢署搜索梓官區漁會並約談張騏晟等人，案情疑涉賄選；報導未載張騏晟回應。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5604045",
+  "outlet": "自由時報",
+  "quote": "案情疑與張騏晟涉及賄選有關",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持搜索、約談及涉賄調查，但不能證明目前無後續結果。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2026-10-12 article cannot prove current status ('目前未見起訴或其他後續結果'); must mark 2026-10 報導時."
+   }
+  }
+ },
+ {
+  "code": "khh4-5",
+  "name": "李眉蓁",
+  "kind": "neg",
+  "date": "2020-09-03",
+  "status": "n/a",
+  "text": "2020年高雄市長補選期間，李眉蓁碩士論文被指與他人相似度達96%，中山大學調查後決定撤銷其碩士學位；監察委員另就碩士專班制度申請自動調查。",
+  "url": "https://www.mirrormedia.mg/story/amp/20200903edi019",
+  "outlet": "鏡週刊",
+  "quote": "其所屬的中山大學經調查後也決定撤銷她的碩士學位",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The excerpt supports the reported similarity, degree revocation decision, and separate oversight inquiry."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "摘錄清楚指涉高雄市議員李眉蓁，論文抄襲撤銷學位與監委申請自動調查均獲支持，屬重大且敘述中立。"
+   }
+  }
+ },
+ {
+  "code": "khh9-8",
+  "name": "徐尚賢",
+  "kind": "neg",
+  "date": "2026-09-13",
+  "status": "一審判決（2026-09 報導時，未確定）",
+  "text": "高雄地院審理「雙罷劫」不實連署案，2026年9月一審認定徐尚賢犯非法利用個資罪，判處有期徒刑2年、緩刑5年；偽造提議人名冊部分另判5月。",
+  "url": "https://cna.com.tw/news/asoc/202609130096.aspx",
+  "outlet": "中央社",
+  "quote": "考量徐尚賢坦承部分犯行，處2年徒刑、緩刑5年，支付公庫新台幣30萬元。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "判決時的狀態有支持，但須標明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, identity, and first-instance appealable status match the CNA excerpt."
+   }
+  }
+ },
+ {
+  "code": "khh1-2",
+  "name": "林義迪",
+  "kind": "neg",
+  "date": "2026-11-25",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "橋頭地檢署指林義迪涉與助理及宮廟管理人員以「平安宴」名義免費招待選民餐敘，搜索並傳喚到案；檢方認其涉投票行賄罪嫌重大，諭知100萬元交保。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5653768",
+  "outlet": "自由時報",
+  "quote": "林義迪100萬交保、助理聲押",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the investigation and bail, but cannot establish the current status."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate, district, and party; excerpt confirms search, summoning, vote-buying allegation, and NT$1M bail on 2026-11-25 under active investigation."
+   }
+  }
+ },
+ {
+  "code": "khh3-2",
+  "name": "張騏晟",
+  "kind": "neg",
+  "date": "2026-11-26",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "檢方指張騏晟涉與梓官區里長候選人安排虛遷戶籍，複訊後以涉妨害投票罪嫌諭知100萬元交保。",
+  "url": "https://www.setn.com/news/1945096",
+  "outlet": "三立新聞",
+  "quote": "張騏晟才涉收賄200萬交保 又捲「幽靈人口」100萬交保 記者 林昱孜 高雄報導",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "須標明報導時間，並將涉案情節歸於檢方；文章日期為11月26日，非11月23日。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt states '涉犯妨害投票罪嫌重大' and does not mention '違反選罷法'; remove unsupported statute reference."
+   }
+  }
+ },
+ {
+  "code": "khh4-5",
+  "name": "李眉蓁",
+  "kind": "neg",
+  "date": "2022-04-12",
+  "status": "起訴後和解（2022-04 報導時）",
+  "text": "李眉蓁因碩士論文涉抄襲，2022年1月遭橋頭地檢署依違反著作權法起訴；同年4月報導指她已與原作者達成和解。",
+  "url": "https://www.cna.com.tw/news/asoc/202204130102.aspx",
+  "outlet": "中央社",
+  "quote": "李眉蓁投入高雄市長補選期間爆碩論抄襲風波，橋檢偵結後依著作權法起訴，但因雙方昨天達成和解，今天庭期取消。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article reports a settlement, but does not establish withdrawal of the complaint or a court judgment."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅稱雙方達成和解、法院將視後續是否撤告依法處理，並未提及已撤告或判決公訴不受理。"
+   }
+  }
+ },
+ {
+  "code": "khh5-3",
+  "name": "張勝富",
+  "kind": "neg",
+  "date": "2013-03-20",
+  "status": "當選無效判決確定（2013-03）",
+  "text": "張勝富在2010年高雄市議員選舉遭指控透過樁腳發放走路工賄選，並被提起當選無效之訴；高雄高分院2013年3月駁回上訴，判決當選無效確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/780885",
+  "outlet": "自由時報",
+  "quote": "張勝富獲知判決結果表示，司法對他極不公平。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt does not establish the criminal case status. The text also omits Zhang's response to the accusation."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未提及「刑事部分未起訴」，須刪除無依據內容，並補上當事人回應以符中立。"
+   }
+  }
+ },
+ {
+  "code": "khh6-3",
+  "name": "蔡金晏",
+  "kind": "neg",
+  "date": "2020-08-18",
+  "status": "判決確定（2020-08）",
+  "text": "蔡金晏2019年受訪指稱時任高雄市府秘書處長陳瓊華請回教移工吃熱狗、香腸，法院認定散布不實訊息，高雄高分院2020年8月依誹謗罪判處拘役25日、得易科罰金確定。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/3263565",
+  "outlet": "自由時報",
+  "quote": "蔡金晏。（資料照） 國民黨高雄市議員蔡金晏涉嫌公開誣指前高市秘書處長陳瓊華請回教徒「吃豬肉」，陳自認",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未提未盡合理查證義務；判決確定的時間與刑度有支持。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt supports conviction, sentence, and finality, but says 散布不實訊息 rather than 未盡合理查證義務."
+   }
+  }
+ },
+ {
+  "code": "khh6-4",
+  "name": "陳美雅",
+  "kind": "neg",
+  "date": "2015-01-15",
+  "status": "判決確定（2015-01）",
+  "text": "陳美雅以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1206354",
+  "outlet": "自由時報",
+  "quote": "23名被告分別：議長康裕成、議員許崑源、黃柏齡、黃淑美、陳美雅、李喬如",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未列陳美雅個別刑期，也未明示刑法第214條。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt only gives the group sentence range (1 month to 1 year 10 months) and 偽造公文書罪, not her individual 1-year term."
+   }
+  }
+ },
+ {
+  "code": "khh7-8",
+  "name": "康裕成",
+  "kind": "neg",
+  "date": "2015-01-14",
+  "status": "判決確定（2015-01）",
+  "text": "康裕成以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1206354",
+  "outlet": "自由時報",
+  "quote": "康裕成等23名被告，均被判依偽造公文書，判處有期徒刑1月至1年10月不等徒刑確定，均得易科罰金。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not state Kang’s individual sentence. The item also lacks the report-date qualifier."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt only states 1 month to 1 year 10 months across 23 defendants, not 4 months specifically for Kang."
+   }
+  }
+ },
+ {
+  "code": "khh7-10",
+  "name": "黃柏霖",
+  "kind": "neg",
+  "date": "2015-01-16",
+  "status": "判決確定（2015-01）",
+  "text": "黃柏霖以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/paper/847901",
+  "outlet": "自由時報",
+  "quote": "黃柏霖；前議員王齡嬌、藍健菖、黃添財、戴德銘、楊色玉、蔡媽福、曹明輝、林崑山、莊啟旺、童燕珍、藍星木",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not state Huang’s individual sentence or the specific statutory offense."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt does not specify 10 months for Huang or mention '使公務員登載不實'."
+   }
+  }
+ },
+ {
+  "code": "khh7-10",
+  "name": "黃柏霖",
+  "kind": "contrib",
+  "date": "2022-09-27",
+  "status": "n/a",
+  "text": "黃柏霖提案推動的《高雄市弱勢族群投保微型保險自治條例》，2022年9月經高雄市議會通過。",
+  "url": "https://www.storm.mg/article/4538739",
+  "outlet": "風傳媒",
+  "quote": "黃柏霖議員提案的「高雄市弱勢族群投保微型保險自治條例」草案，在議長曾麗燕主持議事下，獲得現場議員支持 。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The excerpt reports passage but does not establish three readings or the ordinance’s effective date."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Excerpt says the council passed the ordinance ('通過'), without mentioning third reading ('三讀') or implementation ('施行')."
+   }
+  }
+ },
+ {
+  "code": "khh7-12",
+  "name": "黃淑美",
+  "kind": "neg",
+  "date": "2015-01-15",
+  "status": "判決確定（2015-01）",
+  "text": "黃淑美以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1206354",
+  "outlet": "自由時報",
+  "quote": "23名被告分別：議長康裕成、議員許崑源、黃柏齡、黃淑美、陳美雅、李喬如",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not identify the specific statutory offense. The item lacks the report-date qualifier."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt states '偽造公文書罪' without mentioning '使公務員登載不實'."
+   }
+  }
+ },
+ {
+  "code": "khh9-6",
+  "name": "劉德林",
+  "kind": "neg",
+  "date": "2020-04-01",
+  "status": "起訴（2020-04 報導時）",
+  "text": "2019年10月高雄市議會審查總預算時爆發肢體衝突，民進黨議員林宛蓉提告傷害；高雄地檢署2020年4月依傷害罪起訴劉德林，劉德林否認打人。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/3132560",
+  "outlet": "自由時報",
+  "quote": "劉德林傷害罪，高雄地檢署偵結，認為應與劉以左手推擠林女後背有關，起訴劉德林。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "起訴狀態須標明報導時間，不能視為目前狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The 2020-04 article cannot prove current 2026 status; must add （2020-04 報導時）."
+   }
+  }
+ },
+ {
+  "code": "khh9-7",
+  "name": "李雅靜",
+  "kind": "neg",
+  "date": "2019-07-01",
+  "status": "罰鍰確定",
+  "text": "李雅靜辦理財產申報時漏報土地2筆及汽車1筆，監察院認定故意申報不實，裁處罰鍰新臺幣10萬元確定。",
+  "url": "https://www.storm.mg/article/2212528",
+  "outlet": "風傳媒",
+  "quote": "李雅靜所述申報不實的理由，不足採信，認定為故意申報不實，在去年7月確定處分罰鍰10萬元。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未指出裁罰所依法律，亦未確認實際申報日期。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Confirmed final 100,000 NTD Control Yuan fine for intentional asset-declaration omission."
+   }
+  }
+ },
+ {
+  "code": "khh11-3",
+  "name": "邱于軒",
+  "kind": "neg",
+  "date": "2024-03-12",
+  "status": "罰鍰確定",
+  "text": "邱于軒2021年財產申報未據實申報配偶事業投資6筆，監察院認定故意申報不實，裁處罰鍰新臺幣66萬元確定。",
+  "url": "https://www.mirrormedia.mg/external/setn_1437903",
+  "outlet": "鏡週刊",
+  "quote": "邱于軒被罰新台幣66萬元為最多。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄指財產申報基準日為2021年11月1日，未證明當日辦理申報。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "身分相符，內容與監察院裁罰66萬元確定之事實完全一致，且具重大性與中立性。"
+   }
+  }
+ },
+ {
+  "code": "khh11-3",
+  "name": "邱于軒",
+  "kind": "neg",
+  "date": "2023-07-01",
+  "status": "行政訴訟一審敗訴（2023-07 報導時，未確定）",
+  "text": "邱于軒丈夫經營的食材行與公司承攬高雄市中小學等26筆標案，未依利益衝突迴避法揭露與議員的身分關係，遭監察院裁罰140萬5,000元；2023年7月臺北高等行政法院判決抗罰敗訴，仍可上訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202307220106.aspx",
+  "outlet": "中央社",
+  "quote": "邱于軒丈夫張簡正偉多次投標承攬中小學營養午餐食材案，因未表明身分關係遭監察院依利衝法處罰140萬多元，他提告抗罰。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導稱判決可上訴，不能證明現況。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "該判決仍可上訴且為2023年7月舊報導，須標明未確定並加註「（2023-07 報導時）」。"
+   }
+  }
+ },
+ {
+  "code": "khh6-2",
+  "name": "李喬如",
+  "kind": "neg",
+  "date": "2015-01-15",
+  "status": "判決確定（2015-01）",
+  "text": "李喬如以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1206354",
+  "outlet": "自由時報",
+  "quote": "23名被告分別：議長康裕成、議員許崑源、黃柏齡、黃淑美、陳美雅、李喬如",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未載主文、罪數、刑期、折算金額或確定狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt only contains the facts section; it omits the case number, sentence (1 year 10 months), fine conversion rate, and finality."
+   }
+  }
+ },
+ {
+  "code": "khh7-2",
+  "name": "童燕珍",
+  "kind": "neg",
+  "date": "2015-01-15",
+  "status": "判決確定（2015-01）",
+  "text": "童燕珍以人頭助理申報議會公費助理補助費，高雄高分院2015年1月判處有期徒刑、得易科罰金，判決確定。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/1206354",
+  "outlet": "自由時報",
+  "quote": "前議員王齡嬌、藍健菖、黃添財、戴德銘、楊色玉、蔡媽福、曹明輝、林崑山、童燕珍",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt describes the conduct but does not show the sentence, conversion rate, date, or finality."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt shows facts of joint false-reporting offense with her husband, but omits the 1y4m sentence, fine rate, and finality."
+   }
+  }
+ },
+ {
+  "code": "khh12-3",
+  "name": "王義雄",
+  "kind": "neg",
+  "date": "2025-11-24",
+  "status": "簡易判決（2025-11）",
+  "text": "王義雄酒後駕車，橋頭地院2025年11月依不能安全駕駛罪判處有期徒刑4月，得易科罰金。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=CTDM%2C114%2C原交簡%2C69%2C20251124%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "王義雄犯刑法第185條之3第1項第1款之不能安全駕駛 動力交通工具 罪，處 有期徒刑 肆月， 如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "姓名、年齡及民意代表身分相符，但摘錄未提供選區、黨籍或其他足以明確確認身分的資料；判決確定與否亦未確認。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Name, age 65 in 2025 (born ROC 49), Kaohsiung, indigenous docket (原交簡), and occupation (民意代表) match; DUI conviction and 4-month sentence are directly supported and neutrally stated."
+   }
+  }
+ }
+]
