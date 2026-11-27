@@ -1,0 +1,312 @@
+[
+ {
+  "code": "hua3-3",
+  "name": "楊悟空",
+  "kind": "neg",
+  "date": "2026-10-14",
+  "status": "偵查中（羈押禁見；2026-10 報導時）",
+  "text": "花蓮地檢署指楊悟空涉嫌挪用公益協會捐款作選舉等用途，以涉公益侵占聲請羈押，法院裁准羈押禁見；羈押不代表有罪。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5606543",
+  "outlet": "自由時報",
+  "quote": "花蓮地檢署認定楊涉公益侵占罪嫌重大，有勾串共犯及證人之虞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the candidate and reports the alleged misuse, detention, and ongoing investigation."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts match the excerpt. But the article is dated 2026-10-14 and cannot prove the current status. The text needs 「（2026-10 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "hua8-3",
+  "name": "王玫瑰",
+  "kind": "neg",
+  "date": "2026-11-07",
+  "status": "起訴；羈押禁見（2026-11 報導時）",
+  "text": "花蓮地檢署依違反公職人員選舉罷免法及個人資料保護法等罪嫌，起訴秀林鄉長王玫瑰等5人，指涉宴請選民等賄選；法院裁定王玫瑰等4人羈押禁見3個月，王玫瑰否認犯行。",
+  "url": "https://cna.com.tw/news/asoc/202611070058.aspx",
+  "outlet": "中央社",
+  "quote": "依違反公職人員選舉罷免法及個人資料保護法等罪嫌，對王玫瑰等5人提起公訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "no",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies her as the Hualien County council candidate and confirms indictment, detention, and denial. It does not state the item’s claim that she was detained for three months; it says four were detained."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Person and facts match. Text lacks the bribery allegation. 「時任」 is not stated in the article. The status needs the 「（2026-11 報導時）」 tag because the article is 20 days old."
+   }
+  }
+ },
+ {
+  "code": "hua5-2",
+  "name": "笛布斯．顗賚",
+  "kind": "neg",
+  "date": "2023-10-30",
+  "status": "議會紀律委員會決議（2023-11）",
+  "text": "花蓮縣議會紀律委員會認定笛布斯．顗賚於會議後的不當發言損及議會形象，要求她公開導正並向議會道歉。",
+  "url": "https://www.hlcc.gov.tw/upfile/20231103164351-113.pdf",
+  "outlet": "花蓮縣議會",
+  "quote": "請笛布斯.顗賚議員於媒體公開向花蓮縣議會道歉。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The minutes record the committee’s finding and requests, but do not say it required a public apology; state this as the committee’s request."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Minutes of the 20th Council Disciplinary Committee name the candidate. The text attributes the finding to the committee, and an official council finding with an apology request is major."
+   }
+  }
+ },
+ {
+  "code": "hua5-3",
+  "name": "周駿宥",
+  "kind": "neg",
+  "date": "2026-02-15",
+  "status": "判決確定（已執行完畢；2026-11 報導時）",
+  "text": "周駿宥酒駕案經花蓮地院依公共危險罪判處有期徒刑3月，得易科罰金；已於2026年9月21日易科罰金執行完畢。",
+  "url": "https://www.judicial.gov.tw/tw/cp-1888-1643985-7a5ba-1.html",
+  "outlet": "司法院最高行政法院",
+  "quote": "判處有期徒刑3月，如易科罰金，以新臺幣1,000元折算1日確定",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "no",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the conviction and completion date, but not the article date or the claimed NT$90,000 amount."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the 3-month sentence and the 9/21 execution. It does not state the NT$90,000 amount, so remove it."
+   }
+  }
+ },
+ {
+  "code": "hua6-4",
+  "name": "邱福順",
+  "kind": "neg",
+  "date": "2020-05-05",
+  "status": "判決確定（2020-05 中選會資料）",
+  "text": "邱福順為2018年豐濱鄉長選舉候選人，因虛偽遷徙戶籍罪判刑確定，處有期徒刑4月、緩刑3年、褫奪公權1年。",
+  "url": "https://web.cec.gov.tw/api/file/5c06ac7c-e486-4d1d-b2bb-b815d2bf48c8.pdf",
+  "outlet": "花蓮縣選舉委員會",
+  "quote": "因犯刑法第146條第2項之虛偽遷徙戶籍罪，業經判決處有期徒刑肆月、緩刑參年、褫奪公權壹年。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies 邱福順 as the 2018 Fengbin Township chief candidate and states the conviction was final, with the listed sentence."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Same name, 豐濱鄉, 107 mayoral run. Facts match the excerpt. The 2020 record cannot prove the current status, because the 3-year probation has likely ended. Add the date note."
+   }
+  }
+ },
+ {
+  "code": "hua1-14",
+  "name": "傅國淵",
+  "kind": "neg",
+  "date": "2019-09-12",
+  "status": "簡易判決（2019-09；是否確定未查得）",
+  "text": "花蓮地院簡易判決傅國淵共同犯傷害罪，處拘役55日，得以每日新臺幣1,000元易科罰金（108年度花簡字第367號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLDM%2C108%2C花簡%2C367%2C20190912%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "傅國淵共同犯傷害罪，處 拘役 伍拾伍日，如 易科 罰金 ，以新臺幣 壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The judgment excerpt supports the offense and sentence, but supplies no finality information. Describe it as a trial-court judgment, not a confirmed conviction."
+   },
+   "claude": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The judgment names only 傅國淵 in 花蓮, with no role, party or district to match the candidate. Identity is not confirmed. Finality of this summary judgment is also unknown. Re-verify identity and finality before use."
+   }
+  }
+ },
+ {
+  "code": "hua1-3",
+  "name": "胡仁順",
+  "kind": "neg",
+  "date": "2011-12-15",
+  "status": "一審判決（2011-12；是否確定未查得）",
+  "text": "花蓮地院判決胡仁順犯隱匿他人刑事被告案件證據罪，處有期徒刑4月，得易科罰金，緩刑3年，並應向公庫支付5萬元（100年度訴字第269號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLDM%2C100%2C訴%2C269%2C20111215%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "胡仁順隱匿關係他人刑事被告案件之 證據 ，處有期徒刑肆月，如 易科罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the charge and sentence, but does not establish whether the judgment became final. Mark it as a trial-court judgment with finality unconfirmed."
+   },
+   "claude": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The 2011 judgment names only 胡仁順, with no role, age or district to match the candidate. Identity is not confirmed. Finality is unknown, and the status needs 「（2011-12 判決時）一審」. Re-verify identity first."
+   }
+  }
+ },
+ {
+  "code": "hua4-5",
+  "name": "鍾素政",
+  "kind": "neg",
+  "date": "2017-03-31",
+  "status": "二審判決（2017-03；是否確定未查得）",
+  "text": "臺灣高等法院花蓮分院判決鍾素政共同預備對候選人交付賄賂、約其放棄競選，處有期徒刑6月，得易科罰金，褫奪公權2年，未扣案預備賄款270萬元連帶沒收（105年度選上訴字第6號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLHM%2C105%2C選上訴%2C6%2C20170331%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "鍾素政、邱玉林共同預備對於候選人交付賄賂，而約其放棄競選 ，各處 有期徒刑 陸月，如 易科 罰金 ，均以新臺幣壹仟元折算壹日 。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment names鍾素政 and sets out the stated conviction, sentence, political-rights deprivation, and joint forfeiture."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt shows a high court appeal judgment, not finality. 「判決確定」 is unsupported, and the older page cannot prove the current status."
+   }
+  }
+ },
+ {
+  "code": "hua4-1",
+  "name": "詹金富",
+  "kind": "neg",
+  "date": "2017-12-28",
+  "status": "一審判決（2017-12；是否確定未查得）",
+  "text": "花蓮地院判決詹金富犯政府採購法妨害投標罪（借用他人名義投標），處有期徒刑5月，得易科罰金，沒收犯罪所得10萬7100元（106年度原訴字第33號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLDM%2C106%2C%E5%8E%9F%E8%A8%B4%2C33%2C20171228%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "詹金富犯政府採購法第八十七條第五項前段之妨害投標罪，處 有 期徒刑 伍月，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies詹金富 and gives the stated conviction, sentence, and forfeiture. The text does not claim the judgment is final."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt supports the facts and sentence. It is a first-instance district court ruling. Status 「有罪判決」 is vague, so state it as a first-instance judgment, not yet final."
+   }
+  }
+ },
+ {
+  "code": "hua4-1",
+  "name": "詹金富",
+  "kind": "neg",
+  "date": "2011-03-31",
+  "status": "判決確定（二審上易案件，依法不得上訴第三審；2011-03）",
+  "text": "臺灣高等法院花蓮分院認定詹金富借用他人公司名義投標，犯政府採購法妨害投標罪，宣告緩刑3年（99年度上易字第123號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=HLHM%2C99%2C上易%2C123%2C20110331%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "詹金富與張萬宗則仍承前犯意續向 東誠公司借牌投標，經開標結果，因僅東誠公司參與投標， 而以1,780萬元得標。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt attributes the loan-bidding conduct to詹金富, but the conviction and six-month sentence are absent from the excerpt. It states only that he received three years’ probation."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt shows 緩刑3年 and the bid-rigging facts. It does not show his 6-month sentence, the exact charge, 共同正犯 or finality. Narrow the text to what is supported."
+   }
+  }
+ }
+]
