@@ -1,0 +1,312 @@
+[
+ {
+  "code": "mia1-3",
+  "name": "許櫻萍",
+  "kind": "neg",
+  "date": "2020-05-29",
+  "status": "一審判決當選無效（2020-05 報導時，可上訴）",
+  "text": "苗栗地院一審判決許櫻萍2018年縣議員選舉當選無效，指其知情、授意或容許樁腳買票；她否認，稱對方是熱心支持者。",
+  "url": "https://www.cna.com.tw/news/asoc/202005290247.aspx",
+  "outlet": "中央社",
+  "quote": "今天遭苗栗地院一審判決當選無效，全案可上訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the candidate and district, reports the first-instance invalid-election judgment, her denial, and that appeal was available."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Real and major. Excerpt supports it. Older article cannot prove current status, so text must carry 「（2020-05 報導時）」. Add court's finding for balance."
+   }
+  }
+ },
+ {
+  "code": "mia1-3",
+  "name": "許櫻萍",
+  "kind": "neg",
+  "date": "2016-03-18",
+  "status": "判決確定",
+  "text": "許櫻萍違反選罷法案，苗栗地院判決當選無效；臺灣高等法院臺中分院駁回上訴，判決確定。",
+  "url": "https://gazette.nat.gov.tw/EG_FileManager/eguploadpub/eg022050/ch02/type3/gov15/num4/Eg.pdf",
+  "outlet": "行政院公報／中央選舉委員會公告",
+  "quote": "經臺灣苗栗地方法院民事判決當選無效，並經臺灣高等法院臺中分院民事判決「上訴駁回」確定",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The official notice identifies the 18th-term candidate in the first district and states the invalid-election judgment was affirmed on appeal and final."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Official CEC gazette says 18th-term councillor 許櫻萍's election was void, final after appeal dismissed. Status accurate. Text says 苗栗地院 and 高分院, both supported."
+   }
+  }
+ },
+ {
+  "code": "mia1-9",
+  "name": "張志宇",
+  "kind": "neg",
+  "date": "2020-02-13",
+  "status": "判決確定",
+  "text": "苗栗縣議會第19屆議員張志宇因違反公職人員選舉罷免法案件，經臺灣高等法院臺中分院民事判決當選無效確定。",
+  "url": "https://web.cec.gov.tw/api/file/22d2ea60-64dd-48e5-ab57-d897ec61bc29.pdf",
+  "outlet": "中央選舉委員會",
+  "quote": "經臺灣高等法院臺中分院民事判決當選無效確定",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The election commission notice identifies Zhang, his 19th-term seat and district, and confirms the invalid-election judgment was final."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "CEC notice names 張志宇, 19th-term 苗栗縣議員, district 1, election void final. Same district matches. Status exact; official primary source."
+   }
+  }
+ },
+ {
+  "code": "mia2-2",
+  "name": "羅貴星",
+  "kind": "neg",
+  "date": "2022-01-08",
+  "status": "判決確定（2022-01 報導時）",
+  "text": "羅貴星涉司法黃牛案，被控詐欺取財未遂，一審判處有期徒刑5月，二審駁回上訴，全案確定。",
+  "url": "https://newtalk.tw/news/view/2022-01-08/693593",
+  "outlet": "Newtalk（中央社）",
+  "quote": "案經二審台中高分院審理後駁回上訴，全案確定",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the candidate, states the five-month sentence, and says the appeal was dismissed and the case became final."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Same person (苗栗縣議員). Article supports 5-month sentence, appeal rejected, final. Original text omits the 5月 convertible-to-fine detail and 司法黃牛 context; '5個月' is fine. Minor wording fix only."
+   }
+  }
+ },
+ {
+  "code": "mia5-10",
+  "name": "温俊勇",
+  "kind": "neg",
+  "date": "2026-11-23",
+  "status": "偵查中（羈押禁見；2026-11 報導時）",
+  "text": "苗栗地檢署偵辦温俊勇涉現金賄選案，法院裁定羈押禁見；羈押不代表有罪。",
+  "url": "https://www.cna.com.tw/news/asoc/202611230217.aspx",
+  "outlet": "中央社",
+  "quote": "苗栗地院今天重開羈押庭，裁定温俊勇羈押禁見，當庭收押。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies independent county-council candidate Wen and reports the ongoing investigation and detention ruling, without implying guilt."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Recent CNA report (2026-11-23). It matches the candidate's party and office. Detention is a court decision during the investigation, so 偵查中 is right."
+   }
+  }
+ },
+ {
+  "code": "mia8-2",
+  "name": "劉美蘭",
+  "kind": "neg",
+  "date": "2025-05-13",
+  "status": "起訴（2025-05 報導時）",
+  "text": "苗栗地檢署依貪污治罪條例起訴劉美蘭，指其泰安鄉長任內與丈夫等人涉收工程回扣逾1100萬元；劉美蘭否認犯行。",
+  "url": "https://www.cna.com.tw/news/asoc/202505130098.aspx",
+  "outlet": "中央社",
+  "quote": "苗栗地檢署今天偵結依貪污治罪條例起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt confirms the candidate, charge, alleged amount, and her denial. It does not establish that no later judgment was found; the original wording also omits that the allegations were denied."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Person and indictment match. The excerpt cannot support the claim that no later verdict was found, and the status needs a report-date tag. Added the denial and amount from the article."
+   }
+  }
+ },
+ {
+  "code": "mia4-11",
+  "name": "陳碧華",
+  "kind": "neg",
+  "date": "2017-03-23",
+  "status": "二審判決（2017-03；是否確定未查得）",
+  "text": "陳碧華於2015年在LINE群組傳播關於立委候選人康世儒收受政治資金及棄選的不實訊息，臺灣高等法院臺中分院依選罷法第104條判處有期徒刑6月、褫奪公權1年（106年度選上訴字第138號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C106%2C選上訴%2C138%2C20170323%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "陳碧華（下稱被告） 矢口否認 有何上開犯行， 於原審辯稱：伊是無心的，當成一般的資訊傳遞，伊不知道",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the conviction and sentence; its quoted passage does not establish the NT$1,000-per-day conversion. Add the required article-date qualifier because this older report cannot establish current status."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Same case as mia-008 (duplicate; keep only one). Excerpt does not show 6月、易科罰金、褫奪公權 for this defendant or 確定 status. 確定 comes only from a lead note."
+   }
+  }
+ },
+ {
+  "code": "mia5-6",
+  "name": "陳光軒",
+  "kind": "neg",
+  "date": "2024-11-12",
+  "status": "簡易判決（2024-11；是否確定未查得）",
+  "text": "陳光軒2024年8月酒後駕車（吐氣酒精濃度每公升0.32毫克）追撞前車，苗栗地院依不能安全駕駛罪判處有期徒刑4月，得易科罰金（113年度苗交簡字第595號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=MLDM%2C113%2C苗交簡%2C595%2C20241112%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "陳光軒駕駛 動力交通工具 而吐氣所含 酒 精濃度達每公升零點二五毫克以上，處 有期徒刑 肆月，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The judgment states an appeal may be filed within 20 days. The excerpt alone does not establish that the judgment became final."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Judgment text is supported. The excerpt does not show finality; the 20-day appeal period is open. 「判決確定」 is unsupported. Text rewritten in plain words."
+   }
+  }
+ },
+ {
+  "code": "mia5-2",
+  "name": "鍾孟儒",
+  "kind": "neg",
+  "date": "2024-01-31",
+  "status": "簡易判決（2024-01；是否確定未查得）",
+  "text": "鍾孟儒於2022年里長選舉期間與他人共同違法利用對手個人資料，苗栗地院依個人資料保護法判處有期徒刑3月，得易科罰金，緩刑2年，並應支付公庫4萬元（112年度苗簡字第1594號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=MLDM%2C112%2C%E8%8B%97%E7%B0%A1%2C1594%2C20240131%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "鍾孟儒共同 犯 個人資料保護法 第四十一條之非公務機關未於蒐集特定目的必要範圍內利用個人資料罪，處",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the conviction and full sentence, but says an appeal may be filed within 20 days; it does not establish finality."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Matches candidate (頭份市文化里里長). Conviction is supported. Finality is not shown. Text made plain and neutral."
+   }
+  }
+ },
+ {
+  "code": "mia5-10",
+  "name": "温俊勇",
+  "kind": "neg",
+  "date": "2014-08-08",
+  "status": "簡易判決（2014-08；是否確定未查得）",
+  "text": "温俊勇因施用毒品2罪，苗栗地院簡易判決各處有期徒刑2月，應執行3月，得易科罰金（103年度苗簡字第727號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=MLDM%2C103%2C苗簡%2C727%2C20140808%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "温俊勇施用 第二級毒品 ，共貳罪，各處 有期徒刑 貳月，如 易科 罰 金 以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports two convictions and their individual sentences, but also gives a combined three-month sentence and an appeal right."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Age (37) and 頭份 residence match. Conviction is supported. Finality is not shown, so status is changed. Drug class is dropped because the judgment text is inconsistent on it."
+   }
+  }
+ }
+]
