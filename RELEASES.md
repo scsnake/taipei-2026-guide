@@ -2,6 +2,75 @@
 
 Each release lists the SHA-256 hash of every published file. Check your copy with `shasum -a 256 -c SHA256SUMS` (macOS) or `sha256sum -c SHA256SUMS` (Linux). Each release is also a signed git tag.
 
+## v0.6.6 — 2026-11-27
+
+council.html adds 苗栗縣 (56 candidates, 10 records). Fifteen 縣市, 190 records. 苗栗縣 review: GPT-6 Luna (medium) plus Claude Sonnet 5.5; disputes decided by Claude Opus 5.5.
+
+- Claims: 1269 (active). Ledger lines: 0.
+- SHA-256 of SHA256SUMS: `4d4ade4cab794f49354ba12e690c740c9c0a0cfc4e3b71aae8d871c1560240cb`
+
+| File | SHA-256 |
+|---|---|
+| `guide.md` | `c07736f947c94a8b9c43612f83ba91173e6931e18f148b7fd7020f659ea0b833` |
+| `index.html` | `4555edf9046f97b1f8bd60ae5ae580f0b3d9012f6afe07abcd99302b29a9e399` |
+| `mayors.html` | `c422c87854b34fb62f69c488baac4a2da83e78eac37fb48e4142b4d5f7dee1e2` |
+| `council.html` | `6dff269d84edd9dd92f1899f4752aaa58b214e51d68bf53339bcceffbdb04b1a` |
+| `rubric.md` | `d632be7ae2a51dd07804bb0c192997f497f5dc0d90a4efd6df352a0589b48c2c` |
+| `rubric_r22.md` | `603c79a79fe20993fd7e50cb55b16117f3520cc1e4eaaf3b2166d28906c28166` |
+| `VERIFY.md` | `6b258b552a3209ffc5c20b50213c29662ffca666ed2900179dc502b0b60a0ce1` |
+| `claims/D1.jsonl` | `caeccd651de9b4c2a451c46e467d105c55b5ffe41bf3750f257c433520830031` |
+| `claims/D2.jsonl` | `195c78c4b988265dc4fcb07a0f16160632282f4fed0f90342a4f8a79336900e1` |
+| `claims/D3.jsonl` | `44094f3d62bf907d932e3c37dcf7d6f5edf76cf9968f464b5382d2230edb0bf4` |
+| `claims/D4.jsonl` | `596cbdd009054548fd564ab42c4c4765b525479be8fa3a05da1f69045dd185b3` |
+| `claims/D5.jsonl` | `52d38312e5cd6777ea4f668c02e827fd80f5604412bac46ecdd2aad6fcf4bcd7` |
+| `claims/D6.jsonl` | `84afa83eaaf0b9ef6cf5f6dd3135cd1f18f59cb8e6bd215b78c57641091b8b5a` |
+| `claims/D7.jsonl` | `fae83a474ad25916458d790545b29bbb113f5f530840613d2b81bc36c2267de3` |
+| `claims/D8.jsonl` | `c60584cae423d1c8f5f9885e1a15450a307614071a9c2afbbb27bf1f97f5b41a` |
+| `claims/M.jsonl` | `324d6079d81f1060b1617806d747b70d98b84229b6734e2809f0f89250103e4a` |
+| `claims/R22.jsonl` | `6eeff34daf44626399a7d107e99d5e47a773e2c4ebcff2589934654bfd4ff448` |
+| `panel/D1.json` | `e9911fa5797942ab7d92e4b655599df0b51bd8f431daa007d072528cea023ea0` |
+| `panel/D2.json` | `8c07fd2209a78fe5bc3aed4f33c17d7ce09bc32b287e683c3d9ba7294ec444e6` |
+| `panel/D3.json` | `f8bdd27301f38f2dd1ab5e988b977ea4ffb72590b1b04a95146ec9a67a099aeb` |
+| `panel/D4.json` | `3fd5d67694bcae10b80d338421a9cde045ccdbf19c99a6ab3cf747a4fde972b4` |
+| `panel/D5.json` | `40c8548f6f69af6e5b350f085edbffc0f20ec78036553f26210557840b3a0728` |
+| `panel/D6.json` | `38db0e5823c81c6591922ddfd5998c0562e73ff86e7dfae12fd9e0d495b2e289` |
+| `panel/D7-D8.json` | `3c669d808519beac9202f2a405505db2e2ef8a21d3dedf4105dd552842f3a726` |
+| `panel/M.json` | `74eaf59e89d5fb607dd8227db80a51a2c05e2b060d9bba96ac188946969acf70` |
+| `panel/R22.json` | `6e1199fed9a4eafa18845ac9c366cc2dda82094761ce9817c60a5a9390ad6f3a` |
+| `panel/adjustments.json` | `864665ed5f54300afc374b794c72939c09e1d86b7a5b5dbe0913a0f9ec3d6a0c` |
+| `align/mayors.jsonl` | `c2406b4916872d10ef365ad13c59071001d4f0367a7beebc2ea6bebef1466e17` |
+| `align/taipei.jsonl` | `4e5faeb59e5d1ba05095cac41e39a90a67cc472e69b1574e14dd5a7b3ee6d707` |
+| `council/chc_candidates.json` | `be6e07192938beb025e7ae2caefbbcfa9a4c38c0b230c452e7df8f3ad967ced5` |
+| `council/chc_records.json` | `4130cdf4e3b9a56e2458ad59b0464e1de0fe1758023c1bc57bd8bc06f50d6c1a` |
+| `council/cyi_candidates.json` | `c634de68b0da6c2d4f397a5b71b5f083d81349bb660549ebeed7ef67e818d736` |
+| `council/cyi_records.json` | `67bf03396d28cfc94b8124097be00d4198a6869e5d05baf3cde8894a257d14fc` |
+| `council/cyq_candidates.json` | `e6cf3ce136c73bf1381d67392115e7102bc79964588a9e0f1c143b512d6f76fc` |
+| `council/cyq_records.json` | `6b19ac485689766dd400af54b08b48f1763942ffc14da8d82c06b792ecbe67c1` |
+| `council/hsq_candidates.json` | `2867ab51fcef7273504668817d4394496bb894bcbb6409342d72f87b3a2a2980` |
+| `council/hsq_records.json` | `02101f4e987a49043a9177352744a336169bd6161c6b1e2414dad11a9689c336` |
+| `council/hsz_candidates.json` | `f96ee60a327f451559390e5033978ee50c86053fe074da1c18167fead87c2682` |
+| `council/hsz_records.json` | `61544234df889b829ed49f67e79f39c02ac5f81f545bb07e4601fe0e7dc7957b` |
+| `council/kee_candidates.json` | `e2d65a55683b9e3a4f9d6327f89c6559234065c2608decee09790639d6497ca5` |
+| `council/kee_records.json` | `97187b5759a3c0e4d04f330df3764f7136683164484c53e1078de14d7d085705` |
+| `council/khh_candidates.json` | `beecc94cd0345ac30c9bfcfe08a50af318503af6770f3a5dcd18e7bb9feabea9` |
+| `council/khh_records.json` | `f33aac0246270bed011ac9ba8b03e16ab9a4c969534bde5f68a284921a1762ae` |
+| `council/mia_candidates.json` | `a4875af36df92e30b48f3428a29d28d1c8e38ae4e97f8b08ed5de733089a1466` |
+| `council/mia_records.json` | `9b4a2043a6ec3c249a480c5513ed32de919cfab3d7972683d84eb6f2ab0ba4ec` |
+| `council/nan_candidates.json` | `00b5b24a5caf4538a75cad04b8115f2452254a42c7d8bfa9e692cf40b0c4171b` |
+| `council/nan_records.json` | `a725960384347eee8aaeaad0c4fc48cfcf2cddcadba18cad148c84a965f67112` |
+| `council/ntpc_candidates.json` | `89e67e217dbdeba597653b110b28aa29afb45ea58d5c7a63da4cd0509bbe63bd` |
+| `council/ntpc_records.json` | `e9131dbca30eff3fc422c895f53b8a64866658beec5ce86885cbec04d369f6f1` |
+| `council/pif_candidates.json` | `c18b3a2d7874170318e5c20c4aad6b0ca3776a68c2ca66e817ab91d0bb01bfe7` |
+| `council/pif_records.json` | `fe955c53cc80e1b97cab9404da8a9f68fa7e5940ffbe045c248f414aa89a5eae` |
+| `council/tnn_candidates.json` | `d795aec209b9a12515af63588524930dc77b68fe04c6ddd546af4dc6be71cd4c` |
+| `council/tnn_records.json` | `c1d7023e2009d35c152c0c2ad0d8a35c965a8d2fef392b7a892bb06d0c632270` |
+| `council/txg_candidates.json` | `30081a6937a964d88dd85723f45f9af1a8fd9441db84448d76b7822d2f846e13` |
+| `council/txg_records.json` | `8af423ca90d8821df1c854bf3f7038a09a52e709f5b717c0c6704ca550a14eec` |
+| `council/tyc_candidates.json` | `3c8832db2d7af965ff80b2c7b63b0d2da59fad184d7e8843cf180ef481deaa8f` |
+| `council/tyc_records.json` | `822131389545d7af51f766d7988a49c603616b417b5e00179c0780b1b8d68f53` |
+| `council/yun_candidates.json` | `04fc7402cdf2d9e0799f0167782550667ce24dedbe32f2a5b15972b3cfb4692e` |
+| `council/yun_records.json` | `e4c7ca571659f5c5fb29cd1d137f679a0b48d8d3ebb66ae5c5fe7659e84bc467` |
+
 ## v0.6.5 — 2026-11-27
 
 council.html adds 新竹縣 (68 candidates, 10 records; 1 marked as inferred identity). Fourteen 縣市, 180 records. 新竹縣 review: GPT-6 Luna (medium) plus Gemini 4 Neon, or Claude Sonnet 5.5 where Gemini was rate-limited; disputes decided by Claude Opus 5.5.
