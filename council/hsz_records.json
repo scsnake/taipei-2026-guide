@@ -1,0 +1,250 @@
+[
+ {
+  "code": "hsz1-19",
+  "name": "黃文政",
+  "kind": "neg",
+  "date": "2025-04-30",
+  "status": "一審判決（未確定）；二審審理中（2026-08 報導時）",
+  "text": "黃文政涉未出席議會會議卻補簽到、領取出席費等共4900元，新竹地院一審依利用職務機會詐取財物罪判處2年徒刑、緩刑5年；上訴後二審續開辯論庭。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5555639",
+  "outlet": "自由時報",
+  "quote": "判處黃文政2年徒刑、褫奪公權2年、緩刑5年",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article reports the allegation and sentence, but does not explicitly describe the conduct as the court’s finding. Current appeal status is unverified."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts and legal status match the 2026-08-28 report and candidate bio."
+   }
+  }
+ },
+ {
+  "code": "hsz1-3",
+  "name": "鄭宏輝",
+  "kind": "neg",
+  "date": "2022-09-05",
+  "status": "起訴（2022-09 報導時）",
+  "text": "新竹地檢署指鄭宏輝涉以偽造文書方式加速土地重劃，予以起訴；鄭宏輝表示將循法律途徑捍衛清白。",
+  "url": "https://vip.udn.com/vip/story/121160/6589242?from=vipudn_content_series",
+  "outlet": "聯合報",
+  "quote": "疑意圖以偽造文書方式，加速土地重劃，遭新竹地檢署起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the indictment and response, but not the claim that no later judgment was found."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2022-09 article cannot prove current status; must add (2022-09 報導時) and include his response."
+   }
+  }
+ },
+ {
+  "code": "hsz1-16",
+  "name": "蔡惠婷",
+  "kind": "contrib",
+  "date": "2013-09-11",
+  "status": "n/a",
+  "text": "蔡惠婷任新竹市陽光國小教師期間，以《陽光舞四季～三高五感的節氣課程》獲教育部102年度（2013年）教師教學卓越獎。",
+  "url": "https://nwcoh.nttu.edu.tw/var/file/31/1031/img/582435814.pdf",
+  "outlet": "國立臺東大學",
+  "quote": "榮獲教育部 102 年度教師教學卓越獎《陽光舞四季～三高五感的節氣課程》",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The excerpt supports the award and course. It does not establish the team claim or the ceremony date."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Excerpt does not mention the 2013-09-11 ceremony date or '教學團隊'; revised to stick strictly to excerpt."
+   }
+  }
+ },
+ {
+  "code": "hsz2-2",
+  "name": "許修睿",
+  "kind": "neg",
+  "date": "2022-12-08",
+  "status": "判刑（2022-12 報導時；報導未載明確定與否）",
+  "text": "據2022年12月報導，許修睿過去因違法經營棄土場，隨眾毆打、恐嚇不從的廠商，遭判有期徒刑6個月。",
+  "url": "https://www.mnews.tw/story/20221208sot12023",
+  "outlet": "鏡新聞",
+  "quote": "隨眾毆打、恐嚇不從廠商，被判6個月有期徒刑",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未將6個月刑期明確連結至強制罪，也未載明確定年份或易科罰金執行情形。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not mention 2001 finality or fine commutation, and separates the 6-month dumping-site case from the 1-year coercion sentence."
+   }
+  }
+ },
+ {
+  "code": "hsz2-5",
+  "name": "田雅芳",
+  "kind": "neg",
+  "date": "2012-07-12",
+  "status": "判決確定",
+  "text": "田雅芳因違反公職人員選舉罷免法，判處有期徒刑3月、褫奪公權1年、緩刑2年，最高法院駁回上訴確定。內政部解除其議員職權。",
+  "url": "https://web.cec.gov.tw/api/file/7ccf84b8-2834-4ae8-9ad1-6150d03a0301.pdf",
+  "outlet": "中央選舉委員會",
+  "quote": "並經最高法院判決「上訴駁回」確定。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "中選會公告證實判決確定、刑度及解除議員職權。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Official CEC notice confirms the candidate, conviction, final Supreme Court dismissal, and removal from office."
+   }
+  }
+ },
+ {
+  "code": "hsz5-6",
+  "name": "吳國寶",
+  "kind": "neg",
+  "date": "2025-04-30",
+  "status": "一審判決（未確定；2025-04 判決時）",
+  "text": "新竹地院認定吳國寶未出席會議卻補簽到，詐領出席費等共4,900元，依利用職務機會詐取財物罪判應執行有期徒刑1年8月、褫奪公權1年、緩刑3年。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=SCDM%2C112%2C%E8%A8%B4%2C578%2C20250430%2C2",
+  "outlet": "臺灣新竹地方法院",
+  "quote": "吳國寶犯利用職務機會詐取財物罪，共貳罪",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "判決支持各項事實，但不能證明目前狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The 2025-04 judgment cannot prove current status; text must include 「（2025-04 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "hsz7-2",
+  "name": "雲翔",
+  "kind": "neg",
+  "date": "2026-11-10",
+  "status": "偵查中（6萬元交保；2026-11 報導時）",
+  "text": "檢方調查雲翔涉嫌贈禮賄選及虛偽遷徙戶籍，訊後諭知6萬元交保。",
+  "url": "https://www.mirrordaily.news/story/96927",
+  "outlet": "鏡報",
+  "quote": "雲翔訊後以6萬元交保，另名涉案選民則以2萬元交保。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持所述事實，但不能證明目前案件狀態，須標明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "候選人身分、退休警察背景及選區均吻合；報導明確支持涉嫌賄選、虛偽遷徙戶籍、6萬元交保及偵查中狀態，用語中性且具重大性。"
+   }
+  }
+ },
+ {
+  "code": "hsz5-4",
+  "name": "葉國文",
+  "kind": "neg",
+  "date": "2022-10-21",
+  "status": "偵查中（20萬元交保；2022-10 報導時，後續處分未查得）",
+  "text": "2022年選前，新竹地檢署指葉國文捐助社團法人協會作為學生獎學金，涉違反選罷法行求賄賂等罪嫌，傳喚後諭令20萬元交保、限制住居。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/4096525",
+  "outlet": "自由時報",
+  "quote": "予葉男20萬元交保並限制住居",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未載葉的回應，也無法證明後續處分或目前狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts are supported, but the 2022-10 article cannot prove current status; must add 「（2022-10 報導時）」."
+   }
+  }
+ }
+]
