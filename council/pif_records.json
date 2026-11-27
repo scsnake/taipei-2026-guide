@@ -1,0 +1,560 @@
+[
+ {
+  "code": "pif1-2",
+  "name": "蔣月惠",
+  "kind": "neg",
+  "date": "2020-08-20",
+  "status": "判決確定（2020-08 報導時）",
+  "text": "蔣月惠2018年在屏東市公勇路拆遷現場的警民衝突中，咬傷、打傷2名執勤女警遭起訴；二審駁回上訴，判處拘役80天、得易科罰金定讞。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/3265952",
+  "outlet": "自由時報",
+  "quote": "今天遭判處拘役80天定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未指明起訴罪名，亦未說明聲援拆遷戶的動機。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt does not mention 妨害公務罪; adjusted text to match excerpt facts."
+   }
+  }
+ },
+ {
+  "code": "pif2-2",
+  "name": "葉明博",
+  "kind": "neg",
+  "date": "2017-08-01",
+  "status": "判決確定",
+  "text": "葉明博2015年補選當選鹽埔鄉長，因樁腳買票，遭法院判決當選無效。他否認涉入，高雄高分院駁回上訴，全案確定。",
+  "url": "https://www.cna.com.tw/news/asoc/201708010231.aspx",
+  "outlet": "中央社",
+  "quote": "仍判處葉明博當選無效定讞",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "判決當選無效定讞，原文也記載葉明博的否認。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, identity, and final judgment status are supported and neutral."
+   }
+  }
+ },
+ {
+  "code": "pif2-5",
+  "name": "宋麗華",
+  "kind": "neg",
+  "date": "2026-08-13",
+  "status": "偵查中（300萬元交保；2026-08 報導時）",
+  "text": "橋頭地檢署指宋麗華與丈夫涉犯詐欺、洗錢等罪，搜索其住處並查扣黃金及現金；法院裁定宋麗華300萬元交保並限制住居。",
+  "url": "https://cna.com.tw/news/asoc/202608130316.aspx",
+  "outlet": "中央社",
+  "quote": "裁定宋麗華以新台幣300萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "原文未標明偵查狀態的時間；摘錄未提供宋麗華的實質回應。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Non-final investigation status from 2026-08; text must note 「（2026-08 報導時）」."
+   }
+  }
+ },
+ {
+  "code": "pif4-3",
+  "name": "許展維",
+  "kind": "neg",
+  "date": "2023-07-31",
+  "status": "偵查中（20萬元交保；2023-07 報導時）",
+  "text": "許展維時為民進黨屏南立委參選人，涉嫌違反政府採購法，以20萬元交保後宣布退選；他表示會配合調查並證明清白。",
+  "url": "https://www.cna.com.tw/news/afe/202307310359.aspx",
+  "outlet": "中央社",
+  "quote": "民進黨屏南立委參選人許展維涉嫌違反政府採購法並以新台幣20萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article establishes the status at the time, not the current status."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2023-07 舊報導無法證明目前偵查狀態，內文與狀態均須補註「（2023-07 報導時）」。"
+   }
+  }
+ },
+ {
+  "code": "pif5-4",
+  "name": "周碧雲",
+  "kind": "neg",
+  "date": "2021-04-21",
+  "status": "偵查中（20萬元交保；2021-04 報導時）",
+  "text": "屏東地檢署偵辦周碧雲涉嫌以人頭詐領議員助理費案，傳訊後諭令20萬元交保候傳。周碧雲表示絕無將公款納入私人口袋，盼檢方查清事實。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/3506746",
+  "outlet": "自由時報",
+  "quote": "今天凌晨諭令周碧雲20萬元交保候傳，周博彥10萬元交保候傳。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article establishes the investigation status only at the time of reporting."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2021-04 舊聞無法證明目前進度，text 與 status 須標註「（2021-04 報導時）」，並移除節錄未載之「後續結果未查得」。"
+   }
+  }
+ },
+ {
+  "code": "pif1-5",
+  "name": "林明順",
+  "kind": "neg",
+  "date": "2021-10-06",
+  "status": "裁罰確定",
+  "text": "擔任屏東縣議員期間建議縣府補助其關係人屏東縣大仁科技大學校友會9萬8千元，違反公職人員利益衝突迴避法第12條，經監察院裁處罰鍰新臺幣10萬元確定。",
+  "url": "https://www.zhushan.gov.tw/ViewService/FileDownload.ashx?id=1a1e490b-15e9-4fd8-bdeb-582961d7fd0a&name=35DF7B9E704F445B83DADED8CB3B57B2&module=Word_File",
+  "outlet": "南投縣竹山鎮公所（轉載監察院裁處確定公告）",
+  "quote": "林明順 屏東縣議會 議員 聯誼會」新臺幣 9 萬 8 千元，顯係假借 10 萬元 月 月 議員職務上",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "官方裁罰確定名單支持所述事實與金額。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Official Control Yuan fine list confirms identity, violation, amount, and final status."
+   }
+  }
+ },
+ {
+  "code": "pif1-5",
+  "name": "林明順",
+  "kind": "neg",
+  "date": "2011-03-01",
+  "status": "有罪判決（2012-02 報導時；是否確定未載明）",
+  "text": "報導指林明順早年任屏東縣議員期間，曾因收賄案遭判處有期徒刑6月、褫奪公權3年。",
+  "url": "https://news.ltn.com.tw/news/society/paper/563753",
+  "outlet": "自由時報",
+  "quote": "林明順任上曾收賄 去年遞補上議員",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未說明判決確定；文章日期為2012年，而非所填的2011年。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not explicitly state 判決確定; added reporting date qualifier and updated status."
+   }
+  }
+ },
+ {
+  "code": "pif2-4",
+  "name": "王景山",
+  "kind": "neg",
+  "date": "2024-06-06",
+  "status": "判決確定（2024-06）",
+  "text": "王景山經營堆肥廠，多次違法棄置廚餘等廢棄物，依廢棄物清理法判處有期徒刑1年10月；2024年6月最高法院駁回上訴定讞，並解除其屏東縣議員職務。王景山喊冤。",
+  "url": "https://www.cna.com.tw/news/asoc/202406060180.aspx",
+  "outlet": "中央社",
+  "quote": "王景山說，審理過程中，要求傳喚證人證明自己無罪，也都不傳，「實在太可怕了。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄未載明298車次或最高法院宣判日期；原文未納入王景山的回應。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt does not mention 「共298車次」; removed unsupported figure and included his response."
+   }
+  }
+ },
+ {
+  "code": "pif2-11",
+  "name": "盧文瑞",
+  "kind": "neg",
+  "date": "2025-12-29",
+  "status": "處分確定",
+  "text": "辦理公職人員財產申報時，未據實申報本人債務1筆，經監察院認定故意申報不實，裁處新台幣40萬元罰鍰，於2025年12月29日處分確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=81444",
+  "outlet": "監察院",
+  "quote": "盧文瑞 屏東縣議會 副議長 目，未據實申報本人債務1 40萬元 月 月 筆。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "監察院名單載明事實、金額及處分確定日期。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Official Control Yuan gazette fully supports identity, NT$400,000 fine, and finalization date."
+   }
+  }
+ },
+ {
+  "code": "pif3-5",
+  "name": "黃建溢",
+  "kind": "neg",
+  "date": "2019-11-20",
+  "status": "當選無效判決確定（2019-11）",
+  "text": "民進黨籍屏東縣議員黃建溢涉賄選，遭提當選無效之訴，二審判決當選無效定讞。",
+  "url": "https://www.cna.com.tw/news/asoc/201911200264.aspx",
+  "outlet": "中央社",
+  "quote": "黃建溢賄選 二審當選無效定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "標題支持二審當選無效定讞，但未提供樁腳、起訴經過或解職細節。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt only contains the CNA headline; details like 2018, 樁腳買票, 高雄高分院, date, and 解職 are not in the excerpt."
+   }
+  }
+ },
+ {
+  "code": "pif3-11",
+  "name": "潘連周",
+  "kind": "neg",
+  "date": "2024-01-31",
+  "status": "當選無效判決確定（2024-01）",
+  "text": "屏東縣議員潘連周涉賄選，遭提當選無效之訴，二審逆轉改判當選無效定讞。",
+  "url": "https://www.cna.com.tw/news/asoc/202401310322.aspx",
+  "outlet": "中央社",
+  "quote": "潘連周涉賄 二審逆轉判當選無效定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "標題支持二審逆轉判決定讞，但未提供買票金額、訴訟經過或遞補細節。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt only contains the CNA headline; details like 2022, 第20屆, 洪姓樁腳, 1000元, 高雄高分院, date, and 黃建溢遞補 are unsupported."
+   }
+  }
+ },
+ {
+  "code": "pif4-5",
+  "name": "方冠丁",
+  "kind": "neg",
+  "date": "2024-09-01",
+  "status": "刑事判決確定（2024-09 報導時）",
+  "text": "方冠丁競選連任新園鄉長時，在造勢場合影射黃昭展開賭盤，遭依誹謗罪判處拘役59天確定，可易科罰金；民事另判賠20萬元並須刊登刑事判決全文。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/4792900",
+  "outlet": "自由時報",
+  "quote": "方冠丁誹謗判拘59天 還要賠20萬、在臉書社團刊登判決",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt does not establish the 2022 election year or finality of the civil judgment."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "同人確認，摘錄明確載明誹謗罪判處拘役59天確定、民事判賠20萬元及臉書刊登判決全文，敘述中立。"
+   }
+  }
+ },
+ {
+  "code": "pif5-4",
+  "name": "周碧雲",
+  "kind": "neg",
+  "date": "2019-12-11",
+  "status": "行政處分（廢止登記；2019-12 報導時）",
+  "text": "屏東縣政府表示，周碧雲經營的枋寮鄉樂樂等5間養雞場違反畜牧法、未設置廢污處理設備，裁罰3次仍未改善，於2019年12月11日廢止登記並註銷畜牧場登記證。",
+  "url": "https://www.cna.com.tw/news/firstnews/201912110298.aspx",
+  "outlet": "中央社",
+  "quote": "周碧雲經營的枋寮鄉樂樂等5間養雞場，因時代力量立委黃國昌南下陪民眾抗爭成為焦點。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not attribute the penalties or revocation to long-term odors."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "節錄未提及「長期惡臭擾鄰」，實際理由為違反畜牧法未設廢污處理設備；此屬官方行政處分，status 不應填 n/a。"
+   }
+  }
+ },
+ {
+  "code": "pif7-1",
+  "name": "陳國在",
+  "kind": "neg",
+  "date": "2026-11-25",
+  "status": "偵查中（無保請回；2026-11 報導時）",
+  "text": "屏東地檢署獲報陳國在等人涉嫌以每票1000至2000元包裹式賄選，檢調登島搜索並傳喚陳國在等人及證人共15人；陳國在等人無保請回，檢方持續釐清。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5654072",
+  "outlet": "自由時報",
+  "quote": "陳國在、鄉長候選人蔡榮民等人涉嫌包裹式賄選，屏東地檢署今無保請回。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "15人包括選民及證人，並非均為被傳喚的涉案者；須標明報導時的狀態。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms candidate identity, alleged vote-buying search, release without bail, and ongoing investigation as of 2026-11-26."
+   }
+  }
+ },
+ {
+  "code": "pif10-1",
+  "name": "蕭惠美",
+  "kind": "neg",
+  "date": "2026-11-25",
+  "status": "偵查中（收押禁見；2026-11 報導時）",
+  "text": "蕭惠美涉嫌於2026年6月及10月以每票1000元向選民買票，部分現金藏於水果禮盒；檢方搜索、訊後逮捕，屏東地院11月25日裁定收押禁見。",
+  "url": "https://udn.com/news/story/7321/9901441",
+  "outlet": "聯合報",
+  "quote": "蕭惠美收押禁見 2026-11-25 16:07 聯合報／ 記者 劉星君 ／屏東即時報導 議員 賄選",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The report supports the facts and investigation status, but the status needs a reporting-date qualifier."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Exact candidate match (屏東縣第10選區、無黨籍、衛生所護理長). Every fact, date, and legal status (偵查中, 收押禁見) is directly supported by the 2026-11-25 UDN report, major, and neutrally worded."
+   }
+  }
+ },
+ {
+  "code": "pif12-2",
+  "name": "越秋女",
+  "kind": "neg",
+  "date": "2026-06-08",
+  "status": "起訴（2026-06 報導時）",
+  "text": "台北地檢署偵結立委高金素梅涉貪等案，起訴越秋女等人；起訴指她在疫情期間依指示蒐集人頭，以個人自用名義輸入快篩試劑。",
+  "url": "https://www.cna.com.tw/news/asoc/202606080249.aspx",
+  "outlet": "中央社",
+  "quote": "越秋女、台東縣議員陳政宗、花蓮縣議員簡智隆及程美蓮等24人。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導未逐一列出各被告的罪名；原文將涉案情節寫成確定事實，且未註明報導時間。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2026-06 報導無法證明選前現況，須加註「（2026-06 報導時）」，並改用起訴書原述「未經核准」。"
+   }
+  }
+ },
+ {
+  "code": "pif13-2",
+  "name": "周陳曉玟",
+  "kind": "neg",
+  "date": "2026-09-16",
+  "status": "偵查中（60萬元交保；2026-09 報導時）",
+  "text": "周陳曉玟涉嫌發放未經許可的快篩試劑，經屏東地檢署訊後以60萬元交保。",
+  "url": "https://www.cna.com.tw/news/asoc/202609160050.aspx",
+  "outlet": "中央社",
+  "quote": "周陳曉玟涉發放未經許可快篩試劑 60萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅支持涉嫌發放未經許可試劑及交保；不支持其他案情或偵查狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt only has the headline, supporting 60萬元交保 for allegedly distributing unauthorized rapid test kits, not the 2022 election, China origin, or specific laws. Trim to supported facts and add report date."
+   }
+  }
+ },
+ {
+  "code": "pif1-5",
+  "name": "林明順",
+  "kind": "neg",
+  "date": "2013-04-18",
+  "status": "一審判決（2013-04；是否確定未確認）",
+  "text": "林明順2012年因行車糾紛阻擋校車，屏東地院依強制罪（累犯）判處有期徒刑3月，得易科罰金。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=PTDM%2C101%2C易%2C424%2C20130418%2C2",
+  "outlet": "司法院裁判書",
+  "quote": "林明順犯 強制罪 ， 累犯 ，處 有期徒刑 叁月，如 易科 罰金 ，以新臺 幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄支持一審判決，但未證明後續狀態。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "First-instance 2013 judgment cannot prove current status; added judgment date qualifier and clarified status."
+   }
+  }
+ }
+]
