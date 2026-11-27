@@ -1,0 +1,281 @@
+[
+ {
+  "code": "txg4-8",
+  "name": "王朝坤",
+  "kind": "neg",
+  "date": "2022-10-14",
+  "status": "判決確定（緩刑4年）",
+  "text": "王朝坤因后里區農會選舉違反農會法共同交付財物，判有期徒刑1年6月，二審駁回上訴並宣告緩刑4年、付保護管束確定；2022年因保護管束執行未畢，遭中選會認定不得登記參選。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/4089313",
+  "outlet": "自由時報",
+  "quote": "因違反農會法被判緩刑並交付管束",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "判決確定及2022年不得登記的原因均有明確記載。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt states disqualification was due to unfinished probation supervision (保護管束執行未畢), not 緩刑執行未畢."
+   }
+  }
+ },
+ {
+  "code": "txg3-3",
+  "name": "林汝洲",
+  "kind": "neg",
+  "date": "2016-06-22",
+  "status": "當選無效判決確定（2016-06）",
+  "text": "檢方指控林汝洲的外甥及樁腳於2014年市議員選舉以每票500元賄選；林汝洲稱未授意，法院不採信。2016年6月二審駁回上訴，當選無效確定並解除職務。",
+  "url": "https://news.ltn.com.tw/news/politics/paper/1003361",
+  "outlet": "自由時報",
+  "quote": "林汝洲，被指控前年十一月間，由其外甥陳進益及樁腳以每票五百元代價賄選，檢察官提起當選無效之訴，台中地",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The accusation needs attribution and Lin’s response."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt matches candidate's district and bio, and confirms the 2016-06-22 final second-instance ruling invalidating his 2014 election over NT$500 vote-buying by his nephew and brokers."
+   }
+  }
+ },
+ {
+  "code": "txg4-7",
+  "name": "謝志忠",
+  "kind": "contrib",
+  "date": "2026-10-01",
+  "status": "n/a",
+  "text": "謝志忠與王立任揭露台中魚市場公司董事長溢領年終獎勵金及酬勞金；市府確認溢領122萬5,000元，公司已收回全數款項。",
+  "url": "https://news.ltn.com.tw/news/life/breakingnews/5599518",
+  "outlet": "自由時報",
+  "quote": "謝志忠（右）、王立任踢爆台中魚市場董事長李煥湘自肥。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "市府確認溢領及收回款項，但摘錄未證實違法、解除職務、移送政風或揭露促成追回。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Excerpt confirms full recovery of NT$1,225,000 and review, but does not mention dismissal (解除其職務) or referral to ethics office (移送政風調查)."
+   }
+  }
+ },
+ {
+  "code": "txg8-4",
+  "name": "陳諭韋",
+  "kind": "neg",
+  "date": "2023-12-19",
+  "status": "當選無效判決確定（2023-12）",
+  "text": "陳諭韋2022年當選南投縣埔里鎮民代表，樁腳涉現金賄選及設宴款待選民；高院臺中分院2023年12月判決當選無效確定。陳諭韋稱不知悉買票，也未授意或參與。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/4525771",
+  "outlet": "自由時報",
+  "quote": "陳諭韋被控，其劉姓與黃姓樁於去年選舉期間設宴款待選民，或以現金賄選，檢察官對陳諭韋提起當選無效之訴，",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt does not support removal from the vice chair position. It reports a final civil judgment and her response."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt confirms 2023-12-19 final ruling of election invalidation, but does not mention removal from vice-chairperson position."
+   }
+  }
+ },
+ {
+  "code": "txg17-4",
+  "name": "柯靜志",
+  "kind": "neg",
+  "date": "2024-05-06",
+  "status": "罰鍰確定",
+  "text": "柯靜志2022年參選臺中市議員後，未於投票日後3個月內申報政治獻金會計報告書，遭裁處罰鍰新臺幣80萬元確定。",
+  "url": "https://www.cy.gov.tw/SpecialPublicationDL.aspx?id=73819",
+  "outlet": "監察院",
+  "quote": "柯靜志 K121****** 柯靜志政 計報告書，違反政治獻金法第 80 萬元 月 月 治獻金專 21 條第 1 項第 2 款規定。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "姓名與臺中市議員擬參選人身分相符，處分及確定日期均有記載。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "監察院處分確定名單明確記載111年臺中市議員擬參選人柯靜志逾期未申報政治獻金會計報告書，裁處罰鍰80萬元並於113年5月6日確定。"
+   }
+  }
+ },
+ {
+  "code": "txg4-1",
+  "name": "黃朝淵",
+  "kind": "neg",
+  "date": "2025-10-08",
+  "status": "二審判決（2025-10）",
+  "text": "黃朝淵駕車追撞機車致人受傷後離開現場，一審依肇事致人傷害逃逸罪判有期徒刑8月；臺中高分院2025年10月駁回上訴，宣告緩刑3年，並應向公庫支付10萬元。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C114%2C%E4%BA%A4%E4%B8%8A%E8%A8%B4%2C81%2C20251008%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "黃朝淵 緩刑 叁年，並應於判決確定後六個月向公庫支付新臺幣壹拾萬元。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "判決書被告與候選人同名，並曾參選，但摘錄未提供足夠資訊確認是同一人。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Taichung court ruling matches defendant's political background (running for legislator/councilor) and supports all facts and status."
+   }
+  }
+ },
+ {
+  "code": "txg17-4",
+  "name": "柯靜志",
+  "kind": "neg",
+  "date": "2016-08-31",
+  "status": "簡易判決（2016-08）",
+  "text": "柯靜志2016年6月酒後駕車上高速公路，苗栗地院2016年8月依不能安全駕駛罪判有期徒刑3月、併科罰金1萬元；判決記載他2008年也曾因酒駕被判罰金5萬元確定。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=MLDM%2C105%2C%E8%8B%97%E5%8E%9F%E4%BA%A4%E7%B0%A1%2C61%2C20160831%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "柯靜志前因違背安全駕駛案，經臺灣臺中地方法院以97年度 豐交簡字第35號判處罰金新臺幣5萬元確定。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "姓名、年齡與沙鹿區住址相符，但摘錄未提供足夠資訊確認就是候選人。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "被告年齡（105年38歲）、住沙鹿區及原住民專庭案號均吻合，附件明載其97年度豐交簡字第35號違背安全駕駛案判處罰金5萬元確定。"
+   }
+  }
+ },
+ {
+  "code": "txg17-4",
+  "name": "柯靜志",
+  "kind": "neg",
+  "date": "2020-05-22",
+  "status": "簡易判決（2020-05）",
+  "text": "柯靜志因過失傷害致人重傷，臺中地院沙鹿簡易庭2020年5月判有期徒刑5月，得易科罰金。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=SDEM%2C108%2C%E6%B2%99%E5%8E%9F%E4%BA%A4%E7%B0%A1%2C93%2C20200522%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "柯靜志犯犯過失傷害致人 重傷 罪，處 有期徒刑 伍月，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅有同名，無足夠身分資訊確認是候選人；文字亦未註明判決日期。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "姓名、沙鹿簡易庭及原住民專庭案號與候選人吻合，主文支持過失傷害致人重傷罪判刑5月得易科罰金，且已標註是否確定未確認。"
+   }
+  }
+ },
+ {
+  "code": "txg17-4",
+  "name": "柯靜志",
+  "kind": "neg",
+  "date": "2024-11-19",
+  "status": "簡易判決（2024-11）",
+  "text": "柯靜志酒後駕車（吐氣酒精濃度逾每公升0.25毫克），新北地院2024年11月依不能安全駕駛罪判有期徒刑3月、併科罰金3萬元。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=PCDM%2C113%2C%E5%8E%9F%E4%BA%A4%E7%B0%A1%2C153%2C20241119%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "柯靜志駕駛 動力交通工具 吐氣所含酒精濃度達每公升零點二五毫克以上，處 有期徒刑 參月， 併科 罰金",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "unsure",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "姓名與年齡相符，但不足以確認是候選人；文字亦未註明判決日期。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "姓名、年齡（113年47歲）及原住民專庭案號與候選人吻合，主文支持酒駕判刑3月併科罰金3萬元，狀態標註準確。"
+   }
+  }
+ }
+]
