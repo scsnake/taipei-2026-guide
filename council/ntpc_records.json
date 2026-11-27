@@ -1,0 +1,498 @@
+[
+ {
+  "code": "ntpc2-7",
+  "name": "張昭隆",
+  "kind": "neg",
+  "date": "2026-09-18",
+  "status": "起訴（2026-09 報導時）",
+  "text": "張昭隆涉於2026年競選期間發放蘿蔔糕與1美元紅包，9月10日遭搜索並羈押禁見，新北地檢署9月18日依違反選罷法起訴。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5578431",
+  "outlet": "自由時報",
+  "quote": "新北地檢署今火速依違反選罷法起訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持起訴及羈押禁見，但不能證明目前尚無判決。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Article is from 2026-09-18 and cannot prove current status ('目前未見判決'); add year and '(2026-09 報導時)'."
+   }
+  }
+ },
+ {
+  "code": "ntpc4-14",
+  "name": "王威元",
+  "kind": "neg",
+  "date": "2026-08-26",
+  "status": "起訴（2026-08 報導時）",
+  "text": "新北地檢署依貪污治罪條例行求賄賂罪嫌起訴王威元，指他以禮盒藏20萬元行賄市場處長，求刑3年以上；王威元否認犯行。",
+  "url": "https://cna.com.tw/news/asoc/202608260218.aspx",
+  "outlet": "中央社",
+  "quote": "新北檢依貪污治罪條例行求賄賂罪嫌起訴，並求刑3年以上",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導證實起訴及求刑，但不能證明目前仍在審理或尚未判決。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2026-08 報導無法證明目前審理進度，須加註「（2026-08 報導時）」，並補述本人否認犯行。"
+   }
+  }
+ },
+ {
+  "code": "ntpc5-5",
+  "name": "曾煥嘉",
+  "kind": "neg",
+  "date": "2026-05-22",
+  "status": "一審判決（未確定；2026-05 報導時）",
+  "text": "曾煥嘉涉以人頭詐領公費助理補助費128萬餘元，新北地院一審判有期徒刑3年、褫奪公權4年；上訴二審審理中，他改口否認貪污。",
+  "url": "https://www.setn.com/news/1842558",
+  "outlet": "三立新聞網",
+  "quote": "判處有期徒刑3年、褫奪公權4年。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt does not give the indictment date. The appeal status needs a report-date qualifier."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt does not mention 2021-03 indictment by New Taipei Prosecutors; non-final status from 2026-05 article needs date qualifier."
+   }
+  }
+ },
+ {
+  "code": "ntpc5-5",
+  "name": "曾煥嘉",
+  "kind": "neg",
+  "date": "2023-11-08",
+  "status": "判決確定（緩刑）",
+  "text": "曾煥嘉與父親曾文振被控隱匿凶宅資訊詐貸千萬元，二審判曾煥嘉有期徒刑3月，緩刑2年，全案定讞。",
+  "url": "https://www.setn.com/news/1380151",
+  "outlet": "三立新聞網",
+  "quote": "二審今天判父4月，可科罰金；子3月獲緩刑定讞。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the final judgment and the sentence."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, identity, and final conviction with probation are directly supported by the excerpt."
+   }
+  }
+ },
+ {
+  "code": "ntpc8-5",
+  "name": "黃永昌",
+  "kind": "neg",
+  "date": "2025-02-27",
+  "status": "二審判決（被告不得上訴；2025-02）",
+  "text": "檢方指控黃永昌以親友名義詐領助理費；高院認定不構成貪污，判使公務員登載不實罪有期徒刑1年、緩刑3年。判決書（113年度上訴字第1784號）載被告不得上訴。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C113%2C上訴%2C1784%2C20250227%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "被告3人均不得上訴。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "報導時可上訴；原文未標示時間，且未指明指控來源。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Article is from 2025-02 and cannot prove current status; text must note （2025-02 報導時）."
+   }
+  }
+ },
+ {
+  "code": "ntpc8-5",
+  "name": "黃永昌",
+  "kind": "neg",
+  "date": "2026-10-08",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "黃永昌涉嫌發放關廟麵賄選，新北地院裁定100萬元交保、限制出境出海8月；他回應尊重調查，稱文宣及競選小物皆未超過30元。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5600438",
+  "outlet": "自由時報",
+  "quote": "新北地院今午裁定黃永昌100萬元交保、限制出境出海8月，並命他不得與證人有直接或間接接觸往來",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "原文未標示報導時間，無法證明目前偵查狀態。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate, recent 2026-10 report supports all facts including bail and candidate response, neutral and major."
+   }
+  }
+ },
+ {
+  "code": "ntpc8-7",
+  "name": "廖宜琨",
+  "kind": "neg",
+  "date": "2026-10-29",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "廖宜琨涉嫌以免費磨菜刀服務及請客吃飯賄選，檢方訊後向法院聲請羈押禁見。",
+  "url": "https://udn.com/news/story/6656/9844185",
+  "outlet": "聯合報",
+  "quote": "民進黨新北市二連霸議員廖宜琨，涉嫌以提供選區多個社區選民免費「磨菜刀」服務",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "摘錄記載檢方聲押，但未載候選人回應；也無法證明法院裁定結果未見報導。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Matches candidate, recent 2026-10 report supports bribery allegations and detention request, status and tone are appropriate."
+   }
+  }
+ },
+ {
+  "code": "ntpc11-5",
+  "name": "白珮茹",
+  "kind": "neg",
+  "date": "2026-09-29",
+  "status": "起訴（2026-09 報導時）",
+  "text": "士林地檢署指白珮茹涉於98年9月至100年3月詐領助理費63萬元，依貪污等罪起訴，求刑8年6月。",
+  "url": "https://cna.com.tw/news/asoc/202609290045.aspx",
+  "outlet": "中央社",
+  "quote": "認白珮茹涉犯貪污治罪條例公務員利用職務上機會詐取財物罪",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "起訴及求刑有據；報導未證明目前仍未判決。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt clearly identifies KMT New Taipei councilor 白珮茹 and supports the indictment, dates, NT$630k amount, and 8.5-year sentence request."
+   }
+  }
+ },
+ {
+  "code": "ntpc11-8",
+  "name": "陳竹音",
+  "kind": "neg",
+  "date": "2026-11-19",
+  "status": "偵查中（2026-11 報導時）",
+  "text": "士林地檢署偵辦陳竹音涉嫌違反反滲透法、選罷法、政治獻金法，搜索其住處等處，訊後諭令50萬元交保並限制出境、出海。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/5645659",
+  "outlet": "自由時報",
+  "quote": "涉犯反滲透法、公職人員選舉罷免法、政治獻金法",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導支持偵辦及交保，但未明說尚未起訴；目前狀態無法由舊報導確認。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt matches Labor Party District 11 candidate 陳竹音 and supports the search, alleged statutes, NT$500k bail, and travel ban."
+   }
+  }
+ },
+ {
+  "code": "ntpc4-3",
+  "name": "蔡政呈",
+  "kind": "neg",
+  "date": "2026-11-26",
+  "status": "偵查中（父親等人涉案；2026-11 報導時）",
+  "text": "檢調偵辦蔡政呈之父、前議員蔡明堂等人涉嫌為蔡政呈現金賄選，搜索競選總部等地查扣現金逾2715萬元；蔡明堂無保請回並否認。報導未指蔡政呈本人為被告。",
+  "url": "https://www.cna.com.tw/news/asoc/202611260258.aspx",
+  "outlet": "中央社",
+  "quote": "蔡政呈競選總部等地搜索，共查扣現金新台幣2715萬9500元。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "drop",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "no",
+    "why": "報導指控的是蔡明堂等人，未指蔡政呈涉案，也未記載蔡政呈回應；現金查扣地點包括競選總部等處。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "節錄未見蔡政呈回應遭誣陷，僅有蔡明堂喊冤稱「沒這回事」，須修正回應主體與內容。"
+   }
+  }
+ },
+ {
+  "code": "ntpc6-1",
+  "name": "邱烽堯",
+  "kind": "neg",
+  "date": "2026-09-03",
+  "status": "二審判決（未確定；2026-09 報導時）",
+  "text": "中和安樂市場標售圖利案，邱烽堯一審依對主管事務圖利罪判有期徒刑3年6月；高院二審駁回上訴、維持原判，全案可上訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202609030120.aspx",
+  "outlet": "中央社",
+  "quote": "邱烽堯犯後均未坦承，也未繳回犯罪所得，一審分別判刑10年、5年6月及3年6月並無不當；檢方主張量刑過",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "二審狀態符合報導當時，但須標明報導時間。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "引文僅載5人遭褫奪公權3至4年不等，未明載邱烽堯為3年，應移除該未獲支持細節。"
+   }
+  }
+ },
+ {
+  "code": "ntpc6-3",
+  "name": "陳錦錠",
+  "kind": "neg",
+  "date": "2013-10-01",
+  "status": "緩起訴（2013-10 報導時）",
+  "text": "2013年8月陳錦錠酒後駕車在板橋擦撞機車，造成2人受傷；新北地檢署依公共危險罪給予2年緩起訴，並須支付國庫10萬元。",
+  "url": "https://news.ltn.com.tw/news/society/breakingnews/877989",
+  "outlet": "自由時報",
+  "quote": "陳錦錠酒駕認罪，獲檢方緩起訴處分。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄未說明酒測值單位；應標明報導時間。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "人別、案情、酒測值與2年緩起訴及繳納10萬元處分均與引文相符，敘述中立且具重要性。"
+   }
+  }
+ },
+ {
+  "code": "ntpc11-9",
+  "name": "劉財鑫",
+  "kind": "neg",
+  "date": "2020-09-10",
+  "status": "起訴（2016-12）；二審判決（2020-09）",
+  "text": "士林地檢署指劉財鑫（時任新北市議員周雅玲服務處助理）涉與天傑會成員共謀，以選民服務名義恐嚇汐止工地承包商，2016年12月起訴。高院2020年9月二審判決（108年度上訴字第2484號）；刑度與是否確定，本頁未確認。",
+  "url": "https://news.ltn.com.tw/news/society/paper/1063974",
+  "outlet": "自由時報",
+  "quote": "劉財鑫、蘇宗鍰共謀犯案。 請繼續往下閱讀... 檢警表示，洪男等人鎖定當地美容護膚、卡拉OK等八大行",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄支持起訴，但不支持服務處主任、二審判決、刑期或確切罪名。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "2016-12 LTN excerpt only supports the indictment; it does not mention 周雅玲, 服務處主任, or the 2020 High Court verdict."
+   }
+  }
+ },
+ {
+  "code": "ntpc12-1",
+  "name": "忠仁・達祿斯",
+  "kind": "neg",
+  "date": "2026-10-14",
+  "status": "偵查中（2026-10 報導時）",
+  "text": "忠仁・達祿斯涉嫌於2026年3月免費招待選民飲宴賄選，檢方聲押禁見；法院裁定8萬元交保並限制住居。",
+  "url": "https://udn.com/news/story/7321/9818650",
+  "outlet": "聯合報",
+  "quote": "忠仁．達祿斯，2021年因 賄選 遭判刑、解職，今年再度再度參選議員，竟又涉嫌今年3月在樹林某婚宴會",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "報導日期為10月16日，且未證明目前案件狀態。"
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "All facts, identity, and recent 2026-10 investigation/bail status are directly supported by the excerpt."
+   }
+  }
+ },
+ {
+  "code": "ntpc12-3",
+  "name": "楊春妹",
+  "kind": "neg",
+  "date": "2026-11-05",
+  "status": "起訴（2026-11 報導時）",
+  "text": "楊春妹涉發放洗衣精賄選，經新北地檢署起訴。",
+  "url": "https://www.cna.com.tw/news/asoc/202611050101.aspx",
+  "outlet": "中央社",
+  "quote": "楊春妹發洗衣精涉賄選 新北檢起訴",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "摘錄僅有標題支持起訴，未提供時間、地點、同行者及具體罪名。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt only contains the headline; details (July 2026, spouse/assistant, locations, NT$100, specific charge) are not in the excerpt."
+   }
+  }
+ },
+ {
+  "code": "ntpc12-1",
+  "name": "忠仁・達祿斯",
+  "kind": "neg",
+  "date": "",
+  "status": "二審判決（被告不得上訴；2021-11）",
+  "text": "2020年立委選舉期間共同預備交付賄賂，臺中高分院2021年11月駁回上訴（110年度原選上訴字第1號）；判決書載被告不得上訴。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C110%2C%E5%8E%9F%E9%81%B8%E4%B8%8A%E8%A8%B4%2C1%2C20211124%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "忠仁‧達祿斯 選任辯護人 李永裕律師 陳忠儀律師 彭祐宸律師 上列 上訴人 因被告違反公職人員選舉罷",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "判決摘錄未載刑期、具體罪名或不得再上訴；來源網站附註非裁判書摘錄。"
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt shows second-instance appeal dismissed (2021-11-24) for bribery preparation, but omits the 7-month sentence and finality."
+   }
+  }
+ }
+]
