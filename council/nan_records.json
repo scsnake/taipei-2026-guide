@@ -1,0 +1,312 @@
+[
+ {
+  "code": "nan1-11",
+  "name": "史雪燕",
+  "kind": "neg",
+  "date": "2024-12-02",
+  "status": "行政處分；行政訴訟審理中（2026-09 報導時）",
+  "text": "內政部以史雪燕未辦理放棄中華人民共和國國籍為由，於2024年12月解除其南投縣議員公職；她訴願遭駁回後提起行政訴訟。",
+  "url": "https://www.cna.com.tw/news/aipl/202609040090.aspx",
+  "outlet": "中央社",
+  "quote": "史雪燕對此提起訴願遭駁回，再提起行政訴訟，審理中。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "no",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The article supports these facts, but does not establish the case remained pending as of 2026-09-04; the text must date that status to the report."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts supported by CNA excerpt; status should be 行政訴訟審理中（2026-09 報導時） instead of n/a."
+   }
+  }
+ },
+ {
+  "code": "nan1-14",
+  "name": "賴燕雪",
+  "kind": "neg",
+  "date": "2022-10-03",
+  "status": "判決（是否確定未查得；2022-10 報導時）",
+  "text": "張嘉哲等人指控賴燕雪曾因竊盜罪遭臺中地院判刑，並提供判決資料；賴燕雪表示私領域不回應。",
+  "url": "https://www.cna.com.tw/news/aloc/202210030122.aspx",
+  "outlet": "中央社",
+  "quote": "被依竊盜罪判刑，應向市民說明清楚。對此，賴燕雪說，選舉應提政見，私領域不回應",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The article reports the accusation and response. It says the court imposed a suspended sentence, so label this a first-instance judgment; finality is unverified."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Supported and neutral, but 2022-10 article needs （2022-10 報導時） for status currency."
+   }
+  }
+ },
+ {
+  "code": "nan3-3",
+  "name": "黃春麟",
+  "kind": "contrib",
+  "date": "2022-11-27",
+  "status": "n/a",
+  "text": "2018年獲選全國模範警察，並獲總統表揚。",
+  "url": "https://election.ltn.com.tw/2022/news/breakingnews/4137447",
+  "outlet": "自由時報",
+  "quote": "黃春麟從警33年，曾於2018年榮獲全國模範警察殊榮，並獲蔡英文總統表揚",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "The excerpt identifies the same candidate and supports the 2018 award and presidential commendation. The official bulletin also records the award; it is significant and neutrally stated."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "n/a",
+    "major": "yes",
+    "why": "Matches candidate's district and bulletin bio; excerpt directly supports the 2018 National Model Police official award and presidential commendation in neutral tone."
+   }
+  }
+ },
+ {
+  "code": "nan6-2",
+  "name": "石慶龍",
+  "kind": "neg",
+  "date": "2026-11-19",
+  "status": "偵查中（羈押禁見；2026-11 報導時）",
+  "text": "南投地檢署指石慶龍與助理涉以每票5000元賄選，法院於2026年11月19日裁准羈押禁見；羈押不代表有罪。",
+  "url": "https://www.cna.com.tw/news/asoc/202611190299.aspx",
+  "outlet": "中央社",
+  "quote": "無黨籍南投縣議員石慶龍涉以每票5000元賄選，遭搜索、拘提到案，檢方向法院聲押禁見於今天裁准",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt matches the candidate and supports the allegation and detention. The text omits that this is alleged conduct, which could imply guilt."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt from CNA (2026-11-19) matches the candidate and supports all facts, including the NT$5,000/vote bribery allegation and court-approved detention during investigation."
+   }
+  }
+ },
+ {
+  "code": "nan2-10",
+  "name": "廖梓佑",
+  "kind": "neg",
+  "date": "2022-03-10",
+  "status": "一審判決（2022-03；是否確定未查得）",
+  "text": "廖梓佑涉公費助理薪資申報不實，南投地院依共同使公務員登載不實罪判處有期徒刑3月，得易科罰金，緩刑2年，並應向公庫支付15萬元（110年度投簡字第299號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=NTDM%2C110%2C投簡%2C299%2C20220310%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "廖梓佑共同犯使 公務員登載不實罪 ，處 有期徒刑 參月，如 易科 罰金 ，以新臺幣壹仟元折算壹日，",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The judgment supports the offense and sentence but does not establish finality. Replace the unsupported final-status label with the first-instance status."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt is a 2022 first-instance summary judgment and does not prove 「判決確定」."
+   }
+  }
+ },
+ {
+  "code": "nan2-11",
+  "name": "簡百聰",
+  "kind": "neg",
+  "date": "2015-10-20",
+  "status": "一審判決（2015-10；是否確定未查得）",
+  "text": "南投地院判簡百聰犯公然侮辱罪，處拘役50日，得以每日新臺幣1,000元易科罰金（104年度審易字第211號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=NTDM%2C104%2C審易%2C211%2C20151020%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "簡百聰犯 公然侮辱 罪，處 拘役 伍拾日，如 易科 罰金 ，以新臺幣壹 仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt confirms the conviction and sentence but gives no finality information. Mark it as a first-instance judgment with finality unconfirmed."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Older 2015 first-instance judgment needs date and unconfirmed-finality qualifier in text and status."
+   }
+  }
+ },
+ {
+  "code": "nan2-11",
+  "name": "簡百聰",
+  "kind": "neg",
+  "date": "2025-11-12",
+  "status": "判決確定（二審上易案件，依法不得上訴第三審；2025-11）",
+  "text": "簡百聰競選民進黨南投縣黨部主委期間散布文字誹謗對手，臺中高分院判4罪，各處有期徒刑3月，應執行有期徒刑6月，得易科罰金（114年度上易字第670號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2C114%2C上易%2C670%2C20251112%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "簡百聰部分撤銷。 簡百聰 犯散布 文字 誹謗 罪，共肆罪，各處 有期徒刑 參月，如 易科 罰金 ，均",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The appellate judgment supports the four offenses, individual and aggregate sentences, and confiscation. The excerpt identifies the judgment date and statutory finality is noted in the supplied item."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt omits 「刑法第310條第2項」 and finality; adjust text and status to match excerpt."
+   }
+  }
+ },
+ {
+  "code": "nan2-13",
+  "name": "李洲忠",
+  "kind": "neg",
+  "date": "2021-02-02",
+  "status": "簡易判決（2021-02；是否確定未查得）",
+  "text": "南投地院判李洲忠犯不能安全駕駛罪（酒駕），處有期徒刑3月，得以每日新臺幣1,000元易科罰金（110年度投交簡字第12號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=NTDM%2C110%2C投交簡%2C12%2C20210202%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "李洲忠駕駛 動力交通工具 其血液中酒精濃度達百分之零點零五以 上，處 有期徒刑 參月，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt confirms the offense and sentence but expressly allows an appeal and does not show whether one occurred. The current text should state the judgment date and unconfirmed finality."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Matches candidate by name, age, Caotun police, and education; add 2021-02 date and unconfirmed-finality note."
+   }
+  }
+ },
+ {
+  "code": "nan7-3",
+  "name": "田東憲",
+  "kind": "neg",
+  "date": "2021-12-10",
+  "status": "一審判決（2021-12；是否確定未查得）",
+  "text": "田東憲任信義鄉公所建設課技士期間虛構採購驗收文書，南投地院依公務員登載不實罪判處有期徒刑1年1月，緩刑3年，並應於判決確定後1年內向公庫支付3萬元（110年度原訴字第11號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=NTDM%2C110%2C原訴%2C11%2C20211210%2C2",
+  "outlet": "司法院裁判書",
+  "quote": "田東憲犯如附表七編號5「罪名及宣告刑」欄所示之罪，處如附表七編號5「罪名及宣告刑」欄所示之刑；緩刑參",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the conviction, sentence terms, and candidate’s public role, but does not establish finality. The provided lead note gives a later final date."
+   },
+   "agy": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt omits 附表七編號5 (exact statute and 1年1月 term) and does not confirm finality."
+   }
+  }
+ },
+ {
+  "code": "nan7-1",
+  "name": "全文才",
+  "kind": "neg",
+  "date": "2012-12-27",
+  "status": "簡易判決（2012-12；是否確定未查得）",
+  "text": "全文才因酒後駕車，遭南投地院以不能安全駕駛罪判處拘役55日，得以每日新臺幣1,000元易科罰金（101年度投交簡字第653號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=NTDM%2C101%2C投交簡%2C653%2C20121227%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "全文才服用酒類，不能安全駕駛 動力交通工具 而駕駛，處 拘役 伍 拾伍日，如 易科 罰金 ，以新臺幣壹仟元折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt supports the person, offense, and sentence, but gives no appeal outcome. Mark the status as unconfirmed at the article date."
+   },
+   "agy": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Same person in 信義鄉, all facts and cautious status match the 2012 DUI judgment excerpt."
+   }
+  }
+ }
+]
