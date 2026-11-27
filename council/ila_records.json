@@ -1,0 +1,343 @@
+[
+ {
+  "code": "ila10-3",
+  "name": "黃士駿",
+  "kind": "neg",
+  "date": "2026-11-14",
+  "status": "偵查中（羈押禁見；2026-11 報導時）",
+  "text": "國民黨提名的縣議員參選人黃士駿涉嫌投票行賄，宜蘭地院裁定他與一名潘姓樁腳羈押禁見；羈押不代表有罪。",
+  "url": "https://news.ltn.com.tw/news/politics/breakingnews/5640283",
+  "outlet": "自由時報",
+  "quote": "認定黃與潘姓樁腳涉犯投票行賄罪嫌重大",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the KMT-nominated Yilan council candidate and reports detention pending investigation, with no prosecution or judgment stated."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts match the 11/14 article. An article cannot prove the status as of today, so the text needs 「（2026-11 報導時）」. Say 'no known indictment' only with that date."
+   }
+  }
+ },
+ {
+  "code": "ila13-1",
+  "name": "李勝雄",
+  "kind": "neg",
+  "date": "2026-04-08",
+  "status": "判決確定",
+  "text": "監察院彈劾南澳鄉長李勝雄涉於民國110年對女員工以性意味言詞性騷擾，懲戒法院一、二審均判罰款25萬元，全案確定。",
+  "url": "https://udn.com/news/story/7321/9428119",
+  "outlet": "聯合新聞網（中央社）",
+  "quote": "懲戒法院一、二審均判決李男罰款新台幣25萬元，全案確定。",
+  "lead": "",
+  "decided": "both keep",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies the South Ao Township chief as Li Shengxiong and states the 2021 conduct, NT$250,000 penalty, and final judgment."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "南澳鄉長李勝雄、宜蘭縣吻合。懲戒法院一、二審罰款25萬元，全案確定，為官方懲處。文字中立，使用「涉」。"
+   }
+  }
+ },
+ {
+  "code": "ila1-3",
+  "name": "莊淑如",
+  "kind": "neg",
+  "date": "2024-10-22",
+  "status": "當選無效判決確定（2024-10）",
+  "text": "臺灣高等法院判決駁回莊淑如上訴，其宜蘭縣議員當選無效確定；法院推認她對父親莊阿養的賄選有授意或同意。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/printData.aspx?id=TPHV,112,%E9%81%B8%E4%B8%8A,18,20241022,1",
+  "outlet": "臺灣高等法院",
+  "quote": "本件上訴為無理由，依選罷法第128條本文準用民事訴訟法第449條第1項、第78條，判決如主文。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment supports the ruling and stated finding; avoid wording that presents the court’s inference as an independently established fact."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Status correct (不得上訴). Court 'inferred' (推認) her consent. 'Found' is too strong; change the wording."
+   }
+  }
+ },
+ {
+  "code": "ila1-11",
+  "name": "林岳賢",
+  "kind": "neg",
+  "date": "2026-02-05",
+  "status": "偵查中（30萬元交保；2026-02 報導時）",
+  "text": "宜蘭縣議員林岳賢因疑涉洩漏搜索等偵查秘密遭搜索、約談，檢察官訊後諭知30萬元交保；他稱「天大的冤枉」，表示配合釐清案情。",
+  "url": "https://udn.com/news/story/7321/9311696",
+  "outlet": "聯合報",
+  "quote": "檢察官訊後諭知林岳賢30萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the alleged secrecy leak, bail, and response, but not the quoted phrase「天大的冤枉」in this item’s source excerpt."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Facts supported. Older article, so status needs 「報導時」. Duplicates ila-003."
+   }
+  }
+ },
+ {
+  "code": "ila2-2",
+  "name": "賴良洲",
+  "kind": "neg",
+  "date": "2021-04-09",
+  "status": "當選無效判決確定；刑事部分無罪確定（2021-04 報導時）",
+  "text": "賴良洲因中秋送蘋果禮盒案，民事當選無效判決確定；刑事賄選案更一審判無罪，最高法院駁回上訴，無罪確定。",
+  "url": "https://www.cna.com.tw/news/asoc/202104090062.aspx",
+  "outlet": "中央社",
+  "quote": "民事當選無效確定；刑事部分，更一審認定他有送禮習慣，240元禮盒合乎日常禮儀餽贈，判決無罪，最高法院駁回上訴確定。",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies former Yilan County councilor Lai Liang-chou and supports both the civil judgment and final criminal acquittal."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt names 宜蘭縣前議員賴良洲 and says the civil 當選無效 ruling is final, the retrial acquitted him, and the Supreme Court rejected the appeal (無罪確定). The 2021-04 article fits the status, and the wording is neutral."
+   }
+  }
+ },
+ {
+  "code": "ila3-5",
+  "name": "張永德",
+  "kind": "neg",
+  "date": "2026-11-05",
+  "status": "偵查中（20萬元交保；2026-11 報導時）",
+  "text": "宜蘭地檢署偵辦礁溪鄉長張永德涉嫌投票行賄案，檢方訊後諭令20萬元交保。",
+  "url": "https://news.pts.org.tw/article/834415",
+  "outlet": "公視新聞",
+  "quote": "依投票行賄罪，諭令20萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "The excerpt identifies the candidate and supports the allegation and bail amount. The article reports an ongoing investigation, so the date qualifier is needed; the text also states an unqualified status."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "Excerpt names 國民黨籍礁溪鄉長張永德, running for county councillor; 2026-11-05 report says 投票行賄罪嫌, 20萬元交保, further investigation pending. Status 偵查中 is correct."
+   }
+  }
+ },
+ {
+  "code": "ila5-1",
+  "name": "沈清山",
+  "kind": "neg",
+  "date": "2026-09-18",
+  "status": "偵查中（10萬元交保；2026-09 報導時）",
+  "text": "宜蘭地檢署偵辦壯圍鄉村鄰長餐會案，檢察官訊問沈清山後，認為涉嫌投票行賄罪嫌重大，諭令10萬元交保。",
+  "url": "https://www.cna.com.tw/news/aloc/202609180228.aspx",
+  "outlet": "中央社",
+  "quote": "認為沈清山涉嫌違反公職人員選舉罷免法的投票行賄，罪嫌重大，諭令10萬元交保",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt identifies Shen as Zhuangwei township chief and a county-council candidate, and reports the investigation and NT$100,000 bail on the article date."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Person, facts and major level are supported. The article is from 2026-09-18, so it cannot prove the status on 2026-11-27. The text needs the 「（2026-09 報導時）」 note."
+   }
+  }
+ },
+ {
+  "code": "ila12-1",
+  "name": "陳傑麟",
+  "kind": "neg",
+  "date": "2021-03-12",
+  "status": "判決確定（2021-03）",
+  "text": "陳傑麟助理費案，最高法院駁回檢方上訴，維持二審依使公務員登載不實罪判處有期徒刑6月、緩刑3年，並命向公庫支付20萬元；被訴利用職務詐取財物部分不另為無罪諭知。",
+  "url": "https://www.kamalan-news.com/local/15/9777",
+  "outlet": "葛瑪蘭新聞網",
+  "quote": "三審最高法院駁回檢方上訴，維持二審判決定讞",
+  "lead": "",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt confirms the person, charge, sentence, and finality, but the text omits the court-ordered payment and overstates the judgment as only one offense outcome."
+   },
+   "claude": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The article names Chen as a county councillor from Datong. It says the Supreme Court rejected the prosecution's appeal, so the 6-month sentence with 3-year probation is final. The facts match the text."
+   }
+  }
+ },
+ {
+  "code": "ila1-13",
+  "name": "項秀蘭",
+  "kind": "neg",
+  "date": "2018-05-31",
+  "status": "一審判決（2018-05；是否確定未查得）",
+  "text": "宜蘭地院判決項秀蘭犯傷害罪處拘役40日、公然侮辱罪處拘役20日，應執行拘役50日，得易科罰金；衝突對方也被判刑（106年度易字第674號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=ILDM%2C106%2C易%2C674%2C20180531%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "項秀蘭犯傷害罪，處拘役肆拾日，如易科罰金，以新臺幣壹仟元 折算壹日。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The excerpt supports the sentence but also records a separate公然侮辱罪 and a combined 50-day sentence."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "unsure",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "Excerpt is the first-instance judgment only. Finality and the 高院 case number are not shown. Person match rests on name and Yilan city only."
+   }
+  }
+ },
+ {
+  "code": "ila4-1",
+  "name": "黃浴沂",
+  "kind": "neg",
+  "date": "2011-12-21",
+  "status": "二審判決（2011-12；是否確定未查得）",
+  "text": "黃浴沂於檢察官偵訊時具結後就其子涉案虛偽證述，臺灣高等法院依偽證罪判處有期徒刑6月、緩刑3年，並應向國庫支付10萬元（100年度上訴字第1149號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C100%2C上訴%2C1149%2C20111221%2C1",
+  "outlet": "司法院裁判書",
+  "quote": "黃浴沂及其女友朱瓊純隨後亦至該處，黃冠 銘因無法聯絡上陳振忠，遂令陳福山將陳振忠交出來，陳福 山回稱",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The judgment identifies Huang Yuyi and details his sworn false testimony, six-month sentence, three-year suspended sentence, and payment to the treasury; the item states the judgment was final."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "unsure",
+    "major": "yes",
+    "why": "Excerpt shows the offense and that he admitted it at trial. It does not show his sentence, probation, 10萬元 payment, or finality. Those facts are outside the excerpt. The lead note says 已確定, which is unverified."
+   }
+  }
+ },
+ {
+  "code": "ila6-2",
+  "name": "陳漢鍾",
+  "kind": "neg",
+  "date": "2011-02-23",
+  "status": "二審判決（2011-02；是否確定未查得）",
+  "text": "臺灣高等法院判決時任羅東鎮民代表會主席的陳漢鍾，共同犯交付、收受供偽造有價證券之器械、原料罪，處有期徒刑1年（98年度上訴字第4955號）。",
+  "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2C98%2C%E4%B8%8A%E8%A8%B4%2C4955%2C20110223%2C3",
+  "outlet": "司法院裁判書",
+  "quote": "陳漢鍾共同犯交付、收受供偽造有價證券之器械、原料罪，處有 期徒刑壹年。",
+  "lead": "台灣前進刑事紀錄圖鑑",
+  "decided": "manual",
+  "review": {
+   "codex": {
+    "verdict": "keep",
+    "same_person": "yes",
+    "supported": "yes",
+    "status_ok": "yes",
+    "major": "yes",
+    "why": "The court judgment names 陳漢鍾, finds him guilty of the stated offense, and imposes one year in prison; the excerpt also describes the judgment as final."
+   },
+   "claude": {
+    "verdict": "fix",
+    "same_person": "yes",
+    "supported": "partial",
+    "status_ok": "no",
+    "major": "yes",
+    "why": "判決書節錄只顯示二審判決與刑期，沒有顯示確定。「判決確定」僅來自線索說明，且舊文件不能證明現況。刑度與共同犯罪名有判決書支持。"
+   }
+  }
+ }
+]
